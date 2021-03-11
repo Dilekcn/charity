@@ -20,6 +20,34 @@ const Header = () => {
 				src={logo}
 				alt="logo"
 			/>
+			<button
+				style={{
+					position: 'absolute',
+					width: '153px',
+					height: '63px',
+					left: '88px',
+					top: '22px',
+					background: '#347CA5',
+					borderRadius: '10px',
+				}}
+			>
+				<span
+					style={{
+						width: '117px',
+						height: '20px',
+						left: '110px',
+						top: '37px',
+						fontFamily: 'Roboto',
+						fontStyle: 'normal',
+						fontWeight: 'normal',
+						fontSize: '30px',
+						lineHeight: '35px',
+						color: 'white',
+					}}
+				>
+					DONATE
+				</span>
+			</button>
 		</div>
 	);
 };
