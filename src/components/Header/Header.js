@@ -76,9 +76,9 @@ const Header = () => {
 				placeholder="Search"
 				style={{
 					position: 'absolute',
-					width: '279px',
+					width: '299px',
 					height: '27px',
-					left: '1057px',
+					left: '1027px',
 					top: '40px',
 					background: '#FFFFFF',
 					border: '1px solid #347CA5',
@@ -93,7 +93,7 @@ const Header = () => {
 					position: 'absolute',
 					left: '93.97%',
 					right: '2.87%',
-					top: '6.36%',
+					top: '6.06%',
 					bottom: '97.32%',
 					background: '#FFFFFF',
 					border: '0px #347CA5',

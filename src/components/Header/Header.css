@@ -10,6 +10,12 @@ li {
     color: #347CA5;
 }
 
+a {
+    text-decoration: none;
+    color: #347CA5;
+    font-weight: 400;
+}
+
 /* #img {
     style={
         position: 'absolute',
