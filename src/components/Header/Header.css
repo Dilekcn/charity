@@ -1,0 +1,25 @@
+ul {
+    margin-left: 296px;
+    margin-top: 40px;
+    font-size: 24px;
+}
+
+li {
+    display: inline;
+    margin-right: 48px;
+    color: #347CA5;
+}
+
+/* #img {
+    style={
+        position: 'absolute',
+        left: '95.57%',
+        right: '2.87%',
+        top: '1.96%',
+        bottom: '97.32%',
+        back-ground: '#FFFFFF',
+        border: '1px solid #347CA5',
+        boxSizing: 'border-box',
+    }
+} */
+
