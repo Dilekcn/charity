@@ -9,7 +9,17 @@ const Header = () => {
 				height: '104px',
 			}}
 		>
-			<img src={logo} alt="logo" />
+			<img
+				style={{
+					position: 'absolute',
+					width: '48px',
+					height: '44px',
+					left: '21px',
+					top: '34px',
+				}}
+				src={logo}
+				alt="logo"
+			/>
 		</div>
 	);
 };
