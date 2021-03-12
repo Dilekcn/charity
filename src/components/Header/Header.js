@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './images/img.png';
-import search from './images/search.png';
 import './header.css';
+import image2 from './images/img2.png';
 
 const Header = () => {
 	return (
-		<div classname="div-header">
+		<div id="div-header">
 			<img id="img-logo" src={logo} alt="logo" />
 			<button id="btn-donate">
 				<span id="text-btn-donate">DONATE</span>
@@ -26,15 +26,14 @@ const Header = () => {
 					</li>
 				</ul>
 			</nav>
-			<div class="searchContainer">
-				<i class="fa fa-search searchIcon"></i>
-				<input
-					class="searchBox"
-					type="search"
-					name="search"
-					placeholder="Search..."
-				/>
-				<input type="submit" value="Search" class="searchButton" />
+
+			<input id="searchbox" type="text" placeholder="Search" />
+			<img src={image2} alt="big-pic" id="slider" />
+			<div id="quote-box">
+				<span id="quote-text">
+					"Those who are happiest are those who does the most for others."
+				</span>
+				<span id="quote-person">Booker T. Washington</span>
 			</div>
 		</div>
 	);
