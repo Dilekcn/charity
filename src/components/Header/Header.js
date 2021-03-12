@@ -26,8 +26,16 @@ const Header = () => {
 					</li>
 				</ul>
 			</nav>
-			<input type="text" placeholder="Search" id="searchbar" />
-			<img id="search-icon" src={search} alt="logo" />
+			<div class="searchContainer">
+				<i class="fa fa-search searchIcon"></i>
+				<input
+					class="searchBox"
+					type="search"
+					name="search"
+					placeholder="Search..."
+				/>
+				<input type="submit" value="Search" class="searchButton" />
+			</div>
 		</div>
 	);
 };
