@@ -1,17 +1,20 @@
 import React from 'react';
 import logo from './images/img.png';
-
 import './header.css';
 import image2 from './images/img2.png';
 
 const Header = () => {
 	return (
 		<div id="div-header">
-			<img id="img-logo" src={logo} alt="logo" />
-			<button id="btn-donate">
-				<span id="text-btn-donate">DONATE</span>
-			</button>
 			<nav>
+				<a href="#home">
+					<img id="img-logo" src={logo} alt="logo" />
+				</a>
+				<a href="#donate">
+					<button id="btn-donate">
+						<span id="text-btn-donate">DONATE</span>
+					</button>
+				</a>
 				<ul>
 					<li>
 						<a href="#getInvolved">Get Involved</a>
@@ -26,9 +29,8 @@ const Header = () => {
 						<a href="#login">Log In</a>
 					</li>
 				</ul>
+				<input id="searchbox" type="text" placeholder="Search" />
 			</nav>
-
-			<input id="searchbox" type="text" placeholder="Search" />
 			<img src={image2} alt="big-pic" id="slider" />
 			<div id="quote-box">
 				<span id="quote-text">
