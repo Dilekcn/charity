@@ -1,0 +1,146 @@
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 627px;
+    height: 628px;
+    margin:auto;
+    margin-top: 100px;
+}
+
+.sign-up-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.sign-up-logo {
+    margin-top: 17px;
+    margin-left: 70px;
+    margin-right: 20px;
+}
+
+.sign-up-h1 h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #347CA5;
+}
+
+.sign-up-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    width: 85%;
+    height: 97%;
+    margin:auto;
+    margin: auto;
+}
+
+.sign-up-SignIn {
+    margin-top: 5px;
+    margin-left: 15%;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+    color: #347CA5;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+.sign-up-email {
+    max-width: 80%;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px;
+    font-size: large;
+}
+.sign-up-email::placeholder {
+    padding: 5px;
+}
+
+.sign-up-password {
+    max-width: 80%;
+    margin-top: 30px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px;
+    font-size: large;
+}
+
+.sign-up-password::placeholder {
+    padding: 5px;
+}
+
+.sig-in-forgot-password {
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #347CA5;
+    font-size: small;
+}
+.sign-up-submit {
+    margin-top: 20px;
+    max-width: 84%;
+    border: none;
+    background-color: #F49131;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    padding: 5px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+.sign-up-google {
+    margin-top: 20px;
+    max-width: 84%;
+    border: none;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    color: #347CA5;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    padding: 5px;
+    font-size: large;
+    cursor: pointer;
+}
+
+.sign-up-google img {
+    height: 25px;
+}
+
+
+.sign-up-login {
+    margin-left: 30%;
+    margin-top: auto;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    color: #347CA5;
+}
+
+.sign-up-login p a {
+    font-weight: bold;
+    font-size: large;
+    margin-left: 3px;
+}

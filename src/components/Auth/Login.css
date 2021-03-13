@@ -1,0 +1,121 @@
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    width: 627px;
+    height: 628px;
+    margin:auto;
+    margin-top: 100px;
+}
+
+.sign-in-header {
+    display: flex;
+    flex-direction: row;
+}
+
+.sign-in-logo {
+    margin-top: 17px;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+
+.sign-in-h1 h1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    color: #347CA5;
+}
+
+.sign-in-body {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5E5E5;
+    border-radius: 10px;
+    width: 85%;
+    height: 97%;
+    margin:auto;
+    margin: auto;
+}
+
+.sign-in-SignIn {
+    margin-top: 5px;
+    margin-left: 15%;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 64px;
+    line-height: 78px;
+    color: #347CA5;
+}
+
+.sign-in-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 15%;
+    margin-top: 10px;
+}
+
+.sign-in-email {
+    max-width: 80%;
+    margin-top: 10px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px;
+    font-size: large;
+}
+.sign-in-email::placeholder {
+    padding: 5px;
+}
+
+.sign-in-password {
+    max-width: 80%;
+    margin-top: 30px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    border: none;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    padding: 10px;
+    font-size: large;
+}
+
+.sign-in-password::placeholder {
+    padding: 5px;
+}
+
+.sig-in-forgot-password {
+    margin-top: 10px;
+    margin-left: 5px;
+    color: #347CA5;
+    font-size: small;
+}
+.sign-in-submit {
+    margin-top: 20px;
+    max-width: 84%;
+    border: none;
+    background-color: #F49131;
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    padding: 5px;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
+
+.sign-in-signUp {
+    margin-left: 35%;
+    margin-top: auto;
+    font-family: Prociono;
+    font-style: normal;
+    font-weight: normal;
+    color: #347CA5;
+}
