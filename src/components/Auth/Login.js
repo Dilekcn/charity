@@ -23,7 +23,7 @@ const Login = () => {
 				</form>
 				<div className="sign-in-signUp">
 					<p>
-						New to Helping? <a href="#">Join Now</a>
+						New to Helping? <a href="/signup">Join Now</a>
 					</p>
 				</div>
 			</div>
