@@ -3,7 +3,7 @@ import './NewsHomePage.css';
 
 const NewsHomePage = () => {
 	return (
-		<div>
+		<div id="news-div">
 			<span id="newsTitle">The difference you make</span>
 			<div id="newsHomePage"></div>
 		</div>

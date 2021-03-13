@@ -3,11 +3,9 @@
 }
 
 #footer {
-	position: absolute;
 	width: 100%;
 	height: 193px;
 	left: -1px;
-	top: 2168px;
 	background: #347ca5;
 }
 
@@ -18,7 +16,6 @@
 }
 
 #form-btn {
-	position: absolute;
 	width: 110px;
 	height: 62px;
 	background: #f49131;
@@ -30,16 +27,15 @@
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 35px;
-	top: 68px;
 }
 #form-title {
+	padding: 1.5% 0px;
 	text-align: center;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 35px;
-
 	color: #ffffff;
 }
 
@@ -64,8 +60,6 @@
 }
 
 #footer-nav {
-	position: absolute;
-	top: 2361px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
