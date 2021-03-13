@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Login from '../Auth/Login';
 import Footer from '../Footer/Footer';
-
+import About from '../About/About'
 import Header from '../Header/Header';
 import NewsHomePage from '../News-HomePage/NewsHomePage';
 import SignUp from '../Auth/SignUp';
@@ -31,6 +31,7 @@ export default function App() {
 						)}
 					/>
 					<Route exact path="/login" component={Login} />
+					<Route exact path="/aboutus" component={About} />
 					<Route exact path="/signup" component={SignUp} />
 					<Route exact path="/donate" component={Donate} />
 				</Switch>
