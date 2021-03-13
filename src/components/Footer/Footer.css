@@ -17,9 +17,6 @@
 	align-items: center;
 }
 
-#form-footer {
-	/* margin-left: 7%; */
-}
 #form-btn {
 	position: absolute;
 	width: 110px;
@@ -61,5 +58,5 @@
 	justify-content: space-between;
 	align-items: center;
 	background-color: #c4c4c4;
-	height: 500px;
+	height: 50px;
 }
