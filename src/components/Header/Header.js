@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './images/img.png';
 import search from './images/search.png';
-import './header.css';
+import './Header.css';
 
 const Header = () => {
 	return (
-		<div classname="div-header">
+		<div className="div-header">
 			<img id="img-logo" src={logo} alt="logo" />
 			<button id="btn-donate">
 				<span id="text-btn-donate">DONATE</span>
