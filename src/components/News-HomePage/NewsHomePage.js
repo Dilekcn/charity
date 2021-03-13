@@ -1,17 +1,13 @@
-import React from 'react'
-import "./NewsHomePage.css"
+import React from 'react';
+import './NewsHomePage.css';
 
 const NewsHomePage = () => {
-  return (
-    <div>
-      <span id="newsTitle">The difference you make</span>
-      <div id="newsHomePage">
+	return (
+		<div>
+			<span id="newsTitle">The difference you make</span>
+			<div id="newsHomePage"></div>
+		</div>
+	);
+};
 
-      </div>
-    </div>
-    
-  )
-}
-
-export default NewsHomePage
-
+export default NewsHomePage;
