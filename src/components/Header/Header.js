@@ -6,12 +6,12 @@ const Header = () => {
 	return (
 		<div id="div-header">
 			<div>
-				<a href="http://localhost:3000/">
+				<a href="/">
 					<img src={logo} alt="logo" />
 				</a>
 			</div>
 			<div>
-				<a href="http://localhost:3000/donate">
+				<a href="/donate">
 					<button id="btn-donate">DONATE</button>
 				</a>
 			</div>
@@ -19,13 +19,13 @@ const Header = () => {
 				<nav>
 					<ul>
 						<li>
-							<a href="#getInvolved">Get Involved</a>
+							<a href="/getInvolved">Get Involved</a>
 						</li>
 						<li>
-							<a href="#campaings&news">Campaigns & News</a>
+							<a href="/campaings&news">Campaigns & News</a>
 						</li>
 						<li>
-							<a href="#aboutus">About Us</a>
+							<a href="/aboutus">About Us</a>
 						</li>
 						<li>
 							<a href="/login">Log In</a>
