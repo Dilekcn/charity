@@ -4,8 +4,13 @@ import './Slider.css';
 
 const Slider = () => {
 	return (
-		<div>
-			<img id="slider" src={pic} alt="pic" />
+		<div id="slider-box">
+			<img id="slider-pic" src={pic} alt="pic" />
+			<div id="quote-box">
+				<p id="quote-text">
+					Those who are happiest are those who does the most for others.
+				</p>
+			</div>
 		</div>
 	);
 };

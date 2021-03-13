@@ -1,4 +1,19 @@
-#slider {
+* {
+	box-sizing: border-box;
+}
+
+#slider-box {
+	position: relative;
+}
+
+#slider-pic {
 	width: 100%;
 	height: auto;
+}
+
+#quote-box {
+	position: absolute;
+}
+
+#quote-text {
 }
