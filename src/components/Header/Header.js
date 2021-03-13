@@ -23,7 +23,7 @@ const Header = () => {
 						<a href="#aboutus">About Us</a>
 					</li>
 					<li>
-						<a href="#login">Log In</a>
+						<a href="login">Log In</a>
 					</li>
 				</ul>
 			</nav>
