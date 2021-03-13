@@ -14,8 +14,8 @@ export default function App() {
 				<Header />
 				<NewsHomePage />
 				<Switch>
-					<Route path="/login" component={Login}/>
-					<Route path="/signup" component={SignUp}/>
+					<Route path="/login" component={Login} />
+					<Route path="/signup" component={SignUp} />
 				</Switch>
 				<Footer />
 			</div>

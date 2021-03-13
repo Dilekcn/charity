@@ -17,7 +17,25 @@ const Footer = () => {
 					</form>
 				</div>
 			</div>
-			<div></div>
+			<div id="footer-nav">
+				<nav>
+					<ul>
+						<li>
+							<a href="#terms">Terms & Conditions</a>
+						</li>
+						<li>
+							<a href="#cookies">Privacy & Cookies</a>
+						</li>
+						<li>
+							<a href="#contactus">Contact Us</a>
+						</li>
+						<li>
+							<a href="#access">Accesibility</a>
+						</li>
+						<li>&copy;2021 SoftInnovas</li>
+					</ul>
+				</nav>
+			</div>
 		</div>
 	);
 };

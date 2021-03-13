@@ -55,3 +55,15 @@
 	background: #76a9c7;
 	border-radius: 10px;
 }
+
+#footer-nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #c4c4c4;
+	height: 50px;
+}
+
+li,
+a {
+}
