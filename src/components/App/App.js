@@ -12,9 +12,11 @@ import SignUp from '../Auth/SignUp';
 import Slider from '../Slider/Slider';
 
 export default function App() {
+
 	return (
 		<div>
 			<Header />
+
 
 			<Router>
 				<Switch>
