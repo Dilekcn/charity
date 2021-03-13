@@ -9,11 +9,13 @@ import Footer from '../Footer/Footer';
 import Header from '../Header/Header';
 import NewsHomePage from '../News-HomePage/NewsHomePage';
 import SignUp from '../Auth/SignUp';
+import Slider from '../Slider/Slider';
 
 export default function App() {
 	return (
 		<div>
 			<Header />
+			<Slider />
 			{/* <NewsHomePage /> */}
 			<Router>
 				<Switch>
