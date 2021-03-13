@@ -15,10 +15,19 @@ export default function App() {
 	return (
 		<div>
 			<Header />
-			<Slider />
-			{/* <NewsHomePage /> */}
+
 			<Router>
 				<Switch>
+					<Route
+						exact
+						path="/"
+						render={() => (
+							<React.Fragment>
+								<Slider />
+								<NewsHomePage />
+							</React.Fragment>
+						)}
+					/>
 					<Route exact path="/login" component={Login} />
 					<Route exact path="/signup" component={SignUp} />
 					<Route exact path="/donate" component={Donate} />
