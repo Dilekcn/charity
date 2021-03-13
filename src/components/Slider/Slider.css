@@ -11,9 +11,25 @@
 	height: auto;
 }
 
-#quote-box {
+#quote-text {
 	position: absolute;
+	height: auto;
+	background-color: #347ca5;
+	right: 14px;
+	font-size: 48px;
+	color: #fff;
+	width: 50%;
+	top: 70%;
+	padding: 20px 5%;
+	text-align: left;
+	font-family: Prociono;
+	border-radius: 20px;
+	line-height: 1.4;
 }
 
-#quote-text {
+#quote-person {
+	font-family: Prociono;
+	font-size: 24px;
+	float: right;
+	padding-right: 5%;
 }
