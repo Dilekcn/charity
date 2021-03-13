@@ -17,7 +17,6 @@ const Footer = () => {
 					</form>
 				</div>
 			</div>
-
 			<nav id="footer-nav">
 				<ul>
 					<li>
