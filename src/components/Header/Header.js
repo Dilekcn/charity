@@ -13,11 +13,11 @@ const Header = () => {
 			</button>
 =======
 import './Header.css';
-import image2 from './images/img2.png';
 
 const Header = () => {
 	return (
 		<div id="div-header">
+<<<<<<< Updated upstream
 >>>>>>> e98fa1e4a4679608a13a6f73f661342176d59c73
 			<nav>
 				<a href="#home">
@@ -27,29 +27,36 @@ const Header = () => {
 					<button id="btn-donate">
 						<span id="text-btn-donate">DONATE</span>
 					</button>
+=======
+			<div>
+				<img src={logo} alt="logo" />
+			</div>
+			<div>
+				<a href="/#">
+					<button id="btn-donate">DONATE</button>
+>>>>>>> Stashed changes
 				</a>
-				<ul>
-					<li>
-						<a href="#getInvolved">Get Involved</a>
-					</li>
-					<li>
-						<a href="#campaings&news">Campaigns & News</a>
-					</li>
-					<li>
-						<a href="#aboutus">About Us</a>
-					</li>
-					<li>
-						<a href="login">Log In</a>
-					</li>
-				</ul>
-				<input id="searchbox" type="text" placeholder="Search" />
-			</nav>
-			<img src={image2} alt="big-pic" id="slider" />
-			<div id="quote-box">
-				<span id="quote-text">
-					"Those who are happiest are those who does the most for others."
-				</span>
-				<span id="quote-person">Booker T. Washington</span>
+			</div>
+			<div>
+				<nav>
+					<ul>
+						<li>
+							<a href="#getInvolved">Get Involved</a>
+						</li>
+						<li>
+							<a href="#campaings&news">Campaigns & News</a>
+						</li>
+						<li>
+							<a href="#aboutus">About Us</a>
+						</li>
+						<li>
+							<a href="/login">Log In</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div>
+				<input id="search-box" type="text" placeholder="Search" />
 			</div>
 		</div>
 	);

@@ -13,6 +13,7 @@ import SignUp from '../Auth/SignUp';
 
 export default function App() {
 	return (
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 		<div>
 			<Header />
@@ -23,13 +24,25 @@ export default function App() {
 			<div className="app">
 				<Header />
 				<NewsHomePage />
+=======
+		<div>
+			<Header />
+			<NewsHomePage />
+			<Router>
+>>>>>>> Stashed changes
 				<Switch>
-					<Route path="/login" component={Login} />
-					<Route path="/signup" component={SignUp} />
+					<Route exact path="/login" component={Login} />
+					<Route exact path="/signup" component={SignUp} />
 				</Switch>
+<<<<<<< Updated upstream
 				<Footer />
 			</div>
 		</Router>
 >>>>>>> e98fa1e4a4679608a13a6f73f661342176d59c73
+=======
+			</Router>
+			<Footer />
+		</div>
+>>>>>>> Stashed changes
 	);
 }
