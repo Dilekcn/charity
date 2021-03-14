@@ -43,7 +43,6 @@
 	margin-right: 25px;
 	width: 350px;
 	height: 48px;
-	top: 2252px;
 	border: none;
 	background: #76a9c7;
 	border-radius: 10px;
@@ -72,4 +71,26 @@
 	font-family: Prociono;
 	color: 347ca5;
 	font-weight: 400;
+}
+
+@media (max-width: 1237px) {
+	.form-input {
+		width: 270px;
+		height: 38px;
+		font-size: 16px;
+		padding-left: 15px;
+	}
+
+	.form-input::placeholder {
+		font-size: 21px;
+		color: white;
+		padding-left: 15px;
+		padding-top: 25px;
+	}
+	#form-btn {
+		width: 90px;
+		height: 50px;
+		font-size: 26px;
+		line-height: 35px;
+	}
 }
