@@ -216,8 +216,14 @@
   ],
   "users": [
     {
-      "email":"black@gmail.com",
-      "password":"123456"
+      "id": 1,
+      "email": "black@gmail.com",
+      "password": "123456"
+    },
+    {
+      "email": "blackeagle4894@gmail.com",
+      "password": "123456",
+      "id": 2
     }
   ]
 }
