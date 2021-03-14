@@ -213,5 +213,11 @@
       "bodyImageTwo": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
       "id": 15
     }
+  ],
+  "users": [
+    {
+      "email":"black@gmail.com",
+      "password":"123456"
+    }
   ]
 }

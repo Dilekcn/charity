@@ -31,6 +31,15 @@
 	margin: auto;
 }
 
+.valid {
+	margin-top: 5px;
+	margin-left: 15%;
+	font-family: Prociono;
+	font-style: normal;
+	font-weight: normal;
+	color: red
+}
+
 .sign-in-SignIn {
 	margin-top: 5px;
 	margin-left: 15%;
@@ -91,11 +100,25 @@
 	margin-top: 10px;
 	margin-left: 5px;
 	color: #347ca5;
-	font-size: small;
+	font-size: 16px;
 }
 .sign-in-submit {
+	border: none;
+	background-color: #f49131;
+	border-radius: 10px;
+	color: #ffffff;
+	font-family: Prociono;
+	font-style: normal;
+	font-weight: normal;
+	font-size: xx-large;
+	cursor: pointer;
+}
+
+.link {
+	color: #ffffff;
 	margin-top: 50px;
-	max-width: 84%;
+	max-width: 80%;
+	margin-left: -4px;
 	border: none;
 	background-color: #f49131;
 	border-radius: 10px;
@@ -106,6 +129,8 @@
 	padding: 5px;
 	font-size: xx-large;
 	cursor: pointer;
+	display: flex;
+	justify-content: center;
 }
 
 .sign-in-signUp {

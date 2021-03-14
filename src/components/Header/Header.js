@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './images/img.png';
 import './Header.css';
 
-const Header = () => {
+const Header = ({isLoggedIn, setIsLoggedIn}) => {
 	return (
 		<div id="div-header">
 			<div>
@@ -28,7 +28,7 @@ const Header = () => {
 							<a href="/aboutus">About Us</a>
 						</li>
 						<li>
-							<a href="/login">Log In</a>
+							<a href="/login" onClick={(e) => e.target.textContent == 'Log Out' && setIsLoggedIn(false) }>{isLoggedIn ? 'Log Out' : 'Log In'}</a>
 						</li>
 					</ul>
 				</nav>

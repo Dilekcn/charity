@@ -29,7 +29,7 @@ const SignUp = () => {
 					<input
 						className="sign-up-submit"
 						type="submit"
-						value="Sign in"
+						value="Sign up"
 					/>
 					<button className="sign-up-google" type="button">
 						<img src={googleLogo} alt="google logo" /> Join with Google

@@ -102,7 +102,7 @@
 }
 .sign-up-submit {
 	margin-top: 20px;
-	max-width: 84%;
+	max-width: 80%;
 	border: none;
 	background-color: #f49131;
 	border-radius: 10px;
@@ -117,7 +117,7 @@
 
 .sign-up-google {
 	margin-top: 20px;
-	max-width: 84%;
+	max-width: 80%;
 	border: none;
 	background-color: #ffffff;
 	border-radius: 10px;
