@@ -1,7 +1,16 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 import './NewsHomePage.css';
 
 const NewsHomePage = () => {
+	const [posts, setPosts] = useState([]);
+	useEffect(() => {
+		axios
+			.get('http://localhost:4000/posts')
+			.then((res) => setPosts(res.data))
+			.catch((err) => console.log(err));
+	}, []);
+
 	return (
 		<div id="news-div">
 			<span id="newsTitle">The difference you make</span>
@@ -13,7 +22,7 @@ const NewsHomePage = () => {
 						alt="pic"
 					/>
 					<div className="news-text">
-						<h2>Lorem</h2>
+						<h2>{posts && posts[0].title}</h2>
 						<br />
 						<br />
 						<p>
