@@ -4,6 +4,11 @@
 	padding: 0;
 }
 
+#logo {
+	height: 44px;
+	width: 48px;
+}
+
 #div-header {
 	display: flex;
 	justify-content: space-around;
@@ -47,4 +52,59 @@ a {
 	color: #347ca5;
 	font-size: 12px;
 	padding-left: 8px;
+}
+
+@media (max-width: 1242px) {
+	ul,
+	li,
+	a {
+		font-size: 20px;
+	}
+	#search-box {
+		width: 240px;
+	}
+}
+
+@media (max-width: 768px) {
+	ul,
+	li,
+	a {
+		font-size: 16px;
+	}
+	#search-box {
+		width: 220px;
+		height: 24px;
+	}
+
+	#btn-donate {
+		width: 117px;
+		height: 43px;
+		font-size: 20px;
+	}
+	#logo {
+		height: 38.5px;
+		width: 42px;
+	}
+}
+
+@media (max-width: 548px) {
+	ul,
+	li,
+	a {
+		font-size: 12px;
+	}
+	#search-box {
+		width: 160px;
+		height: 20px;
+	}
+
+	#btn-donate {
+		width: 75px;
+		height: 30px;
+		font-size: 12px;
+	}
+	#logo {
+		height: 33px;
+		width: 36px;
+	}
 }
