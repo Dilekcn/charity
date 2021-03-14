@@ -69,3 +69,12 @@
 		font-size: 8px;
 	}
 }
+
+@media (max-width: 397px) {
+	#quote-text {
+		font-size: 10px;
+	}
+	#quote-person {
+		font-size: 5px;
+	}
+}
