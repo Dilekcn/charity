@@ -12,16 +12,19 @@ const Footer = () => {
 							className="form-input"
 							type="text"
 							placeholder="First Name"
+							required
 						/>
 						<input
 							className="form-input"
 							type="text"
 							placeholder="Last Name"
+							required
 						/>
 						<input
 							className="form-input"
-							type="text"
+							type="email"
 							placeholder="Email"
+							required
 						/>
 						<button id="form-btn" type="submit">
 							Send

@@ -47,6 +47,9 @@
 	border: none;
 	background: #76a9c7;
 	border-radius: 10px;
+	color: white;
+	font-size: 18px;
+	padding-left: 15px;
 }
 
 .form-input::placeholder {

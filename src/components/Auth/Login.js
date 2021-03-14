@@ -1,18 +1,9 @@
 import React from 'react';
 import './Login.css';
-import logo from './sign-in-logo.jpg';
 
 const Login = () => {
 	return (
 		<div className="sign-in">
-			<div className="sign-in-header">
-				<div className="sign-in-logo">
-					<img src={logo} alt="sign in logo" />
-				</div>
-				<div className="sign-in-h1">
-					<h1>Welcome to Helping Hands</h1>
-				</div>
-			</div>
 			<div className="sign-in-body">
 				<h1 className="sign-in-SignIn">Sign in</h1>
 				<form className="sign-in-form">
