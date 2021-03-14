@@ -10,7 +10,7 @@ const NewsHomePage = () => {
 			.then((res) => setPosts(res.data))
 			.catch((err) => console.log(err));
 	}, []);
-
+	console.log(posts.length)
 	return (
 		<div id="news-div">
 			<span id="newsTitle">The difference you make</span>
@@ -22,7 +22,7 @@ const NewsHomePage = () => {
 						alt="pic"
 					/>
 					<div className="news-text">
-						<h2>{posts && posts[0].title}</h2>
+						<h2>{posts.length !== 0 && posts[0].title }</h2>
 						<br />
 						<br />
 						<p>
