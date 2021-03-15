@@ -11,6 +11,7 @@ import NewsHomePage from '../News-HomePage/NewsHomePage';
 import SignUp from '../Auth/SignUp';
 import Slider from '../Slider/Slider';
 import axios from 'axios';
+import News from '../News/News'
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -39,6 +40,8 @@ export default function App() {
 					<Route exact path="/aboutus" component={About} />
 					<Route exact path="/signup" component={SignUp} />
 					<Route exact path="/donate" component={Donate} />
+					<Route exact path="/campaings&news" component={News} />
+
 				</Switch>
 
 				<Footer />

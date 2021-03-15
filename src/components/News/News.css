@@ -1,0 +1,116 @@
+
+
+.newss-bg-img{
+    background-image: url(https://popsci.com.tr/wp-content/uploads/2021/02/larm-rmah-AEaTUnvneik-unsplash.jpg);
+    background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 529px;
+	left: 0px;
+	top: 104px;
+	/* margin-top: 100px ; */
+   
+}
+
+.newss-text{
+    width: 100%;
+height: 144px;
+left: -1px;
+top: 630px;
+display: table-cell;
+vertical-align: middle;
+text-align: center;
+background: #347CA5;
+border: 1px solid #000000;
+box-sizing: border-box;
+box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.newss-text span{
+    height: 77px;
+    left: 48px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+     color: #fff;
+    font-size: 20px;
+ padding-left:35px;
+ padding-right:35px;  
+} 
+.newss-header{
+    width: 100%;
+height: 83px;
+/* left: 387px;
+top: 774px; */
+
+font-family: Prociono;
+font-style: normal;
+font-weight: normal;
+font-size: 64px;
+text-align: center;
+line-height: 78px;
+color: #347CA5;
+}
+.news-area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  background-color:rgba(229, 229, 229, 1)
+}
+
+.first-news{
+    width:90%;
+    height: 399px;
+    /* left: 33px;
+    top: 899px; */
+  
+    margin-top: 30px;
+    background: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+#news-btn-viewmore{
+
+    width: 200px;
+    height: 60px;
+    /* left: 461px;
+    top: 1748px; */
+    
+    background-color: #F49131;
+    border-radius: 5px;
+
+font-family: Roboto;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 28px;
+margin-top: 30px;
+margin-bottom: 30px;
+color: #FFFFFF;
+border: none;
+}
+
+.news-btn-readmore{
+        
+    float: right;
+    width: 176px;
+    height: 52px;
+    /* left: 874px;
+    top: 1649px; */
+     background-color: #F49131;
+    border-radius: 10px; 
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    border: none;
+    color: #FFFFFF;
+margin-bottom: 10px;
+margin-right: 20px;
+
+}

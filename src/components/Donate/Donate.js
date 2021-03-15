@@ -3,17 +3,19 @@ import './Donate.css';
 
 const Donate = () => {
 	return (
+		
 		<div className="main">
+
 			<div className="flex-container">
-				<div className="div1"></div>
-				<div className="div2">
+				<div className="div-picture"></div>
+				<div className="text">
 					<p>
 						Your support could power a kinder, fairer, more friendly
-						future.{' '}
+						future.
 					</p>
 				</div>
-				<div className="div3">
-					<div className="donate">
+				<div className="donate">
+					<div className="donate-header">
 						<h1>DONATE NOW</h1>
 					</div>
 

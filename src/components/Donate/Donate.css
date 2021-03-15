@@ -4,7 +4,7 @@
 	background-color: white;
 }
 
-.div1 {
+.div-picture {
 	background-image: url('https://s3-alpha-sig.figma.com/img/dbd8/ebb4/0835d7c190f5bf270ad55c6585a8cf79?Expires=1616371200&Signature=dLxusbtfCUk35JtqFO9u86iM2iRhNiprt0ir-Ru1-mAidlr-lUA5hsw9yp3cJq7UqBEeHklZD13SNlcA4~xhOC7sZJi~FQQBBaxsf4jjESHnBiP7CgZCg2eB29zPWbDQe8uixufS3GquCBQJwfVNyXzcn8g0pppequDMuXnfXE-LOwUzu3zEl9vDGBII3a0HSYkvQbYNXUUKfBZK9pCL3imu4DHPjfOUBbUcT5uHbt7IunoOBxkEfuxpgl4IaoXqz~zouvd-x~pJwQW6wNyPZKL8DHHjTMtGRV6Pxv-jC7uHbZTABM0AC1CpofzAVC9jbKa0FgmukAAQ~HdtrSaZGQ__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
 	background-position: center;
 	background-repeat: no-repeat;
@@ -13,8 +13,10 @@
 	height: 529px;
 	left: 0px;
 	top: 104px;
+	margin-top: 100px ;
+	
 }
-.div2 {
+.text {
 	/* width: 1152px; */
 	height: 144px;
 	left: 1px;
@@ -23,23 +25,24 @@
 	background: #347ca5;
 }
 
-.div2 p {
-	align-items: center;
+.text p {
+	
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 36px;
 	line-height: 42px;
 	text-align: center;
+	padding-top: 45px;
 	color: #ffffff;
 }
-.div3 {
+.donate {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
-.donate h1 {
+.donate-header h1 {
 	/* display: flex;
     justify-content: center; */
 	margin-top: 40px;
@@ -89,14 +92,14 @@
 	background: #ffffff;
 	border-radius: 10px;
 }
-input::placeholder {
+.donate-form input::placeholder {
 	font-family: Roboto;
 	font-size: 18px;
 	font-weight: lighter;
 	color: #999;
 	margin-left: 5px;
 }
-textarea {
+.donate-form textarea {
 	margin-left: 35px;
 	width: 444px;
 	height: 114px;
