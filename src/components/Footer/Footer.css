@@ -3,11 +3,9 @@
 }
 
 #footer {
-	position: absolute;
 	width: 100%;
 	height: 193px;
 	left: -1px;
-	top: 2168px;
 	background: #347ca5;
 }
 
@@ -18,7 +16,6 @@
 }
 
 #form-btn {
-	position: absolute;
 	width: 110px;
 	height: 62px;
 	background: #f49131;
@@ -30,16 +27,15 @@
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 35px;
-	top: 68px;
 }
 #form-title {
+	padding: 1.5% 0px;
 	text-align: center;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 30px;
 	line-height: 35px;
-
 	color: #ffffff;
 }
 
@@ -47,16 +43,54 @@
 	margin-right: 25px;
 	width: 350px;
 	height: 48px;
-	top: 2252px;
 	border: none;
 	background: #76a9c7;
 	border-radius: 10px;
+	color: white;
+	font-size: 18px;
+	padding-left: 15px;
+}
+
+.form-input::placeholder {
+	display: flex;
+	align-items: center;
+	font-family: Roboto;
+	font-size: 24px;
+	color: white;
+	padding-left: 15px;
+	padding-top: 30px;
 }
 
 #footer-nav {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	background: #c4c4c4;
-	height: 50px;
+	height: 70px;
+	width: 100%;
+	font-family: Prociono;
+	color: 347ca5;
+	font-weight: 400;
+}
+
+@media (max-width: 1237px) {
+	.form-input {
+		width: 270px;
+		height: 38px;
+		font-size: 16px;
+		padding-left: 15px;
+	}
+
+	.form-input::placeholder {
+		font-size: 21px;
+		color: white;
+		padding-left: 15px;
+		padding-top: 25px;
+	}
+	#form-btn {
+		width: 90px;
+		height: 50px;
+		font-size: 26px;
+		line-height: 35px;
+	}
 }

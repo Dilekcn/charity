@@ -8,16 +8,31 @@ const Footer = () => {
 				<h1 id="form-title">Sign up for our newsletter</h1>
 				<div id="form">
 					<form id="form-footer">
-						<input className="form-input" type="text" />
-						<input className="form-input" type="text" />
-						<input className="form-input" type="text" />
+						<input
+							className="form-input"
+							type="text"
+							placeholder="First Name"
+							required
+						/>
+						<input
+							className="form-input"
+							type="text"
+							placeholder="Last Name"
+							required
+						/>
+						<input
+							className="form-input"
+							type="email"
+							placeholder="Email"
+							required
+						/>
 						<button id="form-btn" type="submit">
 							Send
 						</button>
 					</form>
 				</div>
 			</div>
-			<nav id="footer-nav">
+			<div id="footer-nav">
 				<ul>
 					<li>
 						<a href="#terms">Terms & Conditions</a>
@@ -33,7 +48,7 @@ const Footer = () => {
 					</li>
 					<li>&copy;2021 SoftInnovas</li>
 				</ul>
-			</nav>
+			</div>
 		</div>
 	);
 };

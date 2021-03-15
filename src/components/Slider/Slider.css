@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+
+#slider-box {
+	position: relative;
+	padding-top: 50px;
+}
+
+#slider-pic {
+	width: 100%;
+	height: auto;
+}
+
+#quote-text {
+	position: absolute;
+	height: auto;
+	background-color: #347ca5;
+	right: 14px;
+	font-size: 48px;
+	color: #fff;
+	width: 50%;
+	top: 70%;
+	padding: 20px 5%;
+	text-align: left;
+	font-family: Prociono;
+	border-radius: 20px;
+	line-height: 1.4;
+}
+
+#quote-person {
+	font-family: Prociono;
+	font-size: 24px;
+	float: right;
+	padding-right: 5%;
+}
+
+@media (max-width: 1188px) {
+	#quote-text {
+		font-size: 44px;
+	}
+	#quote-person {
+		font-size: 22px;
+	}
+}
+
+@media (max-width: 1188px) {
+	#quote-text {
+		font-size: 33px;
+	}
+	#quote-person {
+		font-size: 18px;
+	}
+}
+
+@media (max-width: 821px) {
+	#quote-text {
+		font-size: 22px;
+	}
+
+	#quote-person {
+		font-size: 12px;
+	}
+}
+@media (max-width: 547px) {
+	#quote-text {
+		font-size: 16px;
+	}
+	#quote-person {
+		font-size: 8px;
+	}
+}
+
+@media (max-width: 397px) {
+	#quote-text {
+		font-size: 10px;
+	}
+	#quote-person {
+		font-size: 5px;
+	}
+}
