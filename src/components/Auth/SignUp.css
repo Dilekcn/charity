@@ -1,11 +1,12 @@
 .sign-up {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px;
 	width: 627px;
 	height: 628px;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 120px;
 	margin-bottom: 100px;
 }
 
