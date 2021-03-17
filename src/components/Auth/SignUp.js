@@ -112,7 +112,7 @@ const SignUp = () => {
 							</button>
 						)}
 						className="sign-up-google"
-						clientId="829612859214-rcj9ribrih4nt1vf7qkv7gqcrntuepak.apps.googleusercontent.com"
+						clientId="906847324262-e38d6kiavhpnl6nu22g4u03ms5h4ul42.apps.googleusercontent.com"
 						buttonText="Join with Google"
 						onSuccess={responseGoogle}
 						onFailure={responseGoogle}
