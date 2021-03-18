@@ -88,6 +88,7 @@
 	left: 334px;
 	top: 989px;
 	border: none;
+	
 
 	background: #ffffff;
 	border-radius: 10px;
@@ -98,6 +99,7 @@
 	font-weight: lighter;
 	color: #999;
 	margin-left: 5px;
+	padding-left: 15px;
 }
 .donate-form textarea {
 	margin-left: 35px;
