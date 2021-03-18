@@ -1,11 +1,12 @@
 .sign-in {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	border-radius: 10px;
 	width: 627px;
-	height: 628px;
+	height: 90%;
 	margin: auto;
-	margin-top: 50px;
+	margin-top: 120px;
 	margin-bottom: 100px;
 }
 
@@ -41,7 +42,7 @@
 }
 
 .sign-in-SignIn {
-	margin-top: 5px;
+	margin-top: 15px;
 	margin-left: 15%;
 	font-family: Prociono;
 	font-style: normal;
@@ -136,6 +137,8 @@
 .sign-in-signUp {
 	text-align: center;
 	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 10px;
 	font-family: Prociono;
 	font-style: normal;
 	font-weight: normal;
