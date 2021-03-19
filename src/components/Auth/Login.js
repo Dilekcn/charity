@@ -55,9 +55,6 @@ const Login = ({setIsLoggedIn}) => {
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
 					/>
-					<p className="sig-in-forgot-password">
-						<a href="#pass">Forgot your password?</a>
-					</p>
 					<Link onClick={ login } className="link" to={userExist ? '/' : '/login'}>Sign in</Link>
 				</form>
 				<div className="sign-in-signUp">
