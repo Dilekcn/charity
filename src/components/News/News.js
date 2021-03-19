@@ -1,7 +1,22 @@
-import React  from "react";
+import React, {useuseState}  from "react";
 import "./News.css";
 
 const News = () => {
+
+  const [posts, setPosts] = useState([]);
+  const [medias,setMedias] =setState([]);
+  useEffect(() => {
+		axios
+			.get('http://localhost:4000/posts')
+			.then((res) => setPosts(res.data))
+			.catch((err) => console.log(err));
+	}, []);
+  useEffect(() => {
+		axios
+			.get('http://localhost:4000/medias')
+			.then((res) => setPosts(res.data))
+			.catch((err) => console.log(err));
+	}, []);
 
   return (
     <div>
@@ -20,9 +35,10 @@ const News = () => {
       <div id="news-area">
         <div className="news-area">
           <div className="news-area-img">
-            <img/>img
+            <img />img
             </div>
-          <div className="news-area-text"> text
+          <div className="news-area-text">
+            {posts.length !==0 && posts[posts.length-1].summary}
           <div className="news-btn-readmore"><button>Read More</button></div>
         </div>
         </div>
