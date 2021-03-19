@@ -7,6 +7,7 @@ export default function NewsDetail() {
     const{id}=useParams()
     const[post,setPost]=useState([])
     const[medias,setMedias]=useState([])
+
     useEffect(() => {
         axios.get(`http://localhost:4000/posts/${id}`)
         .then(res=>{ 

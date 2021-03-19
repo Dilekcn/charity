@@ -2,7 +2,7 @@ import React from 'react';
 import logo from './images/img.png';
 import './Header.css';
 
-const Header = ({isLoggedIn, setIsLoggedIn}) => {
+const Header = ({ isLoggedIn, setIsLoggedIn }) => {
 	return (
 		<div id="div-header">
 			<div>
@@ -16,7 +16,7 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
 				</a>
 			</div>
 			<div>
-				<nav>
+				<nav className="header-nav">
 					<ul>
 						<li>
 							<a href="/getInvolved">Get Involved</a>
@@ -28,7 +28,15 @@ const Header = ({isLoggedIn, setIsLoggedIn}) => {
 							<a href="/aboutus">About Us</a>
 						</li>
 						<li>
-							<a href="/login" onClick={(e) => e.target.textContent == 'Log Out' && setIsLoggedIn(false) }>{isLoggedIn ? 'Log Out' : 'Log In'}</a>
+							<a
+								href="/login"
+								onClick={(e) =>
+									e.target.textContent == 'Log Out' &&
+									setIsLoggedIn(false)
+								}
+							>
+								{isLoggedIn ? 'Log Out' : 'Log In'}
+							</a>
 						</li>
 					</ul>
 				</nav>

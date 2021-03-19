@@ -32,7 +32,7 @@
 	border: none;
 }
 
-ul,
+.header-nav ul,
 li,
 a {
 	display: inline-block;
@@ -59,7 +59,7 @@ a {
 }
 
 @media (max-width: 1242px) {
-	ul,
+	.header-nav ul,
 	li,
 	a {
 		font-size: 20px;
@@ -70,10 +70,11 @@ a {
 }
 
 @media (max-width: 768px) {
-	ul,
+	.header-nav ul,
 	li,
 	a {
 		font-size: 16px;
+		display: block;
 	}
 	#search-box {
 		width: 220px;
@@ -92,10 +93,11 @@ a {
 }
 
 @media (max-width: 548px) {
-	ul,
+	nav ul,
 	li,
 	a {
 		font-size: 12px;
+		display: block;
 	}
 	#search-box {
 		width: 160px;

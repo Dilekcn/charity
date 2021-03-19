@@ -1,22 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import './SignUp.css';
 import googleLogo from './grommet-icons_google.jpg';
-import { Link } from 'react-router-dom';
+import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 import GoogleLogin from 'react-google-login';
 
-const SignUp = () => {
-	const [ email, setEmail ] = useState('');
+const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
+	const [ emailInput, setEmail ] = useState('');
 	const [ password, setPassword ] = useState('');
+	const [ name, setName ] = useState('');
+	const [ surname, setSurname ] = useState('');
+	const [ username, setUsername ] = useState('');
 	const [ confirm, setConfirm ] = useState('');
-	const [ existEmail, setExistEmail ] = useState(true);
+	const [ existEmail, setExistEmail ] = useState(false);
 	const [ users, setUsers ] = useState(null);
 	const [ refresh, setRefresh ] = useState(false);
-
-	const responseGoogle = (response) => {
-		console.log(response);
-		console.log(response.profileObj);
-	};
 
 	useEffect(
 		() => {
@@ -27,13 +25,46 @@ const SignUp = () => {
 				})
 				.catch((err) => console.log(err));
 		},
-		[ refresh ]
+		[]
 	);
+
+	const responseGoogle = (response) => {
+		if(!response.googleId) return document.querySelector('.valid').textContent = 'Something went wrong try again or sign up manually'
+			const {familyName, givenName, email, googleId} = response.profileObj
+		if(users) {
+			for(let i = 0; i < users.length; i++) {
+				if(users[i].email === email) {
+					setExistEmail(true)
+					document.querySelector('.valid').textContent = 'You already signed up. Please Log in.'
+					return
+				}
+			}
+		}
+
+		axios
+		.post('http://localhost:4000/users', {
+			firstname:givenName,
+			lastname:familyName,
+			username:email,
+			email: email,
+			password: googleId
+		})
+		.then((res) => {
+			setIsLoggedIn(true);
+			
+		})
+		.catch((err) => console.log(err));
+
+	};
+
+	if(isLoggedIn) {
+		return <Redirect to='/'/>
+	}
 
 	const signup = (e) => {
 		e.preventDefault();
 		document.querySelector('.valid').textContent = '';
-		if (email.trim() == '' || password.trim() == '' || confirm.trim() == '') {
+		if (emailInput.trim() === '' || password.trim() === '' || confirm.trim() === '') {
 			document.querySelector('.valid').textContent = 'Please fill the blanks!';
 			return;
 		}
@@ -44,7 +75,7 @@ const SignUp = () => {
 		}
 		if (users) {
 			users.forEach((user) => {
-				if (user.email == email.trim()) {
+				if (user.email === emailInput.trim()) {
 					document.querySelector('.valid').textContent = 'Email is already taken';
 					setExistEmail(false);
 					return;
@@ -55,7 +86,7 @@ const SignUp = () => {
 		if (existEmail) {
 			axios
 				.post('http://localhost:4000/users', {
-					email: email,
+					email: emailInput,
 					password: password
 				})
 				.then((res) => console.log(res.data))
@@ -73,27 +104,63 @@ const SignUp = () => {
 		<div className="sign-up">
 			<div className="sign-up-body">
 				<h1 className="sign-up-SignIn">Sign up</h1>
-				<h3 className="valid" style={{ color: 'red' }} />
+				<h3 className="valid" style={{ color: 'red' }}> </h3>
 				<form className="sign-up-form" onSubmit={signup}>
+					<label htmlFor="name">Name</label>
+					<input
+						className="sign-up-email"
+						type="text"
+						name="name"
+						id="name"
+						value={name}
+						placeholder="Enter your firstname"
+						onChange={(e) => setName(e.target.value)}
+					/>
+					<label htmlFor="surname">Surname</label>
+					<input
+						className="sign-up-email"
+						type="text"
+						id="surname"
+						name="surname"
+						value={surname}
+						placeholder="Enter your lastname"
+						onChange={(e) => setSurname(e.target.value)}
+					/>
+					<label htmlFor="username">Username</label>
+					<input
+						className="sign-up-email"
+						type="text"
+						id="username"
+						name="username"
+						value={username}
+						placeholder="Enter your username"
+						onChange={(e) => setUsername(e.target.value)}
+					/>
+					<label htmlFor="email">Email</label>
 					<input
 						className="sign-up-email"
 						type="email"
+						id="email"
 						name="email"
-						value={email}
+						value={emailInput}
 						placeholder="Enter your email"
 						onChange={(e) => setEmail(e.target.value)}
 					/>
+					<label htmlFor="password">Password</label>
 					<input
 						className="sign-up-password"
 						type="password"
+						id="password"
 						name="password"
 						value={password}
 						placeholder="Enter your password"
 						onChange={(e) => setPassword(e.target.value)}
 					/>
+					<label htmlFor="confirm">Confirm your password</label>
 					<input
 						className="sign-up-password"
 						type="password"
+						id="confirm"
 						name="password"
 						value={confirm}
 						placeholder="Confirm your password"

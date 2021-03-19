@@ -32,20 +32,22 @@
 
 .news-img {
 	flex: 6;
-	height: 400px;
+	height: auto;
 	margin: 15px;
-
+	width: 40%;
 }
 
 .news-text {
 	flex: 6;
 	text-align: left;
-	height: 400px;
+	height: auto;
 	font-family: Roboto;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 24px;
 	line-height: 28px;
+	width: 40%;
+	padding-bottom: 100px;
 }
 
 .news-btn {
@@ -114,7 +116,7 @@
 @media (max-width: 579px) {
 	.news-text {
 		font-size: 11px;
-		line-height: 12px;
+		line-height: 15px;
 		height: 300px;
 	}
 
@@ -124,11 +126,14 @@
 		height: 24px;
 	}
 	.news-img {
-		height: 300px;
+		height: 200px;
 		margin: 15px;
 	}
 	#newsHomePage {
 		width: 100%;
 		height: 1000px;
+	}
+	#news-div {
+		padding-bottom: 75px;
 	}
 }
