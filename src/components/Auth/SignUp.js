@@ -52,6 +52,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 			password: googleId
 		})
 		.then((res) => {
+			window.scroll(0,0)
 			document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
 						setTimeout(() => {
 							setIsLoggedIn(true);
@@ -93,6 +94,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						password: password
 					})
 					.then((res) => {
+						window.scroll(0,0)
 						document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
 						setTimeout(() => {
 							setIsLoggedIn(true)
