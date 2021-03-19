@@ -22,8 +22,8 @@ const News = () => {
 	}, []);
 
   const viewMore =() => {
-    if(posts.length - 2 === viewmore){
-
+    if(posts.length - 2 < viewmore){
+      document.querySelector('.allPosts').textContent = 'No more stories to view...'
     } else {
       setViewmore(viewmore + 2)
     }
@@ -60,6 +60,7 @@ const News = () => {
 
     </td>
 </tr>)}
+<tr className="allPosts"></tr>
  <tr className="tr-btn-viewmore"> <button id="news-btn-viewmore" onClick={viewMore}>View More</button></tr>
       </table>
     </div>

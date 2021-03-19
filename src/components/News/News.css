@@ -147,3 +147,10 @@ margin-bottom: 5px;
     display: flex;
     justify-content: center;
 }
+
+.allPosts {
+    color: red;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+}
