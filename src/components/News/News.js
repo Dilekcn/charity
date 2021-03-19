@@ -7,6 +7,7 @@ const News = () => {
 // const {id} =useParams();
   const [posts, setPosts] = useState([]);
   const [medias,setMedias] =useState([]);
+  const [viewmore, setViewmore] = useState(0);
   useEffect(() => {
 		axios
 			.get('http://localhost:4000/posts')
@@ -20,6 +21,15 @@ const News = () => {
 			.catch((err) => console.log(err));
 	}, []);
 
+  const viewMore =() => {
+    if(posts.length - 2 === viewmore){
+
+    } else {
+      setViewmore(viewmore + 2)
+    }
+  }
+
+  console.log(posts)
   return (
     <div>
       <div className="newss-bg-img"></div>
@@ -35,42 +45,23 @@ const News = () => {
         <p>Latest News</p>
       </div>
       <table id="news-area"><br/>
-
-<tr className="news-area">
+{posts.length !== 0 && posts.slice(posts.length-2-viewmore, posts.length).map(post => <tr className="news-area">
     <td className="news-area-img">
-    {medias.map(media=>media.id===posts[posts.length - 1].post_img_Id ? 
+    {medias.map(media=>media.id===post.post_img_Id ? 
           <img src={media.media_url} alt=""/>:null
           )} 
     </td>
 
     <td><br/>
-      <tr  className="news-area-header"><h2>header</h2></tr>
-      <tr  className="news-area-text"><br/><p> {posts.length !==0 && posts[posts.length-1].summary}</p>
+      <tr  className="news-area-header"><h2>{post.title}</h2></tr>
+      <tr  className="news-area-text"><br/><p> {post.summary}</p>
       </tr>
-      <tr className="tr-readmore" ><Link to={`/newsdetail/${posts.length !== 0 && posts[posts.length - 1].id}`} className="news-btn-readmore">Read More</Link></tr>
+      <tr className="tr-readmore" ><Link to={`/newsdetail/${post.id}`} className="news-btn-readmore">Read More</Link></tr>
 
     </td>
-   
-</tr>
-{/* <tr style={{width:100}}></tr> */}
-<tr className="news-area">
-    <td className="news-area-img">
-    {medias.map(media=>media.id===posts[posts.length - 2].post_img_Id ? 
-          <img src={media.media_url} alt=""/>:null
-          )} 
-    </td>
-
-    <td><br/>
-      <tr  className="news-area-header"><h2>header</h2></tr>
-      <tr  className="news-area-text"><br/><p> {posts.length !==0 && posts[posts.length-2].summary}</p>
-      </tr>
-      <tr className="tr-readmore" ><Link to={`/newsdetail/${posts.length !== 0 && posts[posts.length - 2].id}`} className="news-btn-readmore">Read More</Link></tr>
-
-    </td>
-</tr>
- <tr className="tr-btn-viewmore"> <button id="news-btn-viewmore">View More</button></tr>
+</tr>)}
+ <tr className="tr-btn-viewmore"> <button id="news-btn-viewmore" onClick={viewMore}>View More</button></tr>
       </table>
-      
     </div>
   );
 };
