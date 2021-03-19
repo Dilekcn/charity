@@ -1,7 +1,8 @@
-import React from "react";
+import React  from "react";
 import "./News.css";
 
 const News = () => {
+
   return (
     <div>
       <div className="newss-bg-img"></div>
@@ -16,13 +17,25 @@ const News = () => {
       <div className="newss-header">
         <p>Latest News</p>
       </div>
-      <div className="news-area">
-        <div className="first-news">
-          <button className="news-btn-readmore">Read More</button>
+      <div id="news-area">
+        <div className="news-area">
+          <div className="news-area-img">
+            <img/>img
+            </div>
+          <div className="news-area-text"> text
+          <div className="news-btn-readmore"><button>Read More</button></div>
         </div>
-        <div className="first-news">
-          <button className="news-btn-readmore">Read More</button>
         </div>
+
+        <div className="news-area">
+          <div className="news-area-img"> 
+          <img/>img
+          </div>
+          <div className="news-area-text"> text
+          <div className="news-btn-readmore"><button>Read More</button></div>
+        </div>
+        </div>
+    
         <div>
           <button id="news-btn-viewmore">View More</button>
         </div>
