@@ -21,6 +21,7 @@ const NewsHomePage = () => {
 						src={posts.length !== 0 && posts[posts.length - 1].postImgId}
 						alt="pic"
 					/>
+
 					<div className="news-text">
 						<h2>{posts.length !== 0 && posts[posts.length - 1].title}</h2>
 						<br />
