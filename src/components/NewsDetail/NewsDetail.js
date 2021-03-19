@@ -1,13 +1,14 @@
 import React,{useEffect,useState} from 'react'
 import {useParams} from 'react-router-dom'
 import axios from 'axios';
+import './NewsDetail.css'
 
 export default function NewsDetail() {
     
     const{id}=useParams()
     const[post,setPost]=useState([])
     const[medias,setMedias]=useState([])
-
+ 
     useEffect(() => {
         axios.get(`http://localhost:4000/posts/${id}`)
         .then(res=>{ 
@@ -32,10 +33,22 @@ export default function NewsDetail() {
 
 
     return (
-        <div style={{height:'700px',margin:"110px"}}>
-            {medias.map(media=>media.id===post.post_img_Id ? <img src={media.media_url} alt='top'style={{height:"500px",width:"100%"}} />:null )}
-            <h1>{post.title}</h1> 
-            {medias.map(media=>media.id===post.donatee_img_id ? <img src={media.media_url} alt='top'style={{height:"100px",width:"100px"}} />:null )}
-    </div>
+        <div>
+            <div className="slider-container">
+
+                    {medias.map(media=>media.id===post.post_img_Id ? <img className="slider-img" src={media.media_url} alt='slider'/>:null )}
+                    {medias.map(media=>media.id===post.donatee_img_id ? <img className="donatee-img"src={media.media_url} alt='donatee'/>:null)}
+
+                    <p className="quote">
+                        <span>"{post.donatee_desc}"</span>
+                        <br/>
+                        <span className="donatee-name">{post.donatee_name}</span>
+                    </p>
+            </div>
+            <div style={{height:"500px"}}>
+
+            </div>
+            
+        </div>
     )
 }
