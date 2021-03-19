@@ -47,7 +47,7 @@
       "donateeDesc": "We used to eat only chickpea stew, now we grow our own vegetables",
       "donateeName": "Sarah Wingston",
       "title": "Sarah's Story",
-      "summary":"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      "summary": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     }
   ],
   "users": [
@@ -115,6 +115,21 @@
       "email": "black@gmail.com",
       "password": "1",
       "id": 13
+    },
+    {
+      "email": "mrselifbalci@gmail.com",
+      "password": "1234",
+      "id": 14
+    },
+    {
+      "email": "sdf@gmail.com",
+      "password": "1234",
+      "id": 15
+    },
+    {
+      "email": "asdf@gmail.com",
+      "password": "1234",
+      "id": 16
     }
   ]
 }
