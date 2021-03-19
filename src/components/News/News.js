@@ -22,7 +22,7 @@ const News = () => {
 	}, []);
 
   const viewMore =() => {
-    if(posts.length - 2 < viewmore){
+    if(posts.length - 2 <= viewmore){
       document.querySelector('.allPosts').textContent = 'No more stories to view...'
     } else {
       setViewmore(viewmore + 2)
