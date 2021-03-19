@@ -38,7 +38,7 @@ export default function App() {
 						render={() => <Login setIsLoggedIn={setIsLoggedIn} />}
 					/>
 					<Route exact path="/aboutus" component={About} />
-					<Route exact path="/signup" component={SignUp} />
+					<Route exact path="/signup" render={() => <SignUp setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />} />
 					<Route exact path="/donate" component={Donate} />
 					<Route exact path="/campaings&news" component={News} />
 					<Route

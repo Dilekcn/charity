@@ -102,141 +102,155 @@
     }
   ],
   "users": [
-    { 
-      "firstname":"Elif",
-      "lastname":"Balci",
-      "username":"elifb",
+    {
+      "firstname": "Elif",
+      "lastname": "Balci",
+      "username": "elifb",
       "email": "elif@gmail.com",
       "password": "12345",
       "id": 1
     },
-    { 
-      "firstname":"Ismail",
-      "lastname":"O",
-      "username":"ismailo",
+    {
+      "firstname": "Ismail",
+      "lastname": "O",
+      "username": "ismailo",
       "email": "ismail@gmail.com",
       "password": "12345",
       "id": 2
     },
-    { 
-      "firstname":"Mustafa",
-      "lastname":"Balci",
-      "username":"mustafab",
+    {
+      "firstname": "Mustafa",
+      "lastname": "Balci",
+      "username": "mustafab",
       "email": "mustafa@gmail.com",
       "password": "12345",
       "id": 3
     },
-    { 
-      "firstname":"Dilek",
-      "lastname":"C",
-      "username":"dilekc",
+    {
+      "firstname": "Dilek",
+      "lastname": "C",
+      "username": "dilekc",
       "email": "dilek@gmail.com",
       "password": "12345",
       "id": 4
+    },
+    {
+      "firstname": "Black",
+      "lastname": "Eagle",
+      "username": "blackeagle4894@gmail.com",
+      "email": "blackeagle4894@gmail.com",
+      "password": "117231253592307798480",
+      "id": 5
+    },
+    {
+      "firstname": "Software",
+      "lastname": "Chasers",
+      "username": "softwarechaserseu@gmail.com",
+      "email": "softwarechaserseu@gmail.com",
+      "password": "100196596391753903982",
+      "id": 6
     }
-    
   ],
   "medias": [
-    { 
-      "id":101,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+    {
+      "id": 101,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":102,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+      "id": 102,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":103,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+      "id": 103,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":104,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+      "id": 104,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":105,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+      "id": 105,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":106,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+      "id": 106,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":107,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+      "id": 107,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":108,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+      "id": 108,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":109,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+      "id": 109,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":110,
-      "media_url":"https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
-      "type":"post"
+      "id": 110,
+      "media_url": "https://i.postimg.cc/vmDWMNQM/anaya-katlego-CXKk4z-U7an-E-unsplash.jpg",
+      "type": "post"
     },
     {
-      "id":201,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 201,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     },
     {
-      "id":202,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 202,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     },
     {
-      "id":203,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 203,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     },
     {
-      "id":204,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 204,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     },
     {
-      "id":205,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 205,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     },
     {
-      "id":206,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 206,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     },
     {
-      "id":207,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 207,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     },
     {
-      "id":208,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 208,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     },
     {
-      "id":209,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 209,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     },
     {
-      "id":210,
-      "media_url":"https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
-      "type":"donatee"
+      "id": 210,
+      "media_url": "https://i.postimg.cc/C13Ccsp0/christiana-rivers-O-XIv-Dy0pcs-unsplash.jpg",
+      "type": "donatee"
     }
-
   ]
 }

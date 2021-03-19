@@ -62,7 +62,7 @@
 
 .sign-in-email {
 	max-width: 80%;
-	margin-top: 10px;
+	margin-top: 5px;
 	background: #ffffff;
 	border-radius: 10px;
 	border: none;
@@ -80,7 +80,7 @@
 
 .sign-in-password {
 	max-width: 80%;
-	margin-top: 30px;
+	margin-top: 5px;
 	background: #ffffff;
 	border-radius: 10px;
 	border: none;
