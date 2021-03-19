@@ -109,7 +109,14 @@ label {
 .sign-up-password::placeholder {
 	padding: 5px;
 	font-family: Prociono;
-	font-size: 20px;
+	font-size: 15px;
+}
+
+input::placeholder {
+	padding: 5px !important;
+	font-family: Prociono !important;
+	font-size: 15px !important;
+	color: rgb(129, 111, 111) !important;
 }
 
 .sig-in-forgot-password {
@@ -185,4 +192,25 @@ label {
 	font-weight: bold;
 	font-size: larger;
 	margin-left: 3px;
+}
+
+@media only screen and (max-width: 768px) {
+	.sign-up {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		border-radius: 10px;
+		width: 90%;
+		height: 100%;
+		margin: auto;
+		margin-top: 120px;
+		margin-bottom: 100px;
+	}
+
+	.sign-up-login p{
+		display:flex;
+		font-weight: bold;
+		font-size: medium;
+		margin-left: 3px;
+	}
 }
