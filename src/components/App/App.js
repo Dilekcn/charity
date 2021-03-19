@@ -12,7 +12,7 @@ import SignUp from '../Auth/SignUp';
 import Slider from '../Slider/Slider';
 import axios from 'axios';
 import News from '../News/News'
-import NewsDetail from '../NewsDetail/NewsDetail'
+import NewsDetail from '../NewsDetail/NewsDetail';
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -20,7 +20,6 @@ export default function App() {
 	return (
 		<div>
 			<Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
-
 			<Router>
 				<Switch>
 					<Route
@@ -42,10 +41,11 @@ export default function App() {
 					<Route exact path="/signup" component={SignUp} />
 					<Route exact path="/donate" component={Donate} />
 					<Route exact path="/campaings&news" component={News} />
-					<Route exact path="/newsdetail/:id" render={() => <NewsDetail />}
+					<Route
+					   exact
+					   path="/newsdetail/:id"
+					   render={() => <NewsDetail />}
 					/>
-
-
 
 				</Switch>
 
