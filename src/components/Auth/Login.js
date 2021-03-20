@@ -49,6 +49,9 @@ const Login = ({setIsLoggedIn}) => {
 				if(res.data[i].email === email && res.data[i].password === password) {
 					setUserExist(true)
 					setIsLoggedIn(true)
+				} else if(res.data[i].username === email && res.data[i].password === password) {
+					setUserExist(true)
+					setIsLoggedIn(true)
 				} else {
 					setUserExist(false)
 					document.querySelector('.valid').textContent = 'Invalid email or password!'
@@ -68,13 +71,13 @@ const Login = ({setIsLoggedIn}) => {
 				<h1 className="sign-in-SignIn">Sign in</h1>
 				<h3 className="valid" style={{color:'red'}}> </h3>
 				<form className="sign-in-form" >
-				<label htmlFor="email">Email</label>
+				<label htmlFor="email">Email or Username</label>
 					<input
 						className="sign-in-email"
 						type="text"
 						id="email"
 						name="email"
-						placeholder="Enter your email"
+						placeholder="Enter your email or username"
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 					/>
