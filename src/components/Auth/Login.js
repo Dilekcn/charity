@@ -80,6 +80,7 @@ const Login = ({setIsLoggedIn}) => {
 						placeholder="Enter your email or username"
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
+						required
 					/>
 					<label htmlFor="password">Password</label>
 					<input
@@ -90,6 +91,7 @@ const Login = ({setIsLoggedIn}) => {
 						placeholder="Enter your password"
 						value={password}
 						onChange={(e) => setPassword(e.target.value)}
+						required
 					/>
 					<Link onClick={ login } className="link" to={userExist ? '/' : '/login'}>Sign in</Link>
 					<GoogleLogin
