@@ -53,6 +53,7 @@
   flex-direction: column;
 }
 .title-summary h1 {
+  margin-bottom: 20px;
   text-align: center;
   font-family: Prociono;
   font-style: normal;
@@ -63,11 +64,12 @@
 }
 
 .title-summary p {
-  margin: 20px;
+  margin-left: 60px;
+  margin-right: 60px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
-  font-size: 30px;
+  font-size: 25px;
   line-height: 35px;
   color: #000000;
 }

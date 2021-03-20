@@ -73,9 +73,10 @@
   font-size: large;
 }
 .sign-in-email::placeholder {
-  padding: 5px;
+  padding: 3px;
   font-family: Prociono;
-  font-size: 20px;
+  font-size: 18px;
+  color: #c4c4c4;
 }
 
 .sign-in-password {
@@ -92,9 +93,10 @@
 }
 
 .sign-in-password::placeholder {
-  padding: 5px;
+  padding: 3px;
   font-family: Prociono;
-  font-size: 20px;
+  font-size: 18px;
+  color: #c4c4c4;
 }
 
 .sig-in-forgot-password {
