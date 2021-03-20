@@ -51,7 +51,7 @@
 	padding-left: 15px;
 }
 
-.form-input::placeholder {
+#form-footer input::placeholder {
 	display: flex;
 	align-items: center;
 	font-family: Roboto;
