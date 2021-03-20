@@ -50,6 +50,7 @@ const News = () => {
 				{posts.length !== 0 &&
 					posts
 						.slice(posts.length - 2 - viewmore, posts.length)
+						.reverse()
 						.map((post) => (
 							<tr className="news-area">
 								<td className="news-area-img">
