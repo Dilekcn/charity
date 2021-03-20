@@ -35,8 +35,7 @@ export default function NewsDetail() {
     return (
         <div>
             <div className="slider-container">
-
-                    {medias.map(media=>media.id===post.post_img_Id ? <img className="slider-img" src={media.media_url} alt='slider'/>:null )}
+                    {medias.map(media=>media.id===post.post_img_Id ? <div style={{backgroundImage:`url(${media.media_url})`,paddingTop:"50px",height:"575px", backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}></div> : null)}
                     {medias.map(media=>media.id===post.donatee_img_id ? <img className="donatee-img"src={media.media_url} alt='donatee'/>:null)}
 
                     <p className="quote">

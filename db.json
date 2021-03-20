@@ -133,6 +133,14 @@
       "email": "dilek@gmail.com",
       "password": "12345",
       "id": 4
+    },
+    {
+      "firstname": "elif",
+      "lastname": "balci",
+      "username": "elifcsep@gmail.com",
+      "email": "elifcsep@gmail.com",
+      "password": "114003518246516762579",
+      "id": 5
     }
   ],
   "medias": [

@@ -8,7 +8,7 @@ import googleLogo from './grommet-icons_google.jpg';
 const Login = ({setIsLoggedIn}) => {
 	const [users, setUsers] = useState([])
 	const [email, setEmail] = useState('')
-	const [password, setPassword] = useState('')
+	const [password, setPassword] = useState('') 
 	const [userExist, setUserExist] = useState(false)
 
 	useEffect(
@@ -110,7 +110,7 @@ const Login = ({setIsLoggedIn}) => {
 				</form>
 				<div className="sign-in-signUp">
 					<p>
-						New to Helping? <a href="/signup">Join Now</a>
+						New to Helping Hands? <a href="/signup">Join Now</a>
 					</p>
 				</div>
 			</div>
