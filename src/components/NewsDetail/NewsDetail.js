@@ -1,9 +1,13 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect,useState,useLayoutEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import axios from 'axios';
 import './NewsDetail.css'
 
 export default function NewsDetail() {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+       }, [])
     
     const{id}=useParams()
     const[post,setPost]=useState([])
@@ -44,8 +48,9 @@ export default function NewsDetail() {
                         <span className="donatee-name">{post.donatee_name}</span>
                     </p>
             </div>
-            <div style={{height:"500px"}}>
-
+            <div className="" style={{marginTop:"200px",height:"500px",display:"flex",flexDirection:"column"}} >
+                    <h1 style={{textAlign:"center"}}> {post.title}</h1>
+                    <p> {post.summary}</p>
             </div>
             
         </div>
