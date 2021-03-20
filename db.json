@@ -133,22 +133,6 @@
       "email": "dilek@gmail.com",
       "password": "12345",
       "id": 4
-    },
-    {
-      "firstname": "Black",
-      "lastname": "Eagle",
-      "username": "blackeagle4894@gmail.com",
-      "email": "blackeagle4894@gmail.com",
-      "password": "117231253592307798480",
-      "id": 5
-    },
-    {
-      "firstname": "Software",
-      "lastname": "Chasers",
-      "username": "softwarechaserseu@gmail.com",
-      "email": "softwarechaserseu@gmail.com",
-      "password": "100196596391753903982",
-      "id": 6
     }
   ],
   "medias": [
