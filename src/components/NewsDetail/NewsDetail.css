@@ -93,6 +93,18 @@
   }
   .title-summary p {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 25px;
+    margin-left: 17%;
+    margin-right: 1%;
+  }
+  .title-summary h1 {
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  .donatee-img {
+    height: 180px;
+    width: 180px;
+    top: 80%;
+    left: 2%;
   }
 }
