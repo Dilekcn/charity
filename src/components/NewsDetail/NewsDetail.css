@@ -21,12 +21,12 @@
   font-size: 40px;
   color: #fff;
   width: 50%;
-  top: 60%;
+  top: 70%;
   padding: 20px 5%;
   text-align: left;
   font-family: Prociono;
   border-radius: 20px;
-  line-height: 1.4;
+  line-height: 1;
 }
 
 .donatee-name {
@@ -74,22 +74,28 @@
   color: #000000;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1120px) {
   .quote {
-    font-size: 35px;
+    font-size: 30px;
+    width: 50%;
+    line-height: 1;
+    top: 80%;
   }
 }
 
 @media (max-width: 768px) {
   .quote {
-    font-size: 30px;
+    font-size: 28px;
     width: 50%;
+    line-height: 1;
+    top: 72%;
   }
 }
 @media (max-width: 560px) {
   .quote {
     font-size: 20px;
-    width: 40%;
+    width: 45%;
+    top: 80%;
   }
   .title-summary p {
     font-size: 20px;

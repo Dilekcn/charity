@@ -94,7 +94,7 @@
       "id": 10,
       "post_img_Id": 110,
       "donatee_img_id": 210,
-      "donatee_desc": "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened. Happiness never decreases by being shared.",
+      "donatee_desc": "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened.",
       "donatee_name": "Daniel Robertson",
       "title": "Daniel's Story",
       "summary": "Daniel Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
@@ -226,7 +226,7 @@
     },
     {
       "id": 207,
-      "media_url": "https://i.postimg.cc/Pq5Vfs99/gideon-hezekiah-6o-U5-SYnjf-MQ-unsplash.jpg",
+      "media_url": "https://i.postimg.cc/FKnp9TMx/mathis-jrdl-dd0-Eg-K-qo8-A-unsplash.jpg",
       "type": "donatee"
     },
     {
