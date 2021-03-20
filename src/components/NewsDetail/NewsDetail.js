@@ -48,8 +48,8 @@ export default function NewsDetail() {
                         <span className="donatee-name">{post.donatee_name}</span>
                     </p>
             </div>
-            <div className="" style={{marginTop:"200px",height:"500px",display:"flex",flexDirection:"column"}} >
-                    <h1 style={{textAlign:"center"}}> {post.title}</h1>
+            <div className="title-summary" >
+                    <h1> {post.title}</h1>
                     <p> {post.summary}</p>
             </div>
             

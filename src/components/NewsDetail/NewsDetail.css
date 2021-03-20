@@ -45,3 +45,29 @@
   border-radius: 50%;
   border: solid 2px white;
 }
+
+.title-summary {
+  margin-top: 150px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.title-summary h1 {
+  text-align: center;
+  font-family: Prociono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 78px;
+  color: #347ca5;
+}
+
+.title-summary p {
+  margin: 20px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+  color: #000000;
+}
