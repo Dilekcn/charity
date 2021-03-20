@@ -1,16 +1,18 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './NewsHomePage.css';
+import { Link } from 'react-router-dom';
 
 const NewsHomePage = () => {
 	const [posts, setPosts] = useState([]);
+
 	useEffect(() => {
 		axios
 			.get('http://localhost:4000/posts')
 			.then((res) => setPosts(res.data))
 			.catch((err) => console.log(err));
 	}, []);
-	console.log(posts.length);
+
 	return (
 		<div id="news-div">
 			<span id="newsTitle">The difference you make</span>
@@ -27,13 +29,20 @@ const NewsHomePage = () => {
 						<br />
 						<br />
 						<p>{posts.length !== 0 && posts[posts.length - 1].summary}</p>
-						<button className="news-btn">Read More</button>
+
+						<Link
+							to={`/newsdetail/${
+								posts.length !== 0 && posts[posts.length - 1].id
+							}`}
+						>
+							<span className="news-btn">Read More</span>
+						</Link>
 					</div>
 				</div>
 				<div
 					style={{
 						height: 30,
-						backgroundColor: 'rgba(229, 229, 229, 0.42)',
+						backgroundColor: '#f2f2f2',
 					}}
 				></div>
 				<div>
@@ -49,7 +58,13 @@ const NewsHomePage = () => {
 								{posts.length !== 0 && posts[posts.length - 2].summary}
 							</p>
 
-							<button className="news-btn">Read More</button>
+							<Link
+								to={`/newsdetail/${
+									posts.length !== 0 && posts[posts.length - 2].id
+								}`}
+							>
+								<span className="news-btn">Read More</span>
+							</Link>
 						</div>
 						<img
 							className="news-img"
@@ -63,7 +78,7 @@ const NewsHomePage = () => {
 				<div
 					style={{
 						height: 30,
-						backgroundColor: 'rgba(229, 229, 229, 0.42)',
+						backgroundColor: '#f2f2f2',
 					}}
 				></div>
 
@@ -85,7 +100,13 @@ const NewsHomePage = () => {
 							<p>
 								{posts.length !== 0 && posts[posts.length - 3].summary}
 							</p>
-							<button className="news-btn">Read More</button>
+							<Link
+								to={`/newsdetail/${
+									posts.length !== 0 && posts[posts.length - 3].id
+								}`}
+							>
+								<span className="news-btn">Read More</span>
+							</Link>
 						</div>
 					</div>
 				</div>
