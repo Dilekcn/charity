@@ -28,6 +28,7 @@ const NewsHomePage = () => {
 	return (
 		<div id="news-div">
 			<span id="newsTitle">The difference you make</span>
+	
 			<div id="newsHomePage">
 				<div className="news">
 					{medias.map((media) =>
