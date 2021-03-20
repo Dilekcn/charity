@@ -14,7 +14,7 @@ const NewsHomePage = () => {
 			.catch((err) => console.log(err));
 	}, []);
 
-	useEffect(() => {
+	useEffect(() => { 
 		axios
 			.get('http://localhost:4000/medias')
 			.then((res) => setMedias(res.data))
@@ -42,8 +42,8 @@ const NewsHomePage = () => {
 
 					<div className="news-text">
 						<h2>{posts.length !== 0 && posts[posts.length - 1].title}</h2>
-						<br />
-						<br />
+		
+						
 						<p>{posts.length !== 0 && posts[posts.length - 1].summary}</p>
 
 						<Link
@@ -68,8 +68,6 @@ const NewsHomePage = () => {
 								{posts.length !== 0 && posts[posts.length - 2].title}
 							</h2>
 
-							<br />
-							<br />
 							<p>
 								{posts.length !== 0 && posts[posts.length - 2].summary}
 							</p>
@@ -116,8 +114,7 @@ const NewsHomePage = () => {
 							<h2>
 								{posts.length !== 0 && posts[posts.length - 3].title}
 							</h2>
-							<br />
-							<br />
+					
 							<p>
 								{posts.length !== 0 && posts[posts.length - 3].summary}
 							</p>
