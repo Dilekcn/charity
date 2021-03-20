@@ -113,4 +113,7 @@ a {
 		height: 32px;
 		width: 36px;
 	}
+	#div-header {
+		height: 70px;
+	}
 }
