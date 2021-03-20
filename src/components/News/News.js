@@ -45,7 +45,8 @@ const News = () => {
         <p>Latest News</p>
       </div>
       <table id="news-area"><br/>
-{posts.length !== 0 && posts.slice(posts.length-2-viewmore, posts.length).map(post => <tr className="news-area">
+{posts.length !== 0 && posts.slice(posts.length-2-viewmore, posts.length).map(post => 
+<tr className="news-area">
     <td className="news-area-img">
     {medias.map(media=>media.id===post.post_img_Id ? 
           <img src={media.media_url} alt=""/>:null
