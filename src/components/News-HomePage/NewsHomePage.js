@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 
 const NewsHomePage = () => {
 	const [posts, setPosts] = useState([]);
+	const [medias, setMedias] = useState([]);
 
 	useEffect(() => {
 		axios
@@ -13,16 +14,31 @@ const NewsHomePage = () => {
 			.catch((err) => console.log(err));
 	}, []);
 
+	useEffect(() => {
+		axios
+			.get('http://localhost:4000/medias')
+			.then((res) => setMedias(res.data))
+			.catch((err) => console.log(err));
+	}, []);
+
+	// const postImgId1 = posts[posts.length - 1].post_img_Id;
+	// const postImgId2 = posts[posts.length - 2].post_img_Id;
+	// const postImgId3 = posts[posts.length - 3].post_img_Id;
+
 	return (
 		<div id="news-div">
 			<span id="newsTitle">The difference you make</span>
 			<div id="newsHomePage">
 				<div className="news">
-					<img
-						className="news-img"
-						src={posts.length !== 0 && posts[posts.length - 1].postImgId}
-						alt="pic"
-					/>
+					{medias.map((media) =>
+						media.id === posts[posts.length - 1].post_img_Id ? (
+							<img
+								className="news-img"
+								src={media.media_url}
+								alt="pic"
+							/>
+						) : null,
+					)}
 
 					<div className="news-text">
 						<h2>{posts.length !== 0 && posts[posts.length - 1].title}</h2>
@@ -66,13 +82,15 @@ const NewsHomePage = () => {
 								<span className="news-btn">Read More</span>
 							</Link>
 						</div>
-						<img
-							className="news-img"
-							src={
-								posts.length !== 0 && posts[posts.length - 2].postImgId
-							}
-							alt="pic"
-						/>
+						{medias.map((media) =>
+							media.id === posts[posts.length - 2].post_img_Id ? (
+								<img
+									className="news-img"
+									src={media.media_url}
+									alt="pic"
+								/>
+							) : null,
+						)}
 					</div>
 				</div>
 				<div
@@ -84,13 +102,16 @@ const NewsHomePage = () => {
 
 				<div>
 					<div className="news">
-						<img
-							className="news-img"
-							src={
-								posts.length !== 0 && posts[posts.length - 3].postImgId
-							}
-							alt="pic"
-						/>
+						{medias.map((media) =>
+							media.id === posts[posts.length - 3].post_img_Id ? (
+								<img
+									className="news-img"
+									src={media.media_url}
+									alt="pic"
+								/>
+							) : null,
+						)}
+
 						<div className="news-text">
 							<h2>
 								{posts.length !== 0 && posts[posts.length - 3].title}
