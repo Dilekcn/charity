@@ -66,11 +66,13 @@
 	justify-content: space-around;
 	align-items: center;
 	background: #c4c4c4;
-	height: 70px;
+	padding: 10px 0px;
+	height: auto;
 	width: 100%;
 	font-family: Prociono;
-	color: 347ca5;
+	color: #347ca5;
 	font-weight: 400;
+	font-size: 40px;
 }
 
 @media (max-width: 1237px) {
@@ -119,13 +121,17 @@
 }
 
 @media (max-width: 767px) {
-	ul,
-	li {
+	#footer-nav {
 		font-size: 10px;
 	}
 }
 
 @media (max-width: 450px) {
+	#footer-nav ul,
+	li,
+	a {
+		font-size: 10px;
+	}
 	.form-input {
 		width: 200px;
 		height: 28px;
