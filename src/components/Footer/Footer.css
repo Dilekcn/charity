@@ -61,7 +61,7 @@
 	padding-top: 30px;
 }
 
-#footer-nav {
+.footer-nav {
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -121,13 +121,13 @@
 }
 
 @media (max-width: 767px) {
-	#footer-nav {
+	.footer-nav {
 		font-size: 10px;
 	}
 }
 
 @media (max-width: 450px) {
-	#footer-nav ul,
+	.footer-nav ul,
 	li,
 	a {
 		font-size: 10px;

@@ -18,7 +18,7 @@
 	align-items: center;
 	width: 100%;
 	height: 100px;
-	z-index: 1;
+	z-index: 5;
 	background-color: white;
 }
 
@@ -112,15 +112,16 @@ a {
 		position: fixed;
 		display: flex;
 		justify-content: center;
-		z-index: 99;
-		top: -1000px;
+		z-index: 1;
+		right: -1000px;
 		height: auto;
+		top: 100px;
 		background-color: #fff;
 		text-align: left;
 		padding: 25px;
-		left: 0px;
 		width: 100%;
 		text-align: center;
+		transition: all 0.5s ease;
 	}
 
 	.header-nav ul,
@@ -144,7 +145,7 @@ a {
 		display: block;
 	}
 	#header-menu-checkbox:checked ~ .header-nav {
-		top: 100px;
+		right: 0px;
 	}
 }
 
@@ -176,85 +177,3 @@ a {
 		width: 21px;
 	}
 }
-
-/* @media (max-width: 768px) {
-	.header-nav ul,
-	li,
-	a {
-		font-size: 16px;
-		display: block;
-	}
-	.header-search-box {
-		width: 150px;
-		height: 24px;
-	}
-	.header-search-box-btn {
-		height: 24px;
-		width: 30px;
-	}
-
-	#btn-donate {
-		width: 101px;
-		height: 43px;
-		font-size: 20px;
-	}
-	#logo {
-		height: 38.5px;
-		width: 42px;
-	}
-}
-
-@media (max-width: 548px) {
-	nav ul,
-	li,
-	a {
-		font-size: 12px;
-		display: block;
-	}
-	.header-search-box {
-		width: 120px;
-		height: 20px;
-	}
-	.header-search-box-btn {
-		height: 20px;
-		width: 27px;
-	}
-
-	#btn-donate {
-		width: 75px;
-		height: 30px;
-		font-size: 12px;
-	}
-	#logo {
-		height: 32px;
-		width: 36px;
-	}
-	#div-header {
-		height: 70px;
-	}
-}
-@media (max-width: 360px) {
-	nav ul,
-	li,
-	a {
-		font-size: 12px;
-		display: block;
-	}
-	.header-search-box {
-		width: 100px;
-		height: 20px;
-	}
-
-	#btn-donate {
-		width: 75px;
-		height: 30px;
-		font-size: 12px;
-	}
-	#logo {
-		height: 32px;
-		width: 36px;
-	}
-	#div-header {
-		height: 70px;
-	}
-} */
