@@ -59,12 +59,13 @@ const Donate = () => {
 							></button>
 						</div>
 					</form>
-
+                    <br/>
 					<div className="other">
 						<h2>Other ways to donate or get involved →</h2>
 					</div>
+					<br/>
 				</div>
-				<div class="div4">4</div>
+				<div class="div4"></div>
 			</div>
 		</div>
 	);

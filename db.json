@@ -135,12 +135,28 @@
       "id": 4
     },
     {
+      "firstname": "sara",
+      "lastname": "sara",
+      "username": "sara",
+      "email": "sara@gmail.com",
+      "password": "asdf",
+      "id": 5
+    },
+    {
       "firstname": "elif",
       "lastname": "balci",
       "username": "elifcsep@gmail.com",
       "email": "elifcsep@gmail.com",
       "password": "114003518246516762579",
-      "id": 5
+      "id": 6
+    },
+    {
+      "firstname": "devleth",
+      "lastname": "devleth",
+      "username": "devleth",
+      "email": "devleth@gmail.com",
+      "password": "1234",
+      "id": 7
     }
   ],
   "medias": [
@@ -156,7 +172,7 @@
     },
     {
       "id": 103,
-      "media_url": "https://i.postimg.cc/CM7N16HV/josh-appel-0nk-Fvdc-M-X4-unsplash.jpg",
+      "media_url": "https://i.postimg.cc/RFRcWNtT/ben-white-PAi-Vz-Sm-Yy-c-unsplash.jpg",
       "type": "post"
     },
     {

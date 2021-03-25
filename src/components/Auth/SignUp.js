@@ -16,7 +16,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 	const [ users, setUsers ] = useState(null);
 	const [ refresh, setRefresh ] = useState(false);
 
-	const history= useHistory()
+	const history= useHistory() 
 
 	useEffect(
 		() => {
