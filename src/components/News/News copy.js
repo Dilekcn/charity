@@ -47,7 +47,9 @@ const News = () => {
 			</div>
 			<table id="news-area">
 				<br />
-				{posts.length !== 0 && posts .slice(posts.length - 2 - viewmore, posts.length)
+				{posts.length !== 0 &&
+					posts
+						.slice(posts.length - 2 - viewmore, posts.length)
 						.map((post) => (
 							<tr className="news-area">
 								<td className="news-area-img">
@@ -68,17 +70,22 @@ const News = () => {
 										<p> {post.summary}</p>
 									</tr>
 									<tr className="tr-readmore">
-										<Link to={`/newsdetail/${post.id}`} className="news-btn-readmore">
+										<Link
+											to={`/newsdetail/${post.id}`}
+											className="news-btn-readmore"
+										>
 											Read More
 										</Link>
 									</tr>
 								</td>
 							</tr>
-						))}<br/>
+						))}
 				<tr className="allPosts"></tr>
 				<tr className="tr-btn-viewmore">
-				
-					<button id="news-btn-viewmore" onClick={viewMore}>View More</button>
+					{' '}
+					<button id="news-btn-viewmore" onClick={viewMore}>
+						View More
+					</button>
 				</tr>
 			</table>
 		</div>

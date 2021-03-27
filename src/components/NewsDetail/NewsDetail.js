@@ -1,13 +1,21 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect,useState,useLayoutEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import axios from 'axios';
+import './NewsDetail.css'
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+// import ckeditor from '@ckeditor/ckeditor5-react';
+
 
 export default function NewsDetail() {
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0);
+       }, [])
     
     const{id}=useParams()
     const[post,setPost]=useState([])
     const[medias,setMedias]=useState([])
-
+ 
     useEffect(() => {
         axios.get(`http://localhost:4000/posts/${id}`)
         .then(res=>{ 
@@ -32,10 +40,26 @@ export default function NewsDetail() {
 
 
     return (
-        <div style={{height:'700px',margin:"110px"}}>
-            {medias.map(media=>media.id===post.post_img_Id ? <img src={media.media_url} alt='top'style={{height:"500px",width:"100%"}} />:null )}
-            <h1>{post.title}</h1> 
-            {medias.map(media=>media.id===post.donatee_img_id ? <img src={media.media_url} alt='top'style={{height:"100px",width:"100px"}} />:null )}
-    </div>
+        <div>
+            <div className="slider-container">
+                    {medias.map(media=>media.id===post.post_img_Id ? <div style={{backgroundImage:`url(${media.media_url})`,paddingTop:"50px",height:"575px", backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}></div> : null)}
+                    {medias.map(media=>media.id===post.donatee_img_id ? <img className="donatee-img"src={media.media_url} alt='donatee'/>:null)}
+
+                    <p className="quote">
+                        <span>"{post.donatee_desc}"</span>
+                        <br/>
+                        <span className="donatee-name">{post.donatee_name}</span>
+                    </p>
+            </div>
+            <div className="title-summary" >
+                    <h1> {post.title}</h1>
+                    <p> {post.summary}</p>
+            </div>
+            <div style={{fontSize:"90px",color:"#347ca5",textAlign:"center",marginBottom:"200px"}}>
+               CONTENT FROM CK EDITOR
+            </div>
+            
+        </div>
     )
 }
+ 

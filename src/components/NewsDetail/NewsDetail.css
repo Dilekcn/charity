@@ -1,19 +1,24 @@
-#slider-box {
+* {
+  box-sizing: border-box;
+}
+
+.slider-container {
   position: relative;
   padding-top: 50px;
 }
-
-#slider-pic {
+.slider-img {
+  position: relative;
+  top: 0px;
+  left: 0px;
   width: 100%;
-  height: auto;
+  height: 575px;
 }
-
-#quote-text {
+.quote {
   position: absolute;
   height: auto;
   background-color: #347ca5;
   right: 14px;
-  font-size: 48px;
+  font-size: 40px;
   color: #fff;
   width: 50%;
   top: 70%;
@@ -21,12 +26,91 @@
   text-align: left;
   font-family: Prociono;
   border-radius: 20px;
-  line-height: 1.4;
+  line-height: 1;
 }
 
-#quote-person {
+.donatee-name {
   font-family: Prociono;
   font-size: 24px;
   float: right;
   padding-right: 5%;
+}
+
+.donatee-img {
+  position: absolute;
+  height: 230px;
+  width: 260px;
+  top: 80%;
+  left: 2%;
+  border-radius: 50%;
+  border: solid 2px white;
+}
+
+.title-summary {
+  margin-top: 150px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+.title-summary h1 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Prociono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 78px;
+  color: #347ca5;
+}
+
+.title-summary p {
+  margin-left: 60px;
+  margin-right: 60px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 25px;
+  line-height: 35px;
+  color: #000000;
+}
+
+@media (max-width: 1120px) {
+  .quote {
+    font-size: 30px;
+    width: 50%;
+    line-height: 1;
+    top: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .quote {
+    font-size: 28px;
+    width: 50%;
+    line-height: 1;
+    top: 72%;
+  }
+}
+@media (max-width: 560px) {
+  .quote {
+    font-size: 20px;
+    width: 45%;
+    top: 80%;
+  }
+  .title-summary p {
+    font-size: 20px;
+    line-height: 25px;
+    margin-left: 17%;
+    margin-right: 1%;
+  }
+  .title-summary h1 {
+    margin-left: 25px;
+    margin-top: 20px;
+  }
+  .donatee-img {
+    height: 180px;
+    width: 180px;
+    top: 80%;
+    left: 2%;
+  }
 }

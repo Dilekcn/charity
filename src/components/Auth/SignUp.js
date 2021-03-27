@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './SignUp.css';
 import googleLogo from './grommet-icons_google.jpg';
-import { Redirect } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import GoogleLogin from 'react-google-login';
 
@@ -15,6 +15,8 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 	const [ existEmail, setExistEmail ] = useState(false);
 	const [ users, setUsers ] = useState(null);
 	const [ refresh, setRefresh ] = useState(false);
+
+	const history= useHistory()
 
 	useEffect(
 		() => {
@@ -50,55 +52,68 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 			password: googleId
 		})
 		.then((res) => {
-			setIsLoggedIn(true);
-			
+			window.scroll(0,0)
+			document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
+						setTimeout(() => {
+							setIsLoggedIn(true);
+							history.push('/')
+						}, 1500);
 		})
 		.catch((err) => console.log(err));
 
 	};
 
-	if(isLoggedIn) {
-		return <Redirect to='/'/>
-	}
-
 	const signup = (e) => {
 		e.preventDefault();
 		document.querySelector('.valid').textContent = '';
-		if (emailInput.trim() === '' || password.trim() === '' || confirm.trim() === '') {
+		if (emailInput.trim() === '' || password.trim() === '' || confirm.trim() === '' || username.trim() === '' || name.trim() === '' || surname.trim() === '') {
 			document.querySelector('.valid').textContent = 'Please fill the blanks!';
 			return;
 		}
 		if (password !== confirm) {
 			document.querySelector('.valid').textContent = 'Password did not match';
-			setExistEmail(false);
 			return;
 		}
-		if (users) {
-			users.forEach((user) => {
-				if (user.email === emailInput.trim()) {
+		if (users !== null) {
+			for (let i = 0; i < users.length; i++) {
+				if(users[i].email === emailInput.trim().toLowerCase()) {
 					document.querySelector('.valid').textContent = 'Email is already taken';
-					setExistEmail(false);
-					return;
+					return
 				}
-			});
-		}
+				
+			}
+			}
 
-		if (existEmail) {
-			axios
-				.post('http://localhost:4000/users', {
-					email: emailInput,
-					password: password
-				})
-				.then((res) => console.log(res.data))
-				.catch((err) => console.log(err));
-			document.querySelector('.valid').textContent = 'Signed up successfully!';
-			setExistEmail(true);
-			setConfirm('');
-			setEmail('');
-			setPassword('');
-			setRefresh(!refresh);
+			if (!existEmail) {
+				axios
+					.post('http://localhost:4000/users', {
+						firstname:name,
+						lastname:surname,
+						username:username,
+						email: emailInput,
+						password: password
+					})
+					.then((res) => {
+						window.scroll(0,0)
+						document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
+						setTimeout(() => {
+							setIsLoggedIn(true)
+							history.push('/')
+						}, 1500);
+					})
+					.catch((err) => console.log(err));
+				document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
+				setExistEmail(true);
+				setConfirm('');
+				setEmail('');
+				setPassword('');
+				setName('')
+				setSurname('')
+				setUsername('')
+				setRefresh(!refresh);
+			}
 		}
-	};
+	
 
 	return (
 		<div className="sign-up">
