@@ -32,7 +32,7 @@ const Footer = () => {
 					</form>
 				</div>
 			</div>
-			<div id="footer-nav">
+			<div className="footer-nav">
 				<ul>
 					<li>
 						<a href="#terms">Terms & Conditions</a>

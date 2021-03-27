@@ -16,7 +16,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 	const [ users, setUsers ] = useState(null);
 	const [ refresh, setRefresh ] = useState(false);
 
-	const history= useHistory()
+	const history= useHistory() 
 
 	useEffect(
 		() => {
@@ -130,6 +130,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						value={name}
 						placeholder="Enter your firstname"
 						onChange={(e) => setName(e.target.value)}
+						required
 					/>
 					<label htmlFor="surname">Surname</label>
 					<input
@@ -140,6 +141,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						value={surname}
 						placeholder="Enter your lastname"
 						onChange={(e) => setSurname(e.target.value)}
+						required
 					/>
 					<label htmlFor="username">Username</label>
 					<input
@@ -150,6 +152,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						value={username}
 						placeholder="Enter your username"
 						onChange={(e) => setUsername(e.target.value)}
+						required
 					/>
 					<label htmlFor="email">Email</label>
 					<input
@@ -160,6 +163,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						value={emailInput}
 						placeholder="Enter your email"
 						onChange={(e) => setEmail(e.target.value)}
+						required
 					/>
 					<label htmlFor="password">Password</label>
 					<input
@@ -170,6 +174,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						value={password}
 						placeholder="Enter your password"
 						onChange={(e) => setPassword(e.target.value)}
+						required
 					/>
 					<label htmlFor="confirm">Confirm your password</label>
 					<input
@@ -180,6 +185,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						value={confirm}
 						placeholder="Confirm your password"
 						onChange={(e) => setConfirm(e.target.value)}
+						required
 					/>
 					<button className="link">Sign up</button>
 					<GoogleLogin

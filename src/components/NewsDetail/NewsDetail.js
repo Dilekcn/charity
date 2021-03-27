@@ -31,7 +31,7 @@ export default function NewsDetail() {
         axios.get(`http://localhost:4000/medias`)
         .then(res=>{ 
             setMedias(res.data)
-
+ 
         })
         .catch(err=>{
             console.log(err)
