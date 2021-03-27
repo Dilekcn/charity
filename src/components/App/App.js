@@ -13,6 +13,7 @@ import Slider from '../Slider/Slider';
 import axios from 'axios';
 import News from '../News/News'
 import NewsDetail from '../NewsDetail/NewsDetail';
+import DonateGoods from '../GetInvolved/DonateGoods/DonateGoods';
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -46,7 +47,7 @@ export default function App() {
 					   path="/newsdetail/:id"
 					   render={() => <NewsDetail />}
 					/>
-
+					<Route to='/getinvolved/donategoods' component={DonateGoods}/>
 				</Switch>
 
 				<Footer />
