@@ -1,72 +1,3 @@
-<<<<<<< HEAD
-*{
-    font-family: Prociono;
-    font-style: normal;
-    font-weight: normal;
-    
-}
-.newss-bg-img{
-    background-image: url(https://popsci.com.tr/wp-content/uploads/2021/02/larm-rmah-AEaTUnvneik-unsplash.jpg);
-    background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 529px;
-	top: 104px;
-}
-
-.newss-text{
-width: 100%;
-height: 144px;
-display: table-cell;
-vertical-align: middle;
-text-align: center;
-background: #347CA5;
-
-}
-
-.newss-text span{
-height: 77px;
-left: 48px;
-color: #fff;
-font-size: 20px;
- padding-left:35px;
- padding-right:35px;  
-} 
-
-.newss-header{
-width: 100%;
-height: 100px;
-font-size: 64px;
-text-align: center;
-line-height: 78px;
-color: #347ca5;
-}
-
-#news-area{
-    width: 100%;
-    height: 973px;
-    background: #E5E5E5;
-
-}
-#news-area .news-area{
- display:flex;
- margin: 1% 10% 0 10%;
-height: 399px;
- background: #FFFFFF;
-border-radius: 10px;
-border: 1px solid #FFFFFF;
-box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-    
-}
-
-#news-area .news-area-img img{
-  height: 392px;
-  margin: 4px;
-  width: 550px;
-  
-=======
 .newss-bg-img {
   background-image: url(https://popsci.com.tr/wp-content/uploads/2021/02/larm-rmah-AEaTUnvneik-unsplash.jpg);
   background-position: center;
@@ -138,28 +69,11 @@ border-radius: 10px;
   border-radius: 5px;
 
   margin: 10px;
->>>>>>> 3cab25ac117f7c7c897dd132291aad4a9686d8ef
 }
 
 #news-area .news-area-text p {
   margin-left: 25px;
   margin-right: 10px;
-<<<<<<< HEAD
-  padding: 10px;
-  height: 240px;
-  font-size: 18px;
-  line-height: 26px;
-}
-
-#news-area .news-area-header h2{
-margin-top: 10px ;
-margin-left: 15px;
-padding-left:10px ;
-font-weight: bold;
-font-size: 24px;
-text-align: left;
-  
-=======
   width: 600px;
   height: 185px;
   font-family: Roboto;
@@ -175,7 +89,6 @@ text-align: left;
   font-weight: bold;
   font-size: 24px;
   text-align: left;
->>>>>>> 3cab25ac117f7c7c897dd132291aad4a9686d8ef
 }
 
 .tr-readmore {
@@ -184,21 +97,6 @@ text-align: left;
   width: 600px;
 }
 
-<<<<<<< HEAD
-.news-btn-readmore{
-margin-left: 380px;
-display: flex;
-justify-content: center;
-align-items: center;
-width: 176px;
-height: 52px;
-background-color: #F49131;
-border-radius: 10px; 
-font-size: 24px;
-line-height: 28px;
-border: none;
-color: #FFFFFF;
-=======
 .news-btn-readmore {
   margin-left: 25px;
   display: flex;
@@ -206,7 +104,6 @@ color: #FFFFFF;
   align-items: center;
   width: 176px;
   height: 52px;
->>>>>>> 3cab25ac117f7c7c897dd132291aad4a9686d8ef
 
   background-color: #f49131;
   border-radius: 10px;
@@ -220,37 +117,6 @@ color: #FFFFFF;
 }
 
 #news-btn-viewmore {
-<<<<<<< HEAD
-width: 200px;
-height: 60px;
-left: 461px;
-background-color: #F49131;
-border-radius: 5px;
-background-color: #f49131;
-border-radius: 5px;
-font-size: 24px;
-line-height: 28px;
-margin-top: 30px;
-margin-bottom: 30px;
-color: #ffffff;
-border: none;
-}
-
-.tr-btn-viewmore{
-display: flex;
-justify-content: center;
-}
-
-.allPosts {
-color: red;
-margin-left: auto;
-display: flex;
-justify-content: center;
-
-}
-
-
-=======
   width: 200px;
   height: 60px;
   left: 461px;
@@ -280,4 +146,3 @@ justify-content: center;
   justify-content: center;
   margin-top: 10px;
 }
->>>>>>> 3cab25ac117f7c7c897dd132291aad4a9686d8ef

@@ -47,14 +47,10 @@ const News = () => {
 			</div>
 			<table id="news-area">
 				<br />
-<<<<<<< HEAD
-				{posts.length !== 0 && posts .slice(posts.length - 2 - viewmore, posts.length)
-=======
 				{posts.length !== 0 &&
 					posts
 						.slice(posts.length - 2 - viewmore, posts.length)
 						.reverse()
->>>>>>> 3cab25ac117f7c7c897dd132291aad4a9686d8ef
 						.map((post) => (
 							<tr className="news-area">
 								<td className="news-area-img">
