@@ -2,8 +2,8 @@ import React,{useEffect,useState,useLayoutEffect} from 'react'
 import {useParams} from 'react-router-dom'
 import axios from 'axios';
 import './NewsDetail.css'
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
-import ckeditor from '@ckeditor/ckeditor5-react';
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
+// import ckeditor from '@ckeditor/ckeditor5-react';
 
 
 export default function NewsDetail() {
