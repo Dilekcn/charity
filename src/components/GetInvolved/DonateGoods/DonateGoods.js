@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './DonateGoods.css';
 import imageHeader from './Rectangle 26.png';
 import image2 from './nick-de-partee-5DLBoEX99Cs-unsplash 1 (1).png';
@@ -39,6 +39,10 @@ const DonateGoods = () => {
     function afterOpenModal() {
         // references are now sync'd and can be accessed.
       }
+
+      useEffect(() => {
+        window.scroll(0,0)
+    },[])
 
 	return (
 		<div className="donate-goods">

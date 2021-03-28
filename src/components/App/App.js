@@ -15,6 +15,8 @@ import News from '../News/News'
 import NewsDetail from '../NewsDetail/NewsDetail';
 import GetInvolved from '../GetInvolved/GetInvolved'
 import DonateGoods from '../GetInvolved/DonateGoods/DonateGoods';
+import GiftCard from '../GetInvolved/DonateGiftCard/GiftCard';
+
 
 
 export default function App() {
@@ -50,8 +52,8 @@ export default function App() {
 					   render={() => <NewsDetail />}
 					/>
 					<Route exact path='/getInvolved' component={GetInvolved}/> 
-					<Route to='/getinvolved/donategoods' component={DonateGoods}/>
-				
+					<Route exact path='/getinvolved/donategoods' component={DonateGoods}/>
+					<Route exact path='/getinvolved/donate-with-gift-card' component={GiftCard} />
 
 				</Switch>
 
