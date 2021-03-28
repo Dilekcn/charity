@@ -35,7 +35,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
 						<a href="/getInvolved">Get Involved</a>
 					</li>
 					<li>
-						<a href="/campaings&news">Campaigns & News</a>
+						<a href="/campaigns&news">Campaigns & News</a>
 					</li>
 					<li>
 						<a href="/aboutus">About Us</a>
