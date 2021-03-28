@@ -1,7 +1,8 @@
 .donate-goods-text1 {
     position: absolute;
     top: 50%;
-    margin-left: 20%;
+    margin-right: auto;
+    margin-left: 20%;  
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -133,7 +134,8 @@
 
 @media only screen and (max-width: 885px) {
     .donate-goods-text1 {
-        margin-left: 5%;
+        margin-right: auto;
+        font-size: 48px;
     }
 
     .giftcard-form {
@@ -144,8 +146,9 @@
 
 @media only screen and (max-width: 560px) {
     .donate-goods-text1 {
-        margin-left: 1%;
-        margin-top: -5%;
+        margin-left: 8%;
+        margin-top: 3%;
+        font-size: 38px;
     }
 
     .giftcard-form {
