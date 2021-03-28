@@ -1,5 +1,6 @@
 import React from 'react';
 import './Donate.css';
+import { Link } from 'react-router-dom';
 
 const Donate = () => {
 	return (
@@ -61,7 +62,7 @@ const Donate = () => {
 					</form>
                     <br/>
 					<div className="other">
-						<h2>Other ways to donate or get involved →</h2>
+						<Link to='/getInvolved'><h2>Other ways to donate or get involved →</h2></Link>
 					</div>
 					<br/>
 				</div>
