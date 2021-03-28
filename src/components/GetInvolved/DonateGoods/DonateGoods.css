@@ -13,15 +13,15 @@
   }
   
   .donate-goods-overlay {
-    position: absolute; 
+    position: absolute;
     bottom: 0; 
     background: rgba(52, 124, 165, 0.84);
     width: 100%;
     transition: .5s ease;
-    opacity:0;
+    /* opacity:0; */
     color: white;
-    font-size: 20px;
-    padding: 20px;
+    /* font-size: 20px; */
+    /* padding: 20px; */
     text-align: center;
     height: 317px;
     opacity: 1;
@@ -29,9 +29,8 @@
 
 .donate-goods-text {
     position: absolute;
-    left: 35%;
-    top: 55%;
-    font-family: Roboto;
+    top: 50%;
+    margin-left: 33%;
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -44,11 +43,9 @@
     align-content: center;
     height: 100%;
     width: 100%;
-    justify-content: center;
     background: #E5E5E5;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
 }
 
 .cantent1 {
@@ -61,13 +58,17 @@
   }
 
 .image-1 {
+    background: url('./nick-de-partee-5DLBoEX99Cs-unsplash\ 1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 10%;
-    height: 90%;
+    height: 100%;
     border-radius: 5%;
 }
 
 .content1-p {
-    margin-top: 30%;
+    margin-top: 15%;
+    margin-left: +30px;
     font-family: Prociono;
     font-style: normal;
     font-weight: normal;
@@ -86,14 +87,17 @@
   }
 
 .image-2 {
-    margin-top: 5%;
-    height: 90%;
+    background: url('./nick-de-partee-5DLBoEX99Cs-unsplash\ 1\ \(1\).png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10%;
+    height: 100%; 
     border-radius: 5%;
     margin-bottom: 5%;
 }
 
 .content2-p {
-    margin-top: 5%;
+    margin-top: 10%;
     margin-right: 30px;
     font-family: Prociono;
     font-style: normal;
@@ -114,4 +118,45 @@
 
 .content2-p a:hover {
     text-decoration: underline;
+}
+
+.donate-goods-btn {
+    margin-top: 3%;
+    margin-left: 42%;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: none;
+    background: #F49131;
+    color: #fff;
+    padding: 15px;
+    font-size: medium;
+}
+
+
+@media only screen and (max-width: 885px) {
+    .donate-goods-text {
+        margin-left: 20%;
+    }
+
+}
+
+
+@media only screen and (max-width: 560px) {
+    .donate-goods-text {
+        margin-left: 2%;
+    }
+
+    .donate-goods-btn {
+        margin-left: 35%;
+    }
+
+    .content1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .content2 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }

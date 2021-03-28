@@ -7,24 +7,25 @@ import Modal from 'react-modal'
 
 const customStyles = {
     content : {
-      top                   : '50%',
+      position              : 'absolute',
+      top                   : '38%',
       left                  : '50%',
       right                 : '50%',
       bottom                : '60%',
       marginRight           : '-50%',
       marginTop             : '120px',
       transform             : 'translate(-50%, -50%)',
-      height                : '100%',
+      height                : 'fit-content',
       backgroundColor       : '#76A9C7',
       padding               : '10px',
       width                 : '40%',
-      fontFamily: 'Roboto',
-      fontStyle: 'normal',
-      fontWeight: 'normal',
-      fontSize: 'large',
-      lineHeight: '28px',
-      color: 'white',
-      marginBottom: '450px'
+      fontFamily            : 'Roboto',
+      fontStyle             : 'normal',
+      fontWeight            : 'normal',
+      fontSize              : 'large',
+      lineHeight            : '28px',
+      color                 : 'white',
+      marginBottom          : '450px'
     }
   };
 
@@ -48,7 +49,7 @@ const DonateGoods = () => {
 			</div>
 			<div className="cantent">
 				<div className="cantent1">
-					<img src={image1} alt="" className="image-1"/>
+					<div className="image-1"/>
 					<p className="content1-p">
 						Just because you no longer need an item, don’t throw it away. By donating it to us you’re not
 						only keeping it out of landfill, but you’re also making sure it goes to a new home, while also
@@ -62,8 +63,11 @@ const DonateGoods = () => {
 						lease of life in our upcycling workshops. <br />
                         <a onClick={() => setIsOpen(true)}>Find out what you can donate?</a>
 					</p>
-                    <img src={image2} alt="" className="image-2"/>
+                    <div className="image-2"/>
 				</div>
+        <div>
+        <button className="donate-goods-btn" >Donate Goods Now</button>
+      </div>
 			</div>
             <Modal
           isOpen={modalIsOpen}
