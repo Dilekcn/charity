@@ -4,6 +4,7 @@ import imageHeader from './Rectangle 26.png';
 import image2 from './nick-de-partee-5DLBoEX99Cs-unsplash 1 (1).png';
 import image1 from './nick-de-partee-5DLBoEX99Cs-unsplash 1.png';
 import Modal from 'react-modal';
+import { Link } from 'react-router-dom';
 
 const customStyles = {
 	content: {
@@ -78,7 +79,12 @@ const DonateGoods = () => {
 					<div className="image-2" />
 				</div>
 				<div>
-					<button className="donate-goods-btn">Donate Goods Now</button>
+					<Link
+						to="/getinvolved/donategoods-form"
+						className="donate-goods-btn"
+					>
+						Donate Goods Now
+					</Link>
 				</div>
 			</div>
 			<Modal

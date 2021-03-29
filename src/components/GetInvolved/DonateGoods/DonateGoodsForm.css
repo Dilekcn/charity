@@ -37,7 +37,7 @@
 .donate-goods-form-container {
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
+	align-items: flex-start;
 	height: auto;
 	width: 100%;
 	background-color: #e5e5e5;
@@ -46,23 +46,102 @@
 
 .donate-goods-form-left {
 	display: flex;
-	flex: 2;
-	flex-direction: column;
-	align-items: left;
-	justify-content: center;
-	margin: 40px 30px;
-}
-
-.donate-goods-form-left > div > label {
-	font-size: 36px;
-	color: #000;
-	font-weight: normal;
-}
-
-.donate-goods-form-container-right {
-	display: flex;
 	flex: 3;
 	flex-direction: column;
 	align-items: left;
 	justify-content: center;
+	margin: 30px 40px;
+}
+
+.donate-goods-form-left > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.donate-goods-form-left > div > label {
+	font-size: 24px;
+	color: #000;
+	font-weight: normal;
+}
+
+.donate-goods-form-left > div > input {
+	width: 90%;
+	height: 40px;
+	margin: 18px 0px;
+	padding-left: 6px;
+	border-radius: 5px;
+	border: none;
+}
+
+.donate-goods-form-right {
+	display: flex;
+	flex: 3;
+	flex-direction: column;
+	align-items: left;
+	margin-top: 60px;
+	margin-right: 40px;
+}
+
+.donate-goods-form-right > div {
+	display: flex;
+	flex-direction: column;
+}
+
+.donate-goods-form-right > div > label {
+	font-size: 24px;
+	color: #000;
+	font-weight: normal;
+}
+
+.donate-goods-form-right > div > textarea {
+	width: 90%;
+	font-family: Roboto;
+	height: 150px;
+	margin: 18px 0px;
+	padding-top: 12px;
+	padding-left: 6px;
+	line-height: 1.5;
+	border-radius: 5px;
+	border: none;
+}
+
+.donate-goods-form-right > div > input {
+	width: 90%;
+	height: 40px;
+	margin: 18px 0px;
+	padding-left: 6px;
+	border-radius: 5px;
+	border: none;
+}
+
+.donate-goods-form-submit-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	background-color: #e5e5e5;
+	font-family: Roboto;
+	padding: 50px 0px;
+}
+
+.donate-goods-form-submit-btn {
+	border-radius: 5px;
+	border: none;
+	background: #f49131;
+	color: #fff;
+	padding: 15px;
+	font-size: 24px;
+	width: 150px;
+}
+
+.donate-goods-form-btn-popup {
+	border-radius: 5px;
+	border: none;
+	background: #f49131;
+	color: #fff;
+	padding: 10px;
+	font-size: 18px;
+	width: auto;
+	margin-top: 10px;
 }
