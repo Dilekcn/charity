@@ -59,7 +59,7 @@ export default function App() {
 						path="/newsdetail/:id"
 						render={() => <NewsDetail />}
 					/>
-					<Route exact path="/getInvolved" component={GetInvolved} />
+					<Route exact path="/getinvolved" component={GetInvolved} />
 					<Route
 						exact
 						path="/getinvolved/donategoods"
