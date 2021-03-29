@@ -6,10 +6,35 @@ import { Link } from 'react-router-dom';
 
 const DonateGoodsForm = () => {
 	const [modalIsOpen, setmodalIsOpen] = useState(false);
+	const [name, setName] = useState('');
+	const [phone, setPhone] = useState('');
+	const [email, setEmail] = useState('');
+	const [typeOfGoods, setTypeOfGoods] = useState('');
+	const [numberOfPieces, setNumberOfPieces] = useState('');
+	const [address, setAddress] = useState('');
+	const [postCode, setPostCode] = useState('');
+	const [instructions, setInstructions] = useState('');
 
 	useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
+
+	const makeAnotherDonation = () => {
+		setmodalIsOpen(false);
+		window.scroll(0, 0);
+	};
+
+	const submitForm = () => {
+		setName('');
+		setPhone('');
+		setEmail('');
+		setTypeOfGoods('');
+		setNumberOfPieces('');
+		setAddress('');
+		setPostCode('');
+		setInstructions('');
+		setmodalIsOpen(true);
+	};
 
 	return (
 		<div>
@@ -31,6 +56,8 @@ const DonateGoodsForm = () => {
 							<input
 								type="text"
 								placeholder="Enter your full name"
+								value={name}
+								onChange={(e) => setName(e.target.value)}
 								required
 							/>
 						</div>
@@ -39,6 +66,8 @@ const DonateGoodsForm = () => {
 							<input
 								type="text"
 								placeholder="Enter contact number"
+								value={phone}
+								onChange={(e) => setPhone(e.target.value)}
 								required
 							/>
 						</div>
@@ -47,6 +76,8 @@ const DonateGoodsForm = () => {
 							<input
 								type="email"
 								placeholder="Enter your email address"
+								value={email}
+								onChange={(e) => setEmail(e.target.value)}
 								required
 							/>
 						</div>
@@ -58,6 +89,8 @@ const DonateGoodsForm = () => {
 							<input
 								type="text"
 								placeholder="Enter type of goods"
+								value={typeOfGoods}
+								onChange={(e) => setTypeOfGoods(e.target.value)}
 								required
 							/>
 						</div>
@@ -66,6 +99,8 @@ const DonateGoodsForm = () => {
 							<input
 								type="text"
 								placeholder="Enter number of pieces"
+								value={numberOfPieces}
+								onChange={(e) => setNumberOfPieces(e.target.value)}
 								required
 							/>
 						</div>
@@ -78,6 +113,8 @@ const DonateGoodsForm = () => {
 						<textarea
 							type="text"
 							placeholder="Enter the full address"
+							value={address}
+							onChange={(e) => setAddress(e.target.value)}
 							required
 						/>
 					</div>
@@ -86,6 +123,8 @@ const DonateGoodsForm = () => {
 						<input
 							type="text"
 							placeholder="Enter the post code"
+							value={postCode}
+							onChange={(e) => setPostCode(e.target.value)}
 							required
 						/>
 					</div>
@@ -94,6 +133,8 @@ const DonateGoodsForm = () => {
 						<textarea
 							type="email"
 							placeholder="Enter a clear instruction for the driver "
+							value={instructions}
+							onChange={(e) => setInstructions(e.target.value)}
 							required
 						/>
 					</div>
@@ -102,7 +143,7 @@ const DonateGoodsForm = () => {
 			<div className="donate-goods-form-submit-container">
 				<button
 					className="donate-goods-form-submit-btn"
-					onClick={() => setmodalIsOpen(true)}
+					onClick={() => submitForm()}
 				>
 					Submit
 				</button>
@@ -136,6 +177,7 @@ const DonateGoodsForm = () => {
 				<button
 					to="/getinvolved/donategoods-form"
 					className="donate-goods-form-btn-popup"
+					onClick={() => makeAnotherDonation()}
 				>
 					Make Another Donation
 				</button>
