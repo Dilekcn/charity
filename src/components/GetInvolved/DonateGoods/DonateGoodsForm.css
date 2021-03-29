@@ -35,13 +35,15 @@
 }
 
 .donate-goods-form-container {
-	display: flex;
-	justify-content: space-around;
-	align-items: flex-start;
 	height: auto;
 	width: 100%;
 	background-color: #e5e5e5;
 	font-family: Roboto;
+}
+
+.donate-goods-form {
+	display: flex;
+	justify-content: space-around;
 }
 
 .donate-goods-form-left {
@@ -82,8 +84,7 @@
 	flex: 3;
 	flex-direction: column;
 	align-items: left;
-	margin-top: 60px;
-	margin-right: 40px;
+	margin-top: 30px;
 }
 
 .donate-goods-form-right > div {
