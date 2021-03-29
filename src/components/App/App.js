@@ -18,6 +18,7 @@ import DonateGoods from '../GetInvolved/DonateGoods/DonateGoods';
 import GiftCard from '../GetInvolved/DonateGiftCard/GiftCard';
 import DonateGoodsForm from '../GetInvolved/DonateGoods/DonateGoodsForm';
 import Ambassador from '../GetInvolved/BeAnAmbassador/Ambassador';
+import AmbassadorForm from '../GetInvolved/BeAnAmbassador/AmbassadorForm';
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -81,6 +82,11 @@ export default function App() {
 						exact
 						path="/getinvolved/beanambassador"
 						component={Ambassador}
+					/>
+					<Route
+						exact
+						path="/getinvolved/beanambassador-form"
+						component={AmbassadorForm}
 					/>
 				</Switch>
 

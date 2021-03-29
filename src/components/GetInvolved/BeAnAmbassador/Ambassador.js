@@ -38,7 +38,7 @@ const Ambassador = () => {
        <br/>
        <div>
 					<Link
-						to="/getinvolved/donategoods-form"
+						to="/getinvolved/beanambassador-form"
 						className="apply-btn-Amb"
 					>
 						Apply
