@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import imageHeader from './Rectangle 26.png';
 import './DonateGoodsForm.css';
 import Modal from 'react-modal';
@@ -15,13 +15,13 @@ const DonateGoodsForm = () => {
 	const [postCode, setPostCode] = useState('');
 	const [instructions, setInstructions] = useState('');
 
-	useEffect(() => {
+	useLayoutEffect(() => {
 		window.scroll(0, 0);
 	}, []);
 
 	const makeAnotherDonation = () => {
-		setmodalIsOpen(false);
 		window.scroll(0, 0);
+		setmodalIsOpen(false);
 	};
 
 	const submitForm = () => {
