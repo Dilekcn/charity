@@ -1,0 +1,68 @@
+.donate-goods-container {
+	position: relative;
+}
+
+.donate-goods-image {
+	display: block;
+	width: 100%;
+	height: 317px;
+}
+
+.donate-goods-overlay {
+	position: absolute;
+	bottom: 0;
+	background: rgba(52, 124, 165, 0.84);
+	width: 100%;
+	transition: 0.5s ease;
+	/* opacity:0; */
+	color: white;
+	/* font-size: 20px; */
+	/* padding: 20px; */
+	text-align: center;
+	height: 317px;
+	opacity: 1;
+}
+
+.donate-goods-text {
+	position: absolute;
+	top: 50%;
+	margin-left: 33%;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 72px;
+	line-height: 84px;
+	color: #ffffff;
+}
+
+.donate-goods-form-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	background-color: #e5e5e5;
+	font-family: Roboto;
+}
+
+.donate-goods-form-left {
+	display: flex;
+	flex: 2;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+	margin: 40px 30px;
+}
+
+.donate-goods-form-left > div > label {
+	font-size: 36px;
+	color: #000;
+	font-weight: normal;
+}
+
+.donate-goods-form-container-right {
+	display: flex;
+	flex: 3;
+	flex-direction: column;
+	align-items: left;
+	justify-content: center;
+}

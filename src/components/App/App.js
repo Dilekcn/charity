@@ -11,13 +11,12 @@ import NewsHomePage from '../News-HomePage/NewsHomePage';
 import SignUp from '../Auth/SignUp';
 import Slider from '../Slider/Slider';
 import axios from 'axios';
-import News from '../News/News'
+import News from '../News/News';
 import NewsDetail from '../NewsDetail/NewsDetail';
-import GetInvolved from '../GetInvolved/GetInvolved'
+import GetInvolved from '../GetInvolved/GetInvolved';
 import DonateGoods from '../GetInvolved/DonateGoods/DonateGoods';
 import GiftCard from '../GetInvolved/DonateGiftCard/GiftCard';
-
-
+import DonateGoodsForm from '../GetInvolved/DonateGoods/DonateGoodsForm';
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -43,18 +42,40 @@ export default function App() {
 						render={() => <Login setIsLoggedIn={setIsLoggedIn} />}
 					/>
 					<Route exact path="/aboutus" component={About} />
-					<Route exact path="/signup" render={() => <SignUp setIsLoggedIn={setIsLoggedIn} isLoggedIn={isLoggedIn} />} />
+					<Route
+						exact
+						path="/signup"
+						render={() => (
+							<SignUp
+								setIsLoggedIn={setIsLoggedIn}
+								isLoggedIn={isLoggedIn}
+							/>
+						)}
+					/>
 					<Route exact path="/donate" component={Donate} />
 					<Route exact path="/campaigns&news" component={News} />
 					<Route
-					   exact
-					   path="/newsdetail/:id"
-					   render={() => <NewsDetail />}
+						exact
+						path="/newsdetail/:id"
+						render={() => <NewsDetail />}
 					/>
-					<Route exact path='/getInvolved' component={GetInvolved}/> 
-					<Route exact path='/getinvolved/donategoods' component={DonateGoods}/>
-					<Route exact path='/getinvolved/donate-with-gift-card' component={GiftCard} />
+					<Route exact path="/getInvolved" component={GetInvolved} />
+					<Route
+						exact
+						path="/getinvolved/donategoods"
+						component={DonateGoods}
+					/>
+					<Route
+						exact
+						path="/getinvolved/donategoods-form"
+						component={DonateGoodsForm}
+					/>
 
+					<Route
+						exact
+						path="/getinvolved/donate-with-gift-card"
+						component={GiftCard}
+					/>
 				</Switch>
 
 				<Footer />

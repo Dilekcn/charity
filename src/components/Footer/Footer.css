@@ -63,7 +63,7 @@
 
 .footer-nav {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	background: #c4c4c4;
 	padding: 10px 0px;
@@ -73,6 +73,12 @@
 	color: #347ca5;
 	font-weight: 400;
 	font-size: 40px;
+}
+
+.footer-nav > ul,
+li,
+a {
+	padding-right: 15px;
 }
 
 @media (max-width: 1237px) {
