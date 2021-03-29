@@ -1,0 +1,80 @@
+.donate-goods {
+  justify-content: center;
+}
+
+.donate-goods-container {
+  position: relative;
+}
+
+.donate-goods-image {
+  display: block;
+  width: 100%;
+  height: 317px;
+}
+
+.donate-goods-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(52, 124, 165, 0.84);
+  width: 100%;
+  transition: 0.5s ease;
+  /* opacity:0; */
+  color: white;
+  /* font-size: 20px; */
+  /* padding: 20px; */
+  text-align: center;
+  height: 317px;
+  opacity: 1;
+}
+
+.donate-goods-text {
+  position: absolute;
+  top: 50%;
+  /* margin-left: 30%; */
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 84px;
+  color: #ffffff;
+}
+
+.contentAmb {
+  display: grid;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+  background: #e5e5e5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contentAmb1-p {
+  margin-top: 10%;
+  margin-left: +30px;
+  font-family: Prociono;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 70px;
+  width: 90%;
+  text-align: left;
+}
+
+.contentAmb1-p li {
+  color: black;
+  font-size: 24px;
+}
+
+.apply-btn-Amb {
+  margin-top: 5%;
+  margin-left: 42%;
+  margin-bottom: 5%;
+  border-radius: 5px;
+  border: none;
+  background: #f49131;
+  color: #fff;
+  padding: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
+  font-size: 28px;
+}
