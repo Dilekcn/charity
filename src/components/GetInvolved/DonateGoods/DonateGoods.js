@@ -14,7 +14,7 @@ const customStyles = {
 		right: '50%',
 		bottom: '60%',
 		marginRight: '-50%',
-		marginTop: '120px',
+		marginTop: '120px', 
 		transform: 'translate(-50%, -50%)',
 		height: 'fit-content',
 		backgroundColor: '#76A9C7',
@@ -56,17 +56,17 @@ const DonateGoods = () => {
 					<h1 className="donate-goods-text">Donate Goods</h1>
 				</div>
 			</div>
-			<div className="cantent">
-				<div className="cantent1">
+			<div className="content">
+				<div className="content1">
 					<div className="image-1" />
 					<p className="content1-p">
 						Just because you no longer need an item, don’t throw it away.
 						By donating it to us you’re not only keeping it out of
 						landfill, but you’re also making sure it goes to a new home,
-						while also doing something to help others.
+						while also doing something to help others. To donate, please fill in the form at the link below and our team will get back to you. Take a look at the information on this page to see what we can and cannot accept as gifts.
 					</p>
 				</div>
-				<div className="cantent2">
+				<div className="content2">
 					<p className="content2-p">
 						<h4>What we can and can't collect</h4> It goes without saying
 						that we need to be able to re-sell items, but if a piece of
