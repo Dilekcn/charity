@@ -23,7 +23,9 @@ const GetInvolved = () => {
 
                 <div className="getInvolved_image">
                     <div className="getInvolved_image_img">
+                    <Link to='/getinvolved/donate-with-gift-card' className="getInvolved_image_img">
                         <span className="donate_good">Donate with a gift card</span>
+                    </Link>
                     </div>
                 </div>  
 
