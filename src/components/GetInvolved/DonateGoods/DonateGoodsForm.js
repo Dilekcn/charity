@@ -99,7 +99,7 @@ const DonateGoodsForm = () => {
 							<div>
 								<label>Number of Pieces</label>
 								<input
-									type="text"
+									type="number"
 									placeholder="Enter number of pieces"
 									value={numberOfPieces}
 									onChange={(e) => setNumberOfPieces(e.target.value)}
@@ -131,7 +131,7 @@ const DonateGoodsForm = () => {
 							<div>
 								<label>Instructions for the Driver</label>
 								<textarea
-									type="email"
+									type="text"
 									placeholder="Enter a clear instruction for the driver "
 									value={instructions}
 									onChange={(e) => setInstructions(e.target.value)}
@@ -169,6 +169,8 @@ const DonateGoodsForm = () => {
 						padding: '60px',
 						textAlign: 'center',
 						lineHeight: 1.8,
+						backgroundColor: '#347ca5',
+						color: 'white',
 					},
 				}}
 			>
