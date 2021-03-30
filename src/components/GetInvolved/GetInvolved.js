@@ -1,11 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './GetInvolved.css';
 import { Link } from 'react-router-dom';
 
 const GetInvolved = () => {
+    useEffect(() => {
+		window.scroll(0, 0);
+	}, []);
     return (
         <div className="getInvolved">
-            Hello
+           
             <div className="getInvolved_img"></div>
           <div className="getInvolved_text">
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -30,9 +33,9 @@ const GetInvolved = () => {
                 </div>  
 
                  <div className="getInvolved_image">
-                    <div  className="getInvolved_image_img">
+                    <Link to='/getinvolved/donateyourtime' className="getInvolved_image_img">
                         <span  className="donate_good"> Donate your time</span>
-                    </div>
+                    </Link>
                 </div>
 
                 <div className="getInvolved_image">

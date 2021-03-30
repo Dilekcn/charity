@@ -17,6 +17,8 @@ import GetInvolved from '../GetInvolved/GetInvolved';
 import DonateGoods from '../GetInvolved/DonateGoods/DonateGoods';
 import GiftCard from '../GetInvolved/DonateGiftCard/GiftCard';
 import DonateGoodsForm from '../GetInvolved/DonateGoods/DonateGoodsForm';
+import DonateYourTime from '../GetInvolved/DonateYourTime/DonateYourTime'
+import DonateYourTimeForm from '../GetInvolved/DonateYourTime/DonateYourTimeForm'
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -70,7 +72,16 @@ export default function App() {
 						path="/getinvolved/donategoods-form"
 						component={DonateGoodsForm}
 					/>
-
+	<Route
+						exact
+						path="/getinvolved/donateyourtime"
+						component={DonateYourTime}
+					/>
+						<Route
+						exact
+						path="/getinvolved/donateyourtime-form"
+						component={DonateYourTimeForm}
+					/>
 					<Route
 						exact
 						path="/getinvolved/donate-with-gift-card"
