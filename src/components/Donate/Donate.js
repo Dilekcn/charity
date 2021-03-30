@@ -3,6 +3,9 @@ import './Donate.css';
 import { Link } from 'react-router-dom';
 
 const Donate = () => {
+
+
+
 	return (
 		
 		<div className="main">
