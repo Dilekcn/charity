@@ -17,13 +17,11 @@ import GetInvolved from '../GetInvolved/GetInvolved';
 import DonateGoods from '../GetInvolved/DonateGoods/DonateGoods';
 import GiftCard from '../GetInvolved/DonateGiftCard/GiftCard';
 import DonateGoodsForm from '../GetInvolved/DonateGoods/DonateGoodsForm';
-<<<<<<< HEAD
-import DonateYourTime from '../GetInvolved/DonateYourTime/DonateYourTime'
-import DonateYourTimeForm from '../GetInvolved/DonateYourTime/DonateYourTimeForm'
-=======
 import Ambassador from '../GetInvolved/BeAnAmbassador/Ambassador';
 import AmbassadorForm from '../GetInvolved/BeAnAmbassador/AmbassadorForm';
->>>>>>> c4e81f22af6fbfb33844c045f4d6e99a6f8a3c52
+import DonateYourTime from '../GetInvolved/DonateYourTime/DonateYourTime'
+import DonateYourTimeForm from '../GetInvolved/DonateYourTime/DonateYourTimeForm'
+
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
