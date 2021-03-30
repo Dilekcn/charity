@@ -40,7 +40,9 @@ const GetInvolved = () => {
 
                 <div className="getInvolved_image">
                     <div className="getInvolved_image_img">
+                    <Link to='/getinvolved/beanambassador' className="getInvolved_image_img">
                         <span className="donate_good"> Be an ambassador</span>
+                    </Link>  
                     </div>
                 </div>
 
