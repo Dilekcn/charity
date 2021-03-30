@@ -176,7 +176,7 @@ const AmbassadorForm = () => {
 					</div>
 					
 					<div className="ambassador-row7">
-						<button type="submit">Submit</button>
+						<button type="submit" onClick={()=>window.scroll(0, 0)}>Submit</button>
 					</div>
 				</form>
 			</div>
