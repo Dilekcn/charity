@@ -13,6 +13,7 @@ const News = () => {
 			.get('http://localhost:4000/posts')
 			.then((res) => setPosts(res.data))
 			.catch((err) => console.log(err));
+			console.log()
 	}, []);
 	useEffect(() => {
 		axios
@@ -30,7 +31,7 @@ const News = () => {
 		}
 	};
 
-	console.log(posts);
+	// console.log(posts);
 	return (
 		<div>
 			<div className="newss-bg-img"></div>
