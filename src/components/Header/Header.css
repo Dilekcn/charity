@@ -76,7 +76,7 @@ a {
 
 #header-menu-checkbox,
 .header-menu-icon {
-	display: none;
+	display: ;
 }
 
 @media (max-width: 1242px) {
@@ -99,6 +99,7 @@ a {
 	}
 	.header-search-box {
 		width: 180px;
+		box-sizing: border-box;
 	}
 	#btn-donate {
 		width: 111px;
