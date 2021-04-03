@@ -263,58 +263,68 @@
   ],
   "goods-donation": [
     {
-      "id":1,
-      "user_id":1,
-      "firstname":"John",
-      "lastname":"Doe",
-      "email":"john@gmail.com",
-      "phone":789678903,
-      "type_of_goods":"books",
-      "number_of_pieces":7,
-      "adress":"Holmes road,Kentish Town,London",
-      "post_code":"NW5 3AN",
-      "instructions_for_the_driver":"Be aware of the dog"
+      "id": 1,
+      "user_id": 1,
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john@gmail.com",
+      "phone": 789678903,
+      "type_of_goods": "books",
+      "number_of_pieces": 7,
+      "adress": "Holmes road,Kentish Town,London",
+      "post_code": "NW5 3AN",
+      "instructions_for_the_driver": "Be aware of the dog"
     }
   ],
   "gift-card-donation": [
     {
-      "id":2,
-      "user_id":2,
-      "type_of_card":"Amazon",
-      "card_number":"854HFSDK",
-      "security_code":"564",
-      "amount":"£100",
-      "expiration_date":"01.01.2022",
-      "post_code":"NW5 3AN",
-      "add_info":""
-    } 
+      "id": 2,
+      "user_id": 2,
+      "type_of_card": "Amazon",
+      "card_number": "854HFSDK",
+      "security_code": "564",
+      "amount": "£100",
+      "expiration_date": "01.01.2022",
+      "post_code": "NW5 3AN",
+      "add_info": ""
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "type_of_card": "Tesco",
+      "card_number": "854HFSDK",
+      "security_code": "564",
+      "amount": "£100",
+      "expiration_date": "01.01.2022",
+      "post_code": "NW5 3AN",
+      "add_info": ""
+    }
   ],
   "time-donation": [
     {
-      "id":3,
-      "user_id":3,
-      "firstname":"Jane",
-      "lastname":"Doe",
-      "email":"jane@gmail.com",
-      "phone":789678903,
-      "based_in":"London",
-      "interested_in":"Teaching English",
-      "comments":""
+      "id": 3,
+      "user_id": 3,
+      "firstname": "Jane",
+      "lastname": "Doe",
+      "email": "jane@gmail.com",
+      "phone": 789678903,
+      "based_in": "London",
+      "interested_in": "Teaching English",
+      "comments": ""
     }
   ],
   "ambassadors": [
     {
-      "id":4,
-      "user_id":4,
-      "firstname":"John",
-      "lastname":"Doe",
-      "email":"john@gmail.com",
-      "phone":789678903,
-      "based_in":"Birmingham",
-      "reason_to_join":"I am a good person.",
-      "interest_area":"advertise",
-      "comments":""
+      "id": 4,
+      "user_id": 4,
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john@gmail.com",
+      "phone": 789678903,
+      "based_in": "Birmingham",
+      "reason_to_join": "I am a good person.",
+      "interest_area": "advertise",
+      "comments": ""
     }
   ]
-
 }
