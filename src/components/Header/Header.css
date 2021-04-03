@@ -76,7 +76,7 @@ a {
 
 #header-menu-checkbox,
 .header-menu-icon {
-	display: ;
+	display: none;
 }
 
 @media (max-width: 1242px) {
