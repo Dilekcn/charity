@@ -155,3 +155,28 @@
         width: 95%;
     }
 }
+
+@media only screen and (max-width: 361px) {
+    .giftcard-form label {
+        font-size: small;
+    }
+
+    .giftcard-form input {
+        padding: 5px;
+    }
+
+    .giftcard-form input::placeholder {
+        font-size: 10px;
+    }
+
+    .giftcard-row6 {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .donate-goods-text1 {
+        font-size: 28px !important;
+        margin-left: 10% !important;
+        margin-right: auto;
+    }
+}
