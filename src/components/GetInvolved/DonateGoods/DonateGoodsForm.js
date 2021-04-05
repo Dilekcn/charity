@@ -29,7 +29,7 @@ const DonateGoodsForm = () => {
 	const submitForm = (e) => {
 		e.preventDefault();
 		axios
-			.post('http://localhost:4000/goods-donation', {
+			.post('https://mern-brothers.herokuapp.com/goods-donation', {
 				firstname: firstName,
 				lastname: lastName,
 				email: email,
