@@ -271,7 +271,7 @@
       "phone": 789678903,
       "type_of_goods": "books",
       "number_of_pieces": 7,
-      "adress": "Holmes road,Kentish Town,London",
+      "address": "Holmes road,Kentish Town,London",
       "post_code": "NW5 3AN",
       "instructions_for_the_driver": "Be aware of the dog"
     },
