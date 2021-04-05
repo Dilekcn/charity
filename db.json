@@ -298,6 +298,18 @@
       "post_code": "PRS SLT",
       "instructions_for_the_driver": "asdasd",
       "id": 3
+    },
+    {
+      "firstname": "a",
+      "lastname": "a",
+      "email": "a@a.com",
+      "phone": "111-1111-1111",
+      "type_of_goods": "asdasd",
+      "number_of_pieces": "1",
+      "adress": "11",
+      "post_code": "asd",
+      "instructions_for_the_driver": "asdas",
+      "id": 4
     }
   ],
   "gift-card-donation": [
