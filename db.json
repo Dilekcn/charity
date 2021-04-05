@@ -260,5 +260,95 @@
       "media_url": "https://i.postimg.cc/6QPKt378/sigmund-Qj-CNk0-Tx-Gfc-unsplash.jpg",
       "type": "donatee"
     }
+  ],
+  "goods-donation": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john@gmail.com",
+      "phone": 789678903,
+      "type_of_goods": "books",
+      "number_of_pieces": 7,
+      "address": "Holmes road,Kentish Town,London",
+      "post_code": "NW5 3AN",
+      "instructions_for_the_driver": "Be aware of the dog"
+    },
+    {
+      "firstname": "a",
+      "lastname": "b",
+      "email": "a@a.com",
+      "phone": "111-1111-1111",
+      "type_of_goods": "asdasd",
+      "number_of_pieces": "5",
+      "adress": "asdasdasd",
+      "post_code": "NW5 2NM",
+      "instructions_for_the_driver": "sdfsfsdfsdf",
+      "id": 2
+    },
+    {
+      "firstname": "aaa",
+      "lastname": "aaa",
+      "email": "b@b.com",
+      "phone": "222-2222-2222",
+      "type_of_goods": "aaa",
+      "number_of_pieces": "4",
+      "adress": "asdasdas",
+      "post_code": "PRS SLT",
+      "instructions_for_the_driver": "asdasd",
+      "id": 3
+    }
+  ],
+  "gift-card-donation": [
+    {
+      "id": 2,
+      "user_id": 2,
+      "type_of_card": "Amazon",
+      "card_number": "854HFSDK",
+      "security_code": "564",
+      "amount": "£100",
+      "expiration_date": "01.01.2022",
+      "post_code": "NW5 3AN",
+      "add_info": ""
+    },
+    {
+      "id": 3,
+      "user_id": 3,
+      "type_of_card": "Tesco",
+      "card_number": "854HFSDK",
+      "security_code": "564",
+      "amount": "£100",
+      "expiration_date": "01.01.2022",
+      "post_code": "NW5 3AN",
+      "add_info": ""
+    }
+  ],
+  "time-donation": [
+    {
+      "id": 3,
+      "user_id": 3,
+      "firstname": "Jane",
+      "lastname": "Doe",
+      "email": "jane@gmail.com",
+      "phone": 789678903,
+      "based_in": "London",
+      "interested_in": "Teaching English",
+      "comments": ""
+    }
+  ],
+  "ambassadors": [
+    {
+      "id": 4,
+      "user_id": 4,
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john@gmail.com",
+      "phone": 789678903,
+      "based_in": "Birmingham",
+      "reason_to_join": "I am a good person.",
+      "interest_area": "advertise",
+      "comments": ""
+    }
   ]
 }

@@ -66,13 +66,33 @@ const AmbassadorForm = () => {
 		setComment('');
     setIsOpen(true);
 	};
+	function setInputFilter(textbox, inputFilter) {
+		["input", "keydown", "keyup", "mousedown", "mouseup", "select", "contextmenu", "drop"].forEach(function(event) {
+		if(textbox){textbox.addEventListener(event, function() {
+			if (inputFilter(this.value)) {
+				this.oldValue = this.value;
+				this.oldSelectionStart = this.selectionStart;
+				this.oldSelectionEnd = this.selectionEnd;
+			} else if (this.hasOwnProperty("oldValue")) {
+				this.value = this.oldValue;
+				this.setSelectionRange(this.oldSelectionStart, this.oldSelectionEnd);
+			} else {
+				this.value = "";
+			}
+		});
+	}	
+		});
+	}
+	setInputFilter(document.getElementById("ambassador-contact"), function(value) {
+		return /^\d*\.?\d*$/.test(value); // Allow digits and '.' only, using a RegExp
+	});
 
 	return (
 		<div>
-			<div className="donate-goods-container">
-				<img src={imageHeader} alt="Avatar" className="donate-goods-image" />
-				<div className="donate-goods-overlay">
-					<h1 className="donate-goods-text1">Be an Ambassador</h1>
+			<div className="ambassadorForm-container">
+				<img src={imageHeader} alt="Avatar" className="ambassadorForm-image" />
+				<div className="ambassadorForm-overlay">
+					<h1 className="ambassadorForm-text" id="h1-content">Be an Ambassador</h1>
 				</div>
 			</div>
 			<div className="ambassador-form-content">
@@ -110,7 +130,7 @@ const AmbassadorForm = () => {
             
 					</div>
 					<div className="ambassador-row2">
-						<div>
+						<div className="ambas-email">
 							<label htmlFor="ambassador-email">Email</label>
 							<input
 								required
@@ -176,7 +196,7 @@ const AmbassadorForm = () => {
 					</div>
 					
 					<div className="ambassador-row7">
-						<button type="submit">Submit</button>
+						<button type="submit" onClick={()=>window.scroll(0, 0)}>Submit</button>
 					</div>
 				</form>
 			</div>

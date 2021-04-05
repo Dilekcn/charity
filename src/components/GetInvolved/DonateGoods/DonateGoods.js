@@ -58,13 +58,13 @@ const DonateGoods = () => {
 			</div>
 			<div className="content">
 				<div className="content1">
-					<div className="image-1" />
-					<p className="content1-p">
+					<img className="image-1" src={image1}/>
+					<div className="content1-p">
 						Just because you no longer need an item, don’t throw it away.
 						By donating it to us you’re not only keeping it out of
 						landfill, but you’re also making sure it goes to a new home,
 						while also doing something to help others. To donate, please fill in the form at the link below and our team will get back to you. Take a look at the information on this page to see what we can and cannot accept as gifts.
-					</p>
+					</div>
 				</div>
 				<div className="content2">
 					<p className="content2-p">
@@ -76,9 +76,9 @@ const DonateGoods = () => {
 							Find out what you can donate?
 						</a>
 					</p>
-					<div className="image-2" />
+					<img className="image-2" src={image2}/>
 				</div>
-				<div>
+				<div className="donate-goods-btn-div">
 					<Link
 						to="/getinvolved/donategoods-form"
 						className="donate-goods-btn"
@@ -93,6 +93,7 @@ const DonateGoods = () => {
 				onAfterOpen={afterOpenModal}
 				onRequestClose={closeModal}
 				contentLabel="Example Modal"
+				className="donate-goods-modal"
 			>
 				Our chain of 600 shops are all really grateful for any of the below
 				donations. They fly off our shelves and help us raise vital funds.

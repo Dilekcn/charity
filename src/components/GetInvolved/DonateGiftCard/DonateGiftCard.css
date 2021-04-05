@@ -2,7 +2,7 @@
     position: absolute;
     top: 50%;
     margin-right: auto;
-    margin-left: 20%;  
+    margin-left: 25% !important;  
     font-style: normal;
     font-weight: normal;
     font-size: 72px;
@@ -131,6 +131,18 @@
     border-radius: 5px;
 }
 
+@media only screen and (max-width: 1275px) {
+    .donate-goods-text1 {
+      margin-left: 20% !important;
+    }
+}
+
+@media only screen and (max-width: 1124px) {
+    .donate-goods-text1 {
+      margin-left: 15% !important;
+    }
+}
+
 
 @media only screen and (max-width: 885px) {
     .donate-goods-text1 {
@@ -141,17 +153,52 @@
     .giftcard-form {
         width: 95%;
     }
+
+    .donate-goods-text1 {
+        margin-left: 18% !important;
+      }
 }
 
 
 @media only screen and (max-width: 560px) {
     .donate-goods-text1 {
-        margin-left: 8%;
-        margin-top: 3%;
-        font-size: 38px;
-    }
+        margin-left: 18% !important;
+        font-size: xx-large !important;
+      }
 
     .giftcard-form {
         width: 95%;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .donate-goods-text1 {
+        margin-left: 18% !important;
+        font-size: x-large !important;
+      }
+}
+
+@media only screen and (max-width: 361px) {
+    .giftcard-form label {
+        font-size: small;
+    }
+
+    .giftcard-form input {
+        padding: 5px;
+    }
+
+    .giftcard-form input::placeholder {
+        font-size: 10px;
+    }
+
+    .giftcard-row6 {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .donate-goods-text1 {
+        font-size: 28px !important;
+        margin-left: 10% !important;
+        margin-right: auto;
     }
 }
