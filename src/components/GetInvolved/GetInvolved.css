@@ -12,7 +12,6 @@ background-size: cover;
 background-position: center;
 }
 .getInvolved_text{
-    /* position: absolute; */
 width: 100%;
 height: 144px;
 background: #347CA5;
@@ -48,14 +47,12 @@ line-height: 78px;
     height: 944px;
     background: #E5E5E5;
     display: flex;
-/* flex-direction: row; */
 flex-direction:column;
 flex-wrap: wrap;
 justify-content: space-evenly;
 align-items: center;
 }
 .getInvolved_images .getInvolved_image{
-/* background-color: aqua; */
 width: 433px;
 height: 348px;
 overflow: hidden;
@@ -63,7 +60,7 @@ overflow: hidden;
 .getInvolved_image .getInvolved_image_img{
     width: 100%;
     height: 100%;
-    background-color: black; /* fallback color */
+    background-color: black; 
     background-image: url("https://i.postimg.cc/K8XTGcZc/photo-1518949142393-f1d68174c92a.jpg");
     background-position: center;
     background-size: cover;
@@ -101,3 +98,144 @@ color:#fff;
 
 
 }
+/*****************************************************/
+@media only screen and (max-width: 1024px) {
+ 
+.getInvolved_img{   
+       height: 450px; 
+   }
+   .getInvolved_text{
+ 
+   height: 100px;
+    padding-left: 15px;
+   padding-right: 15px;
+   font-size: 18px;
+   line-height: 28px;
+   }
+   .getInvolved_title{
+   font-size: 60px;
+   }
+   .getInvolved_images{
+       width: 100%;
+       height: 800px;  
+   justify-content:space-around;
+  
+   }
+   .getInvolved_images .getInvolved_image{
+   width: 400px;
+   height: 350px;
+  
+   }
+
+    }
+
+
+    @media only screen and (max-width: 768px) {
+      
+.getInvolved_img{
+    margin-top: 90px;
+       height: rk54rh6rc;
+   width: 100%;
+   left: 0px;
+   top: 106px;
+   border-radius: 0px;
+    background-image: url("https://i.postimg.cc/4y4VVWY8/69d547-80caef70e4734a62bbce3e41b10653df-mv2.jpg");
+    background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   }
+   .getInvolved_text{
+       /* position: absolute; */
+   width: 100%;
+   height: 144px;
+   background: #347CA5;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 15px;
+   padding-right: 10px;
+   font-family: Roboto;
+   font-size: 20px;
+   font-style: normal;
+   font-weight: 400;
+   line-height: 30px;
+   letter-spacing: 0em;
+   text-align: left;
+   color:#fff;
+   
+   }
+   .getInvolved_title{
+       width: 100%;
+       height: 83px;
+       color: #347CA5;
+       font-family: Prociono;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 64px;
+   line-height: 78px;
+   
+   
+   }
+   .getInvolved_images{
+       width: 100%;
+       height: 944px;
+       background: #E5E5E5;
+       display: flex;
+   /* flex-direction: row; */
+   flex-direction:column;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   align-items: center;
+   }
+   .getInvolved_images .getInvolved_image{
+   /* background-color: aqua; */
+   width: 433px;
+   height: 348px;
+   overflow: hidden;
+   }
+   .getInvolved_image .getInvolved_image_img{
+       width: 100%;
+       height: 100%;
+       background-color: black; /* fallback color */
+       background-image: url("https://i.postimg.cc/K8XTGcZc/photo-1518949142393-f1d68174c92a.jpg");
+       background-position: center;
+       background-size: cover;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       
+   }
+   .getInvolved_image:hover .getInvolved_image_img,
+   .getInvolved_image:focus .getInvolved_image_img{
+       transform: scale(1.2);
+       transition: all .5s;
+      
+   }
+   .getInvolved_image_img::before{
+       content: "";
+       display: none;
+       height: 100%;
+       width: 100%;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background-color: rgba(0, 0, 0, 0.5);
+   }
+   .getInvolved_image:hover .getInvolved_image_img::before,
+   .getInvolved_image:focus .getInvolved_image_img::before{
+       display: block;
+   }
+   .getInvolved_image_img .donate_good{
+       font-family: Prociono;
+   font-size: 40px;
+   font-style: normal;
+   color:#fff;
+   
+   
+   }
+    }
+
+    @media only screen and (max-width: 360px) {
+ 
+    }

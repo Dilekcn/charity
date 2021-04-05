@@ -1,34 +1,14 @@
-import React, {useState,useEffect} from "react";
+import React, {useState} from "react";
 import "./DonateYourTimeForm.css";
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
-
+import {useForm} from 'react-hook-form';
 
 const DonateYourTimeForm = () => {
-  
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [fullname,setFullname] =useState('');
-  const [email, setEmail]=useState('');
-  const [phone, setPhone]=useState('');
-  const [based,setBased] =useState('');
-  const [text,setText] =useState('');
-  const [text1,setText1]=useState('');
-
-  const submitForm = (e) => {
-		setFullname('');
-		setEmail('');
-		setPhone('');
-		setBased('');
-		setText('');
-		setText1('');
-		setModalIsOpen(true);
-		e.preventDefault();
-	};
-
-  useEffect(() => {
-    window.scroll(0, 0);
-   }, []);
-
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+  const {register, handleSubmit}=useForm();
+ 
+  const onSubmit =data=>console.log(data)
     return (
     <div id="donate_your_time_form">
         <div className="donate_your_time_form">
@@ -37,42 +17,42 @@ const DonateYourTimeForm = () => {
         </div>
       </div>
       <div className="donate_your_time_form_container">
-          <form  onSubmit={submitForm}>
+          <form onSubmit={handleSubmit(onSubmit)}>
             <div id="time_container">
             <div className="time_container">
                 <div className="time_name">
                 <label for="fullname">Full Name</label><br/>
-                 <input value={fullname} onChange={(e)=>setFullname(e.target.value)} type="text" id="fullname" name="fullname"/>
+                 <input ref={register} type="text" id="fullname" name="fullname"/>
                 </div>
 <br/>
                 <div className="time_email">
                 <label for="email">Email</label><br/>
-                 <input value={email} onChange={(e)=>setEmail(e.target.value)} type="email" id="email" name="email"/>
+                 <input ref={register} type="email" id="email" name="email"/>
                 </div>
             </div>
 <br/>
             <div className="time_container_right">
                 <div className="time_number"><br/>
                 <label for="number">Contact Number</label><br/>
-                 <input  value={phone} onChange={(e)=>setPhone(e.target.value)}  type="phone" id="number" name="number"/>
+                 <input  ref={register} type="phone" id="number" name="number"/>
                 </div>
 <br/>
                 <div className="time_based">
                 <label for="based">Where are you based?</label><br/>
-                 <input  value={based} onChange={(e)=>setBased(e.target.value)}  type="text" id="based" name="based"/>
+                 <input  ref={register} type="text" id="based" name="based"/>
                 </div>
 
             </div>
 
             <div className="time_text">
                 <label for="text">What particular areas are you willing to contribute to or interest you the most?</label> <br/> <br/>
-                <textarea value={text} onChange={(e)=>setText(e.target.value)} type="text" id="text" name="text" />
+                <textarea  ref={register} type="text" id="text" name="text" />
             </div>
            
             <div className="time_text2">
                 <label for="text2">Other thoughts or comments
 </label>  <br/> <br/>
-                <textarea  value={text1} onChange={(e)=>setText1(e.target.value)}  type="textarea" id="text2" name="text2" rows="10" cols="50"/>
+                <textarea  ref={register} type="textarea" id="text2" name="text2" rows="10" cols="50"/>
             </div>
             
 <div className="time_submit"> <button type="submit" className="time_submit_sub">Submit</button></div>
