@@ -42,6 +42,10 @@ const AmbassadorForm = () => {
 	const [ comment, setComment ] = useState('');
   const [modalIsOpen,setIsOpen] = React.useState(false);
 
+	const makeAnotherDonation = () => {
+		window.scroll(0, 0);
+		setIsOpen(false);
+	};
     const history = useHistory()
 
     function closeModal(){
@@ -208,6 +212,7 @@ const AmbassadorForm = () => {
 				contentLabel="Example Modal"
 			>
 				<p>Thank you! You have just made a difference in someone else’s life! </p>
+								<button className="modal-btn" onClick={() => makeAnotherDonation()}>Make another donation</button>
                 <button className="modal-btn" onClick={() => history.push('/')}>Back to home page</button>
 			</Modal>
 		</div>
