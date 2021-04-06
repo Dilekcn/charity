@@ -1,11 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import logo from './images/img.png';
 import './Header.css';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import axios from 'axios';
 
-const Header = ({ isLoggedIn, setIsLoggedIn }) => {
+const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
+	const [search, setSearch] = useState('')
+	const [posts, setPosts] = useState([])
+	const history = useHistory()
+
+	useEffect(() => {
+		axios.get('http://localhost:4000/posts').then(res => setPosts(res.data)).catch(err => console.log(err))
+	}, [])
+
+	const onSubmitSearch = (e) => {
+		e.preventDefault();
+		const results = []
+		for (let i = 0; i < posts.length; i++) {
+			if(posts[i].title.toLowerCase().search(search.toLowerCase()) !== -1) {
+				results.push(posts[i].id)
+			}
+		}
+		searchFunc(results)
+		history.push('/search-results');
+	}
 	return (
 		<div id="div-header">
 			<a href="/">
@@ -15,14 +35,16 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
 			<a href="/donate">
 				<button id="btn-donate">DONATE</button>
 			</a>
-			<form className="header-search-container">
+			<form className="header-search-container" onSubmit={onSubmitSearch}>
 				<input
 					className="header-search-box"
 					type="search"
 					placeholder="Search"
 					required
+					value={search}
+					onChange={e => setSearch(e.target.value)}
 				/>
-				<button className="header-search-box-btn">
+				<button className="header-search-box-btn" type="submit">
 					<AiOutlineSearch size={17} fill={'white'} />
 				</button>
 			</form>
