@@ -1,10 +1,13 @@
-import React from "react";
+import React,{useEffect} from "react";
 
 import "./DonateYourTime.css";
 import { Link } from 'react-router-dom';
 
 
 const DonateYourTime = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+   }, []);
   return (
     <div id="donate_your_time">
         <div className="donate_your_time">

@@ -9,8 +9,7 @@
 .donete_your_time_form_title {
   background-color: rgba(52, 124, 165, 0.84);
   height: 317px;
-  width: 100%;
-  /* opacity: 0.2; */
+  width: 100%; 
   color: #e5e5e5;
   font-size: 72px;
   padding-top: 140px;
@@ -34,7 +33,7 @@
   left: 100px;
   top: 40px;
   width: 40%;
-  margin: 10px 70px;
+  margin: 10px 50px;
   /* background-color: blueviolet; */
 }
 .time_name > label {
@@ -54,6 +53,11 @@
   padding-left:10px ;
 
 }
+.time_email{
+  margin-top:190px;
+  width: 100%;
+  margin-left: 1px;
+}
 
 .time_email > label {
   font-family: Roboto;
@@ -64,8 +68,9 @@
   font-weight: 400;
   line-height: 42px;
   letter-spacing: 0em;
+ 
 }
-.time_container .time_email > input {
+.time_email > input {
   height: 40px;
   width: 400px;
   border: none;
@@ -76,7 +81,7 @@
 .time_container_right {
   position: absolute;
   right: 200px;
-  top: 40px;
+  top: 26px;
   width: 40%;
 
 
@@ -122,7 +127,7 @@
 
 .time_text {
   position: absolute;
-  top: 323px;
+  top: 343px;
   width: 80%;
 }
 .time_text > label {
@@ -200,4 +205,330 @@
 	font-size: 18px;
 	width: auto;
 	margin-top: 10px;
+}
+.donate_time_modal{
+  margin-top: 200px;
+  margin-left: 30%;
+
+}
+/************************************************************/
+
+@media (max-width: 1366px){
+  .donate_time_modal{
+    margin-top: 250px;
+    margin-left: 20%;
+  
+  }
+  
+}
+@media only screen and (max-width: 1024px) {
+  .donate_your_time_form_container {
+      height: 990px;    
+  }
+  #time_container {  
+    padding: 40px 70px; 
+   }
+  .time_container { 
+    left: 50px;
+    top: 40px;
+    width: 40%;
+    margin: 10px 20px;    
+  }
+  .time_name > label {  
+    font-size: 24px; 
+    line-height: 32px; 
+  }
+  .time_container .time_name > input {
+    height: 40px;
+    width: 300px; 
+    padding-left:10px ;  
+  }  
+  .time_email{
+    margin-top:180px;   
+  }
+  .time_email > label {   
+    font-size: 24px;
+    line-height: 32px;    
+  }
+  .time_email > input {
+    height: 40px;
+    width: 300px;  
+  }  
+  .time_container_right {  
+    right: 150px;
+    top: 29px;
+    width: 40%;  
+  }  
+  .time_container_right .time_number > label {
+    font-size: 24px;
+    color: black;  
+    line-height: 32px; 
+  }
+   .time_container_right .time_number > input {
+    height: 40px;
+    width: 300px; 
+   }
+  
+  .time_container_right .time_based > label {
+    font-size: 24px;   
+    line-height: 32px;   
+  }
+  .time_container_right .time_based > input {
+    height: 40px;
+    width: 300px;   
+  }  
+  .time_text {
+    top: 330px;
+    width: 80%;
+    }
+  .time_text > label {  
+    font-size: 24px;
+    line-height: 32px; 
+  }
+  .time_text > textarea {    
+    height: 300px;   
+  }  
+  .time_text2 {   
+    top: 730px;  
+  }  
+  .time_text2 > label {  
+    font-size: 24px;  
+    line-height: 32px;   
+  }
+  .time_text2 > textarea { 
+    height: 115px; 
+    padding:20px 20px;  
+  }
+  .time_submit { 
+    top: 920px;
+    width: 90%;
+    left: 40%;
+  }  
+  .time_submit_sub {
+    height: 40px;
+    width: 132px;   
+    font-size: 24px; 
+    line-height: 32px;  
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .donate_time_modal{   
+    margin-top: 280px;
+    margin-left: 20%;
+    
+  
+  }
+
+  .donate_your_time_form {
+      height: 300px;
+      }
+  .donete_your_time_form_title {
+   height: 300px;
+   font-size: 62px; 
+  }
+  .donate_your_time_form_container {  
+    height: 850px;   
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #time_container {
+    padding: 20px 50px;  
+  }
+  .time_container {
+   left: 40px;
+    top: 20px;
+    width: 30%;
+    margin: 10px 10px;  
+  }
+  .time_name > label {    
+    font-size: 22px;     
+    line-height: 28px;   
+  }
+  .time_container .time_name > input {
+    height: 40px;
+    width: 250px;   
+  }  
+  .time_email{
+    margin-top:160px;   
+  }
+  .time_email > label {   
+    font-size: 22px;  
+    line-height: 28px; 
+  }
+  .time_email > input {
+    height: 40px;
+    width: 250px;  
+  }  
+  .time_container_right {
+   right: 50px;
+    top: 7px;
+    width: 50%; 
+  }  
+  .time_container_right .time_number > label {
+    font-size: 22px;  
+    line-height: 28px;    
+  }  
+  .time_container_right .time_number > input {
+    width: 250px;    
+  }
+  .time_container_right .time_based > label {
+    font-size: 22px;
+    line-height: 28px; 
+  }  
+  .time_container_right .time_based > input {
+     width: 250px;
+   }
+  .time_text {  
+    top: 293px;
+    width: 80%;
+  }
+  .time_text > label {   
+    font-size: 22px;
+    line-height: 28px;  
+  }
+  .time_text > textarea {  
+    height: 175px;
+    }
+  .time_text2 {
+    top: 570px;
+    width: 80%;
+  }  
+  .time_text2 > label {   
+    font-size: 22px;   
+    line-height: 28px;
+  }
+  .time_text2 > textarea {
+    width: 100%;
+    height: 110px;  
+  }  
+  .time_submit { 
+    top: 780px;
+    width: 90%;
+    left: 40%;
+  }  
+  .time_submit_sub {
+    height: 40px;
+    width: 132px;   
+    font-size: 22px; 
+    line-height: 28px;
+    } 
+}
+
+@media only screen and (max-width: 360px) {
+  .donate_time_modal{   
+    margin-top: 280px;
+    margin-left: 25%;  
+  }
+  .donate_your_time_form {
+    height: 200px;   
+  }
+  .donete_your_time_form_title {   
+    height: 200px; 
+    font-size: 28px;
+    padding-top: 125px;      
+  }
+  .donate_your_time_form_container { 
+    height: 910px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  #time_container {  
+    padding: 10px 10px;  
+  }
+  .time_container {   
+    left: 10px;
+    top: 10px;
+    width: 50%;
+    margin: 5px 5px;  
+  }
+  .time_name > label {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;    
+  }
+  .time_container .time_name > input {
+    height: 30px;
+    width: 280px;  
+  }  
+  .time_email{
+    margin-top:315px;   
+  }
+  .time_email > label {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .time_email > input {
+    height: 30px;
+    width: 280px;  
+  }
+  .time_container_right {
+    margin: 5px 5px; 
+    left: 10px;
+    top: 140px;
+    width: 70%;  
+  }  
+  .time_container_right .time_number > label {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+  }  
+  .time_container_right .time_number > input {
+    height: 30px;
+    width: 280px;
+   }  
+  .time_container_right .time_based > label {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+  }  
+  .time_container_right .time_based > input {
+    height: 30px;
+    width: 280px;  
+  }  
+  .time_text { 
+    top: 420px;
+    width: 80%;
+    margin: 5px 5px;
+  }
+  .time_text > label {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .time_text > textarea {
+    width: 95%;
+    height: 135px;   
+    padding:10px 10px;
+    }
+    .time_text2 { 
+    top: 680px;
+    width: 80%;
+  }  
+  .time_text2 > label {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 26px;
+  }
+  .time_text2 > textarea {  
+    width: 95%;
+    height: 100px;   
+    padding:10px 10px;  
+  }
+  
+  .time_submit {
+    position: absolute;
+    top: 850px;
+    width: 80%;
+    left: 30%;
+  }  
+  .time_submit_sub {
+    height: 35px;
+    width: 100px; 
+    font-size: 20px;   
+    font-weight: 300;
+    line-height: 22px;
+  } 
+
 }
