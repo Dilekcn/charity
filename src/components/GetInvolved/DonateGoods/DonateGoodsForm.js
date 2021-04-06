@@ -3,10 +3,12 @@ import imageHeader from './Rectangle 26.png';
 import './DonateGoodsForm.css';
 import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 
 const DonateGoodsForm = () => {
 	const [modalIsOpen, setModalIsOpen] = useState(false);
-	const [name, setName] = useState('');
+	const [firstName, setFirstName] = useState('');
+	const [lastName, setLastName] = useState('');
 	const [phone, setPhone] = useState('');
 	const [email, setEmail] = useState('');
 	const [typeOfGoods, setTypeOfGoods] = useState('');
@@ -25,7 +27,24 @@ const DonateGoodsForm = () => {
 	};
 
 	const submitForm = (e) => {
-		setName('');
+		e.preventDefault();
+		axios
+			.post('https://mern-brothers.herokuapp.com/goods-donation', {
+				firstname: firstName,
+				lastname: lastName,
+				email: email,
+				phone: phone,
+				type_of_goods: typeOfGoods,
+				number_of_pieces: numberOfPieces,
+				adress: address,
+				post_code: postCode,
+				instructions_for_the_driver: instructions,
+			})
+			.then((res) => console.log(res))
+			.catch((err) => console.log(err));
+
+		setFirstName('');
+		setLastName('');
 		setPhone('');
 		setEmail('');
 		setTypeOfGoods('');
@@ -34,7 +53,6 @@ const DonateGoodsForm = () => {
 		setPostCode('');
 		setInstructions('');
 		setModalIsOpen(true);
-		e.preventDefault();
 	};
 
 	return (
@@ -54,19 +72,39 @@ const DonateGoodsForm = () => {
 					<div className="donate-goods-form">
 						<div className="donate-goods-form-left">
 							<div>
-								<label>Full Name</label>
+								<label>First Name</label>
 								<input
 									type="text"
-									placeholder="Enter your full name"
-									value={name}
-									onChange={(e) => setName(e.target.value)}
+									placeholder="Enter your first name"
+									value={firstName}
+									onChange={(e) => setFirstName(e.target.value)}
 									required
 								/>
 							</div>
 							<div>
-								<label>Contact Number</label>
+								<label>Last Name</label>
 								<input
 									type="text"
+									placeholder="Enter your last name"
+									value={lastName}
+									onChange={(e) => setLastName(e.target.value)}
+									required
+								/>
+							</div>
+							<div className="donate-goods-form-contact-no">
+								<label>
+									Contact Number{' '}
+									<span
+										className="donate-goods-form-contact-no-format"
+										style={{ fontSize: '14px' }}
+									>
+										<i>(Format XXX-XXXX-XXXX)</i>
+									</span>
+								</label>
+								<input
+									type="tel"
+									className="donate-goods-form-contact-no-input"
+									pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
 									placeholder="Enter contact number"
 									value={phone}
 									onChange={(e) => setPhone(e.target.value)}
@@ -144,6 +182,7 @@ const DonateGoodsForm = () => {
 						<button
 							type="submit"
 							className="donate-goods-form-submit-btn"
+							onClick={() => window.scroll(0, 0)}
 						>
 							Submit
 						</button>
@@ -174,7 +213,7 @@ const DonateGoodsForm = () => {
 					},
 				}}
 			>
-				Thank you! Your donation is currently under review.Once approved,
+				Thank you! Your donation is currently under review. Once approved,
 				you will be contacted via email regarding the collection time in
 				your area.
 				<br />
@@ -182,7 +221,10 @@ const DonateGoodsForm = () => {
 				<button
 					to="/getinvolved/donategoods-form"
 					className="donate-goods-form-btn-popup"
-					onClick={() => makeAnotherDonation()}
+					onClick={() => {
+						makeAnotherDonation();
+						window.scroll(0, 0);
+					}}
 				>
 					Make Another Donation
 				</button>
