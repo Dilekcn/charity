@@ -64,9 +64,11 @@
 }
 
 .donate-goods-form-left > div > label {
-	font-size: 24px;
-	color: #000;
-	font-weight: normal;
+	margin-bottom: 1%;
+	color: #347ca5;
+	font-size: medium;
+	font-weight: bold;
+	margin-top: 5px;
 }
 
 .donate-goods-form-left > div > input {
@@ -93,9 +95,11 @@
 }
 
 .donate-goods-form-right > div > label {
-	font-size: 24px;
-	color: #000;
-	font-weight: normal;
+	margin-bottom: 1%;
+	color: #347ca5;
+	font-size: medium;
+	font-weight: bold;
+	margin-top: 5px;
 }
 
 .donate-goods-form-right > div > textarea {
@@ -137,8 +141,8 @@
 	border: none;
 	background: #f49131;
 	color: #fff;
-	padding: 15px;
-	font-size: 24px;
+	padding: 8px;
+	font-size: 20px;
 	width: 150px;
 }
 
