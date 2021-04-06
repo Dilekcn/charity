@@ -11,6 +11,13 @@
 
 #form {
 	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#form-footer {
+	display: flex;
 	justify-content: center;
 	align-items: center;
 }
@@ -57,8 +64,12 @@
 	font-family: Roboto;
 	font-size: 24px;
 	color: white;
-	padding-left: 15px;
+	padding-left: 5px;
 	padding-top: 30px;
+}
+
+.newsletter-saved-message {
+	color: white;
 }
 
 .footer-nav {
