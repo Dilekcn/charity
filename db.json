@@ -157,6 +157,14 @@
       "email": "devleth@gmail.com",
       "password": "1234",
       "id": 7
+    },
+    {
+      "firstname": "Elif",
+      "lastname": "Balci",
+      "username": "elifbalci",
+      "email": "e@gmail.com",
+      "password": "1234",
+      "id": 8
     }
   ],
   "medias": [
@@ -300,6 +308,30 @@
       "id": 3
     },
     {
+<<<<<<< HEAD
+      "firstname": "09",
+      "lastname": "09",
+      "email": "09@gmail.com",
+      "phone": "902-1234-1234",
+      "type_of_goods": "09",
+      "number_of_pieces": "09",
+      "adress": "9009",
+      "post_code": "fdghf",
+      "instructions_for_the_driver": "0990",
+      "id": 4
+    },
+    {
+      "firstname": "abc",
+      "lastname": "a",
+      "email": "1@gmail.com",
+      "phone": "123-4563-5078",
+      "type_of_goods": "fgfh",
+      "number_of_pieces": "5",
+      "adress": "gfdhgfd",
+      "post_code": "gfdh",
+      "instructions_for_the_driver": "fghgfdh",
+      "id": 5
+=======
       "firstname": "a",
       "lastname": "a",
       "email": "a@a.com",
@@ -310,6 +342,7 @@
       "post_code": "asd",
       "instructions_for_the_driver": "asdas",
       "id": 4
+>>>>>>> 4b1bff000664f9487c07a1b7e1dec47ef9ae3a95
     }
   ],
   "gift-card-donation": [
@@ -358,6 +391,15 @@
       "based_in": "London",
       "interested_in": "Teaching English",
       "comments": ""
+    },
+    {
+      "fullname": "Dilek CANTURK",
+      "email": "can@gmail.com",
+      "phone": "012-3456-7890",
+      "based": "glasgow",
+      "text": "fdhyftgh",
+      "text1": "fgdhfgh",
+      "id": 4
     }
   ],
   "ambassadors": [
