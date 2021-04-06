@@ -21,15 +21,29 @@ import Ambassador from '../GetInvolved/BeAnAmbassador/Ambassador';
 import AmbassadorForm from '../GetInvolved/BeAnAmbassador/AmbassadorForm';
 import DonateYourTime from '../GetInvolved/DonateYourTime/DonateYourTime'
 import DonateYourTimeForm from '../GetInvolved/DonateYourTime/DonateYourTimeForm'
+import SearchResults from '../Header/SearchResults/SearchResults';
 
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
+	const [searchResults, setSearchResults] = useState([])
+
+	const searchFunc = async (val) => {
+		let results = []
+		for (let i =0; i < val.length; i++) {
+            await axios
+			.get(`http://localhost:4000/posts/${val[i]}`)
+			.then((res) => results.push(res.data))
+			.catch((err) => console.log(err));
+        }
+
+		setSearchResults(results)
+	}
 
 	return (
 		<div>
 			<Router>
-			<Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
+			<Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} searchFunc={searchFunc}/>
 				<Switch>
 				
 					<Route
@@ -101,6 +115,7 @@ export default function App() {
 						path="/getinvolved/beanambassador-form"
 						render={() => <AmbassadorForm />}
 					/>
+					<Route exact path="/search-results" render={() => <SearchResults searchResults={searchResults}/>}/>
 				</Switch>
 
 				<Footer />
