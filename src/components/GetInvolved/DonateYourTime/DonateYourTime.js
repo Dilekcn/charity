@@ -4,15 +4,11 @@ import "./DonateYourTime.css";
 import { Link, useHistory } from 'react-router-dom';
 
 
-<<<<<<< HEAD
+
 const DonateYourTime = () => {
   useEffect(() => {
     window.scroll(0, 0);
    }, []);
-=======
-const DonateYourTime = ({isLoggedIn}) => {
-  const history = useHistory()
->>>>>>> 4b1bff000664f9487c07a1b7e1dec47ef9ae3a95
   return (
     <div id="donate_your_time">
         <div className="donate_your_time">
