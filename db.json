@@ -410,5 +410,19 @@
       "interest_area": "advertise",
       "comments": ""
     }
+  ],
+  "subscribers": [
+    {
+      "id": "1",
+      "first_name": "Elif",
+      "last_name": "Balci",
+      "email": "elif@gmail.com"
+    },
+    {
+      "first_name": "Mustafa",
+      "last_name": "Balci",
+      "email": "mustafa@gmail.com",
+      "id": "WSwgziO"
+    }
   ]
 }
