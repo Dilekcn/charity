@@ -3,6 +3,7 @@ import imageHeader from '../DonateGoods/Rectangle 26.png';
 import './DonateGiftCard.css';
 import Modal from 'react-modal'
 import {useHistory} from 'react-router';
+import axios from 'axios';
 
 const customStyles = {
     content : {
@@ -56,8 +57,18 @@ const GiftCard = () => {
 		window.scroll(0, 0);
 	}, []);
 
-	const submit = (e) => {
+	const submit = async (e) => {
 		e.preventDefault();
+		await axios.post('http://localhost:4000/gift-card-donation', {
+			type_of_card: type,
+			card_number: number,
+			security_code: code,
+			amount: balance,
+			expriration_date: expiration,
+			post_code: postcode,
+			add_info: info,
+			user_id: JSON.parse(sessionStorage.getItem('userInfo')).id
+		}).then(res => console.log(res.data)).catch(err => console.log(err))
 		setCheckbox(false);
 		setType('');
 		setNumber('');

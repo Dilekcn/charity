@@ -3,6 +3,7 @@ import logo from './images/img.png';
 import './Header.css';
 import { AiOutlineSearch } from 'react-icons/ai';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { Link } from 'react-router-dom';
 
 const Header = ({ isLoggedIn, setIsLoggedIn }) => {
 	return (
@@ -32,24 +33,26 @@ const Header = ({ isLoggedIn, setIsLoggedIn }) => {
 			<nav className="header-nav">
 				<ul className="header-nav-links">
 					<li>
-						<a href="/getInvolved">Get Involved</a>
+						<Link to="/getInvolved">Get Involved</Link>
 					</li>
 					<li>
-						<a href="/campaigns&news">Campaigns & News</a>
+						<Link to="/campaigns&news">Campaigns & News</Link>
 					</li>
 					<li>
-						<a href="/aboutus">About Us</a>
+						<Link to="/aboutus">About Us</Link>
 					</li>
 					<li>
-						<a
-							href="/login"
-							onClick={(e) =>
-								e.target.textContent == 'Log Out' &&
-								setIsLoggedIn(false)
-							}
+						<Link
+							to="/login"
+							onClick={(e) => {
+								if(e.target.textContent == 'Log Out'){
+									setIsLoggedIn(false)
+									sessionStorage.removeItem('userInfo')
+								}
+							}}
 						>
 							{isLoggedIn ? 'Log Out' : 'Log In'}
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</nav>

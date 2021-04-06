@@ -1,10 +1,10 @@
 import React, {useState,useEffect} from "react";
 import "./DonateYourTimeForm.css";
 import Modal from 'react-modal';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
-const DonateYourTimeForm = () => {
+const DonateYourTimeForm = ({isLoggedIn}) => {
   
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [fullname,setFullname] =useState('');
@@ -13,9 +13,14 @@ const DonateYourTimeForm = () => {
   const [based,setBased] =useState('');
   const [text,setText] =useState('');
   const [text1,setText1]=useState('');
+  const history = useHistory()
 
   const submitForm = (e) => {
 		setFullname('');
+    if(!isLoggedIn) {
+      history.push('/login')
+      return
+    }
 		setEmail('');
 		setPhone('');
 		setBased('');

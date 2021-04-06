@@ -334,6 +334,17 @@
       "expiration_date": "01.01.2022",
       "post_code": "NW5 3AN",
       "add_info": ""
+    },
+    {
+      "type_of_card": "Ismail's Gift Card",
+      "card_number": "1234567890123456",
+      "security_code": "123",
+      "amount": "150",
+      "expriration_date": "15/04",
+      "post_code": "10431",
+      "add_info": "Hello",
+      "user_id": 2,
+      "id": 4
     }
   ],
   "time-donation": [

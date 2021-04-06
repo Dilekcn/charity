@@ -1,10 +1,11 @@
 import React from "react";
 
 import "./DonateYourTime.css";
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
-const DonateYourTime = () => {
+const DonateYourTime = ({isLoggedIn}) => {
+  const history = useHistory()
   return (
     <div id="donate_your_time">
         <div className="donate_your_time">
@@ -50,7 +51,7 @@ const DonateYourTime = () => {
         </div>
 <br/>
         <div className="donate_time_btn">
-          <Link 	to="/getinvolved/donateyourtime-form" className="donate_time_your_btn">Apply</Link>
+          <Link 	to={isLoggedIn ? "/getinvolved/donateyourtime-form" : "/login"} className="donate_time_your_btn">Apply</Link>
         </div>
       </div>
     </div>

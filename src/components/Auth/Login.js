@@ -13,6 +13,7 @@ const Login = ({setIsLoggedIn}) => {
 
 	useEffect(
 		() => {
+			window.scroll(0, 0)
 			axios
 				.get('http://localhost:4000/users')
 				.then((res) => {
@@ -49,9 +50,11 @@ const Login = ({setIsLoggedIn}) => {
 				if(res.data[i].email === email && res.data[i].password === password) {
 					setUserExist(true)
 					setIsLoggedIn(true)
+					sessionStorage.setItem('userInfo', JSON.stringify(res.data[i]))
 				} else if(res.data[i].username === email && res.data[i].password === password) {
 					setUserExist(true)
 					setIsLoggedIn(true)
+					sessionStorage.setItem('userInfo', JSON.stringify(res.data[i]))
 				} else {
 					setUserExist(false)
 					document.querySelector('.valid').textContent = 'Invalid email or password!'

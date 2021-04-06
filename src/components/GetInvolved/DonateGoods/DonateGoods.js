@@ -4,7 +4,7 @@ import imageHeader from './Rectangle 26.png';
 import image2 from './nick-de-partee-5DLBoEX99Cs-unsplash 1 (1).png';
 import image1 from './nick-de-partee-5DLBoEX99Cs-unsplash 1.png';
 import Modal from 'react-modal';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const customStyles = {
 	content: {
@@ -30,8 +30,9 @@ const customStyles = {
 	},
 };
 
-const DonateGoods = () => {
+const DonateGoods = ({isLoggedIn}) => {
 	const [modalIsOpen, setIsOpen] = React.useState(false);
+	const history = useHistory()
 
 	function closeModal() {
 		setIsOpen(false);
@@ -80,7 +81,7 @@ const DonateGoods = () => {
 				</div>
 				<div className="donate-goods-btn-div">
 					<Link
-						to="/getinvolved/donategoods-form"
+						to={isLoggedIn ? "/getinvolved/donategoods-form" : "/login"}
 						className="donate-goods-btn"
 					>
 						Donate Goods Now
