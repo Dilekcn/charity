@@ -36,7 +36,7 @@ const DonateGoodsForm = () => {
 				phone: phone,
 				type_of_goods: typeOfGoods,
 				number_of_pieces: numberOfPieces,
-				adress: address,
+				address: address,
 				post_code: postCode,
 				instructions_for_the_driver: instructions,
 			})

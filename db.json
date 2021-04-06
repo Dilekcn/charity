@@ -165,6 +165,14 @@
       "email": "e@gmail.com",
       "password": "1234",
       "id": 8
+    },
+    {
+      "firstname": "Mehmet",
+      "lastname": "Mehmet",
+      "username": "Mehmet",
+      "email": "mehmet@gmail.com",
+      "password": "1234",
+      "id": 9
     }
   ],
   "medias": [
@@ -343,7 +351,7 @@
       "expiration_date": "01.01.2022",
       "post_code": "NW5 3AN",
       "add_info": ""
-    }, 
+    },
     {
       "id": 3,
       "user_id": 3,
