@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import Donate from '../Donate/Donate';
-
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 import Login from '../Auth/Login';
@@ -19,33 +18,35 @@ import GiftCard from '../GetInvolved/DonateGiftCard/GiftCard';
 import DonateGoodsForm from '../GetInvolved/DonateGoods/DonateGoodsForm';
 import Ambassador from '../GetInvolved/BeAnAmbassador/Ambassador';
 import AmbassadorForm from '../GetInvolved/BeAnAmbassador/AmbassadorForm';
-import DonateYourTime from '../GetInvolved/DonateYourTime/DonateYourTime'
-import DonateYourTimeForm from '../GetInvolved/DonateYourTime/DonateYourTimeForm'
+import DonateYourTime from '../GetInvolved/DonateYourTime/DonateYourTime';
+import DonateYourTimeForm from '../GetInvolved/DonateYourTime/DonateYourTimeForm';
 import SearchResults from '../Header/SearchResults/SearchResults';
-
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
-	const [searchResults, setSearchResults] = useState([])
+	const [searchResults, setSearchResults] = useState([]);
 
 	const searchFunc = async (val) => {
-		let results = []
-		for (let i =0; i < val.length; i++) {
-            await axios
-			.get(`http://localhost:4000/posts/${val[i]}`)
-			.then((res) => results.push(res.data))
-			.catch((err) => console.log(err));
-        }
+		let results = [];
+		for (let i = 0; i < val.length; i++) {
+			await axios
+				.get(`http://localhost:4000/posts/${val[i]}`)
+				.then((res) => results.push(res.data))
+				.catch((err) => console.log(err));
+		}
 
-		setSearchResults(results)
-	}
+		setSearchResults(results);
+	};
 
 	return (
 		<div>
 			<Router>
-			<Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} searchFunc={searchFunc}/>
+				<Header
+					isLoggedIn={isLoggedIn}
+					setIsLoggedIn={setIsLoggedIn}
+					searchFunc={searchFunc}
+				/>
 				<Switch>
-				
 					<Route
 						exact
 						path="/"
@@ -79,23 +80,27 @@ export default function App() {
 						path="/newsdetail/:id"
 						render={() => <NewsDetail />}
 					/>
-					<Route exact path="/getinvolved" render={() => <GetInvolved isLoggedIn={isLoggedIn}/>} />
+					<Route
+						exact
+						path="/getinvolved"
+						render={() => <GetInvolved isLoggedIn={isLoggedIn} />}
+					/>
 					<Route
 						exact
 						path="/getinvolved/donategoods"
-						render={() => <DonateGoods isLoggedIn={isLoggedIn}/>}
+						render={() => <DonateGoods isLoggedIn={isLoggedIn} />}
 					/>
 					<Route
 						exact
 						path="/getinvolved/donategoods-form"
-						render={() => <DonateGoodsForm isLoggedIn={isLoggedIn}/>}
+						render={() => <DonateGoodsForm isLoggedIn={isLoggedIn} />}
 					/>
-	<Route
+					<Route
 						exact
 						path="/getinvolved/donateyourtime"
-						render={() => <DonateYourTime isLoggedIn={isLoggedIn}/>}
+						render={() => <DonateYourTime isLoggedIn={isLoggedIn} />}
 					/>
-						<Route
+					<Route
 						exact
 						path="/getinvolved/donateyourtime-form"
 						render={() => <DonateYourTimeForm />}
@@ -103,19 +108,23 @@ export default function App() {
 					<Route
 						exact
 						path="/getinvolved/donate-with-gift-card"
-						render={() => <GiftCard isLoggedIn={isLoggedIn}/>}
+						render={() => <GiftCard isLoggedIn={isLoggedIn} />}
 					/>
 					<Route
 						exact
 						path="/getinvolved/beanambassador"
-						render={() => <Ambassador isLoggedIn={isLoggedIn}/>}
+						render={() => <Ambassador isLoggedIn={isLoggedIn} />}
 					/>
 					<Route
 						exact
 						path="/getinvolved/beanambassador-form"
 						render={() => <AmbassadorForm />}
 					/>
-					<Route exact path="/search-results" render={() => <SearchResults searchResults={searchResults}/>}/>
+					<Route
+						exact
+						path="/search-results"
+						render={() => <SearchResults searchResults={searchResults} />}
+					/>
 				</Switch>
 
 				<Footer />
