@@ -5,7 +5,7 @@ import { Link, useHistory } from 'react-router-dom';
 
 
 
-const DonateYourTime = () => {
+const DonateYourTime = ({isLoggedIn}) => {
   useEffect(() => {
     window.scroll(0, 0);
    }, []);
