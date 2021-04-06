@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useLayoutEffect,useEffect } from 'react';
 import imageHeader from './Rectangle 26.png';
 import './DonateGoodsForm.css';
 import Modal from 'react-modal';
@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const DonateGoodsForm = () => {
+	
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
@@ -16,10 +17,14 @@ const DonateGoodsForm = () => {
 	const [address, setAddress] = useState('');
 	const [postCode, setPostCode] = useState('');
 	const [instructions, setInstructions] = useState('');
+	const [userId,setUserId]=useState(JSON.parse(sessionStorage.getItem('userInfo')).id)
+	
 
 	useLayoutEffect(() => {
 		window.scroll(0, 0);
 	}, []);
+
+
 
 	const makeAnotherDonation = () => {
 		window.scroll(0, 0);
@@ -29,7 +34,7 @@ const DonateGoodsForm = () => {
 	const submitForm = (e) => {
 		e.preventDefault();
 		axios
-			.post('https://mern-brothers.herokuapp.com/goods-donation', {
+			.post('http://localhost:4000/goods-donation', {
 				firstname: firstName,
 				lastname: lastName,
 				email: email,
@@ -39,10 +44,11 @@ const DonateGoodsForm = () => {
 				address: address,
 				post_code: postCode,
 				instructions_for_the_driver: instructions,
+				user_id: userId
 			})
 			.then((res) => console.log(res))
 			.catch((err) => console.log(err));
-
+		
 		setFirstName('');
 		setLastName('');
 		setPhone('');
@@ -53,6 +59,8 @@ const DonateGoodsForm = () => {
 		setPostCode('');
 		setInstructions('');
 		setModalIsOpen(true);
+		
+		
 	};
 
 	return (
