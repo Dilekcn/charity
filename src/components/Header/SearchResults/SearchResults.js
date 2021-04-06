@@ -2,7 +2,7 @@ import './SearchResults.css'
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
+ 
 const SearchResults = ({results, searchResults}) => {
 	// const {id} =useParams();
 	const [posts, setPosts] = useState([])
@@ -52,7 +52,7 @@ const SearchResults = ({results, searchResults}) => {
 							<tr className="news-area">
 								<td className="news-area-img">
 									{medias.map((media) =>
-										media.id === post.post_img_Id ? (
+										media.id === post.post_img_id ? (
 											<img src={media.media_url} alt="" />
 										) : null,
 									)}

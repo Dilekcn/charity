@@ -21,9 +21,9 @@ const NewsHomePage = () => {
 			.catch((err) => console.log(err));
 	}, []);
 
-	// const postImgId1 = posts[posts.length - 1].post_img_Id;
-	// const postImgId2 = posts[posts.length - 2].post_img_Id;
-	// const postImgId3 = posts[posts.length - 3].post_img_Id;
+	// const postImgId1 = posts[posts.length - 1].post_img_id;
+	// const postImgId2 = posts[posts.length - 2].post_img_id;
+	// const postImgId3 = posts[posts.length - 3].post_img_id;
 
 	return (
 		<div id="news-div">
@@ -32,7 +32,7 @@ const NewsHomePage = () => {
 			<div id="newsHomePage">
 				<div className="news">
 					{medias.map((media) =>
-						media.id === posts[posts.length - 1].post_img_Id ? (
+						posts.length !== 0 && media.id === posts[posts.length - 1].post_img_id ? (
 							<img
 								className="news-img"
 								src={media.media_url}
@@ -82,7 +82,7 @@ const NewsHomePage = () => {
 							</Link>
 						</div>
 						{medias.map((media) =>
-							media.id === posts[posts.length - 2].post_img_Id ? (
+							posts.length !== 0 && media.id === posts[posts.length - 2].post_img_id ? (
 								<img
 									className="news-img"
 									src={media.media_url}
@@ -102,7 +102,7 @@ const NewsHomePage = () => {
 				<div>
 					<div className="news">
 						{medias.map((media) =>
-							media.id === posts[posts.length - 3].post_img_Id ? (
+							posts.length !== 0 && media.id === posts[posts.length - 3].post_img_id ? (
 								<img
 									className="news-img"
 									src={media.media_url}
