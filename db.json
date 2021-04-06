@@ -157,6 +157,14 @@
       "email": "devleth@gmail.com",
       "password": "1234",
       "id": 7
+    },
+    {
+      "firstname": "Elif",
+      "lastname": "Balci",
+      "username": "elifbalci",
+      "email": "e@gmail.com",
+      "password": "1234",
+      "id": 8
     }
   ],
   "medias": [
