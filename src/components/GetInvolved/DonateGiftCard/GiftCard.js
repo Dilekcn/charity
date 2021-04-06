@@ -100,7 +100,7 @@ const GiftCard = () => {
 								required
 								value={number}
 								onChange={(e) => setNumber(e.target.value)}
-								type="number"
+								type="text"
 								id="giftcard-number"
 								name="giftcard-number"
 								placeholder="Enter the gift card number"
@@ -162,7 +162,7 @@ const GiftCard = () => {
 					<div className="giftcard-row5">
 						<label htmlFor="giftcard-info">
 							Please tell us if you have any additional information that may help us process your gift
-							card.
+							card. (optional)
 						</label>
 						<textarea
 							required
