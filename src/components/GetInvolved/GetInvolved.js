@@ -1,8 +1,17 @@
 import React, {useEffect} from 'react';
 import './GetInvolved.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
-const GetInvolved = () => {
+const GetInvolved = ({isLoggedIn}) => {
+    const history = useHistory()
+    const alertFunc = () => {
+        if(isLoggedIn) {
+            history.push("/getinvolved/donate-with-gift-card")
+        } else {
+            alert('Please login first.')
+            history.push('/login')
+        }
+    }
     useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
@@ -26,7 +35,7 @@ const GetInvolved = () => {
 
                 <div className="getInvolved_image">
                     <div className="getInvolved_image_img">
-                    <Link to='/getinvolved/donate-with-gift-card' className="getInvolved_image_img">
+                    <Link onClick={() => alertFunc()} className="getInvolved_image_img">
                         <span className="donate_good">Donate with a gift card</span>
                     </Link>
                     </div>

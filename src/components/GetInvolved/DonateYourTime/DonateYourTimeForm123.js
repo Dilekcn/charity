@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from "react";
 import "./DonateYourTimeForm.css";
 import Modal from 'react-modal';
+<<<<<<< HEAD:src/components/GetInvolved/DonateYourTime/DonateYourTimeForm123.js
 import { Link } from 'react-router-dom';
 import {useForm} from 'react-hook-form';
 
@@ -9,6 +10,37 @@ const DonateYourTimeForm = () => {
   const {register, handleSubmit}=useForm();
  
   const onSubmit =data=>console.log(data)
+=======
+import { Link, useHistory } from 'react-router-dom';
+
+
+const DonateYourTimeForm = ({isLoggedIn}) => {
+  
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [fullname,setFullname] =useState('');
+  const [email, setEmail]=useState('');
+  const [phone, setPhone]=useState('');
+  const [based,setBased] =useState('');
+  const [text,setText] =useState('');
+  const [text1,setText1]=useState('');
+  const history = useHistory()
+
+  const submitForm = (e) => {
+		setFullname('');
+    if(!isLoggedIn) {
+      history.push('/login')
+      return
+    }
+		setEmail('');
+		setPhone('');
+		setBased('');
+		setText('');
+		setText1('');
+		setModalIsOpen(true);
+		e.preventDefault();
+	};
+
+>>>>>>> 4b1bff000664f9487c07a1b7e1dec47ef9ae3a95:src/components/GetInvolved/DonateYourTime/DonateYourTimeForm12.js
   useEffect(() => {
 		window.scroll(0, 0);
 	}, []);

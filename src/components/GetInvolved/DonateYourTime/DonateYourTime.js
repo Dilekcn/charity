@@ -1,13 +1,18 @@
 import React,{useEffect} from "react";
 
 import "./DonateYourTime.css";
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 
+<<<<<<< HEAD
 const DonateYourTime = () => {
   useEffect(() => {
     window.scroll(0, 0);
    }, []);
+=======
+const DonateYourTime = ({isLoggedIn}) => {
+  const history = useHistory()
+>>>>>>> 4b1bff000664f9487c07a1b7e1dec47ef9ae3a95
   return (
     <div id="donate_your_time">
         <div className="donate_your_time">
@@ -53,7 +58,7 @@ const DonateYourTime = () => {
         </div>
 <br/>
         <div className="donate_time_btn">
-          <Link 	to="/getinvolved/donateyourtime-form" className="donate_time_your_btn">Apply</Link>
+          <Link 	to={isLoggedIn ? "/getinvolved/donateyourtime-form" : "/login"} className="donate_time_your_btn">Apply</Link>
         </div>
       </div>
     </div>

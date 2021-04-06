@@ -28,9 +28,10 @@ export default function App() {
 
 	return (
 		<div>
-			<Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 			<Router>
+			<Header isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
 				<Switch>
+				
 					<Route
 						exact
 						path="/"
@@ -64,41 +65,41 @@ export default function App() {
 						path="/newsdetail/:id"
 						render={() => <NewsDetail />}
 					/>
-					<Route exact path="/getinvolved" component={GetInvolved} />
+					<Route exact path="/getinvolved" render={() => <GetInvolved isLoggedIn={isLoggedIn}/>} />
 					<Route
 						exact
 						path="/getinvolved/donategoods"
-						component={DonateGoods}
+						render={() => <DonateGoods isLoggedIn={isLoggedIn}/>}
 					/>
 					<Route
 						exact
 						path="/getinvolved/donategoods-form"
-						component={DonateGoodsForm}
+						render={() => <DonateGoodsForm isLoggedIn={isLoggedIn}/>}
 					/>
 	<Route
 						exact
 						path="/getinvolved/donateyourtime"
-						component={DonateYourTime}
+						render={() => <DonateYourTime isLoggedIn={isLoggedIn}/>}
 					/>
 						<Route
 						exact
 						path="/getinvolved/donateyourtime-form"
-						component={DonateYourTimeForm}
+						render={() => <DonateYourTimeForm />}
 					/>
 					<Route
 						exact
 						path="/getinvolved/donate-with-gift-card"
-						component={GiftCard}
+						render={() => <GiftCard isLoggedIn={isLoggedIn}/>}
 					/>
 					<Route
 						exact
 						path="/getinvolved/beanambassador"
-						component={Ambassador}
+						render={() => <Ambassador isLoggedIn={isLoggedIn}/>}
 					/>
 					<Route
 						exact
 						path="/getinvolved/beanambassador-form"
-						component={AmbassadorForm}
+						render={() => <AmbassadorForm />}
 					/>
 				</Switch>
 

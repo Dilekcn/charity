@@ -300,6 +300,7 @@
       "id": 3
     },
     {
+<<<<<<< HEAD
       "firstname": "09",
       "lastname": "09",
       "email": "09@gmail.com",
@@ -322,6 +323,18 @@
       "post_code": "gfdh",
       "instructions_for_the_driver": "fghgfdh",
       "id": 5
+=======
+      "firstname": "a",
+      "lastname": "a",
+      "email": "a@a.com",
+      "phone": "111-1111-1111",
+      "type_of_goods": "asdasd",
+      "number_of_pieces": "1",
+      "adress": "11",
+      "post_code": "asd",
+      "instructions_for_the_driver": "asdas",
+      "id": 4
+>>>>>>> 4b1bff000664f9487c07a1b7e1dec47ef9ae3a95
     }
   ],
   "gift-card-donation": [
@@ -346,6 +359,17 @@
       "expiration_date": "01.01.2022",
       "post_code": "NW5 3AN",
       "add_info": ""
+    },
+    {
+      "type_of_card": "Ismail's Gift Card",
+      "card_number": "1234567890123456",
+      "security_code": "123",
+      "amount": "150",
+      "expriration_date": "15/04",
+      "post_code": "10431",
+      "add_info": "Hello",
+      "user_id": 2,
+      "id": 4
     }
   ],
   "time-donation": [
