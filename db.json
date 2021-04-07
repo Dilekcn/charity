@@ -308,7 +308,6 @@
       "id": 3
     },
     {
-<<<<<<< HEAD
       "firstname": "09",
       "lastname": "09",
       "email": "09@gmail.com",
@@ -331,18 +330,6 @@
       "post_code": "gfdh",
       "instructions_for_the_driver": "fghgfdh",
       "id": 5
-=======
-      "firstname": "a",
-      "lastname": "a",
-      "email": "a@a.com",
-      "phone": "111-1111-1111",
-      "type_of_goods": "asdasd",
-      "number_of_pieces": "1",
-      "adress": "11",
-      "post_code": "asd",
-      "instructions_for_the_driver": "asdas",
-      "id": 4
->>>>>>> 4b1bff000664f9487c07a1b7e1dec47ef9ae3a95
     }
   ],
   "gift-card-donation": [

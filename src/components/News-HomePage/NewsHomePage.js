@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const NewsHomePage = () => {
 	const [posts, setPosts] = useState([]);
-	const [medias, setMedias] = useState([]);
+	const [medias, setMedias] = useState();
 
 	useEffect(() => {
 		axios
@@ -21,9 +21,9 @@ const NewsHomePage = () => {
 			.catch((err) => console.log(err));
 	}, []);
 
-	// const postImgId1 = posts[posts.length - 1].post_img_Id;
-	// const postImgId2 = posts[posts.length - 2].post_img_Id;
-	// const postImgId3 = posts[posts.length - 3].post_img_Id;
+	// const postImgId1 = posts[posts.length - 1].post_img_id;
+	// const postImgId2 = posts[posts.length - 2].post_img_id;
+	// const postImgId3 = posts[posts.length - 3].post_img_id;
 
 	return (
 		<div id="news-div">
@@ -31,7 +31,7 @@ const NewsHomePage = () => {
 	
 			<div id="newsHomePage">
 				<div className="news">
-					{medias.map((media) =>
+					{medias && medias.map((media) =>
 						media.id === posts[posts.length - 1].post_img_Id ? (
 							<img
 								className="news-img"
@@ -81,7 +81,7 @@ const NewsHomePage = () => {
 								<span className="news-btn">Read More</span>
 							</Link>
 						</div>
-						{medias.map((media) =>
+						{medias && medias.map((media) =>
 							media.id === posts[posts.length - 2].post_img_Id ? (
 								<img
 									className="news-img"
@@ -101,8 +101,8 @@ const NewsHomePage = () => {
 
 				<div>
 					<div className="news">
-						{medias.map((media) =>
-							media.id === posts[posts.length - 3].post_img_Id ? (
+						{medias && medias.map((media) =>
+							media.id === posts[posts.length - 3].post_img_id ? (
 								<img
 									className="news-img"
 									src={media.media_url}
