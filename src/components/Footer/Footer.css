@@ -1,10 +1,6 @@
-* {
-	box-sizing: border-box;
-}
-
 #footer {
 	width: 100%;
-	height: 193px;
+	height: auto;
 	left: -1px;
 	background: #347ca5;
 }
@@ -80,14 +76,13 @@
 	padding: 10px 0px;
 	height: auto;
 	width: 100%;
-	font-family: Prociono;
 	color: #347ca5;
 	font-weight: 400;
-	font-size: 40px;
 }
 
-.footer-nav > ul > li > a {
-	padding-right: 15px;
+.footer-nav-links {
+	font-size: 20px;
+	padding: 8px 25px;
 }
 
 @media (max-width: 1237px) {
@@ -101,7 +96,7 @@
 	.form-input::placeholder {
 		font-size: 21px;
 		color: white;
-		padding-left: 15px;
+		padding-left: 5px;
 		padding-top: 25px;
 	}
 	#form-btn {
@@ -124,7 +119,7 @@
 	.form-input::placeholder {
 		font-size: 17px;
 		color: white;
-		padding-left: 15px;
+		padding-left: 5px;
 		padding-top: 20px;
 	}
 	#form-btn {
@@ -136,15 +131,18 @@
 }
 
 @media (max-width: 767px) {
+	#form-footer {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 	.footer-nav {
 		font-size: 10px;
 	}
 }
 
 @media (max-width: 450px) {
-	.footer-nav ul > li > a {
-		font-size: 10px;
-	}
 	.form-input {
 		width: 200px;
 		height: 28px;
@@ -156,7 +154,7 @@
 	.form-input::placeholder {
 		font-size: 17px;
 		color: white;
-		padding-left: 15px;
+		padding-left: 5px;
 		padding-top: 20px;
 	}
 	#form-btn {
@@ -170,9 +168,22 @@
 		font-size: 24px;
 		line-height: 35px;
 	}
+	.footer-nav-links {
+		font-size: 14px;
+	}
 }
 
-@media (max-width: 276px) {
+@media (max-width: 280px) {
+	#form {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	#form-title {
+		padding: 1.5% 0px;
+		font-size: 16px;
+		line-height: 27px;
+	}
 	.form-input {
 		width: 200px;
 		height: 28px;
@@ -184,24 +195,17 @@
 	.form-input::placeholder {
 		font-size: 13px;
 		color: white;
-		padding-left: 13px;
+		padding-left: 5px;
 		padding-top: 20px;
 	}
 	#form-btn {
 		width: 72px;
-		height: 36px;
+		height: 34px;
 		font-size: 18px;
 		line-height: 35px;
 	}
-	#form-title {
-		padding: 1.5% 0px;
-		font-size: 16px;
-		line-height: 27px;
-	}
-	#form {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding-bottom: 100px;
+
+	.footer-nav-links {
+		font-size: 12px;
 	}
 }
