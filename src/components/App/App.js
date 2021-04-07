@@ -21,6 +21,7 @@ import AmbassadorForm from '../GetInvolved/BeAnAmbassador/AmbassadorForm';
 import DonateYourTime from '../GetInvolved/DonateYourTime/DonateYourTime';
 import DonateYourTimeForm from '../GetInvolved/DonateYourTime/DonateYourTimeForm';
 import SearchResults from '../Header/SearchResults/SearchResults';
+import ContactUs from '../ContactUs/ContactUs';
 
 export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -125,6 +126,8 @@ export default function App() {
 						path="/search-results"
 						render={() => <SearchResults searchResults={searchResults} />}
 					/>
+
+					<Route exact path="/contact-us" component={ContactUs} />
 				</Switch>
 
 				<Footer />

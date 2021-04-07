@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Footer.css';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
 	const [firstName, setFirstName] = useState('');
@@ -77,12 +78,9 @@ const Footer = () => {
 					<li>
 						<a href="#cookies">Privacy & Cookies</a>
 					</li>
-					<li>
-						<a href="#contactus">Contact Us</a>
-					</li>
-					<li>
-						<a href="#access">Accesibility</a>
-					</li>
+
+					<Link to="/contact-us">Contact Us</Link>
+
 					<li>&copy;2021 SoftInnovas</li>
 				</ul>
 			</div>
