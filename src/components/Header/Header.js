@@ -28,9 +28,9 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 	}
 	return (
 		<div id="div-header">
-			<a href="/">
+			<Link to="/">
 				<img id="logo" src={logo} alt="logo" />
-			</a>
+			</Link>
 
 			<a href="/donate">
 				<button id="btn-donate">DONATE</button>
