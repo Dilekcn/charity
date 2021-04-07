@@ -1,204 +1,205 @@
 .donate-goods-text1 {
-    position: absolute;
-    top: 50%;
-    margin-right: auto;
-    margin-left: 25% !important;  
-    font-style: normal;
-    font-weight: normal;
-    font-size: 72px;
-    line-height: 84px;
-    color: #FFFFFF;
+	position: absolute;
+	top: 50%;
+	margin-right: auto;
+	margin-left: 25% !important;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 72px;
+	line-height: 84px;
+	color: #ffffff;
 }
 
 .giftcard-content {
-    display: flex;
-    justify-content: center;
-    background: #E5E5E5;
-    height: 100%;   
+	display: flex;
+	justify-content: center;
+	background: #e5e5e5;
+	height: 100%;
 }
 
 .giftcard-form {
-    display: block;
-    justify-content: center;
-    background: #E5E5E5;
-    height: 100%;
-    width: 70%; 
-
+	display: block;
+	justify-content: center;
+	background: #e5e5e5;
+	height: 100%;
+	width: 70%;
 }
 
 .giftcard-form label {
-    margin-bottom: 1%;
+	margin-bottom: 1%;
+	color: #347ca5;
+	font-size: medium;
+	font-weight: bold;
+	margin-top: 5px;
 }
 
-.giftcard-form input, .giftcard-form textarea {
-    border: none;
-    padding: 15px;
-    border-radius: 5px;
+.giftcard-form input,
+.giftcard-form textarea {
+	border: none;
+	padding: 15px;
+	border-radius: 5px;
 }
 
 .giftcard-row1 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 3%;
 }
 
 .giftcard-row2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-top: 3%;
 }
 
 .giftcard-row2 div {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
+	display: flex;
+	flex-direction: column;
+	width: 45%;
 }
 
 .giftcard-row3 {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 3%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	margin-top: 3%;
 }
 
 .giftcard-row3 div {
-    display: flex;
-    width: 45%;
-    flex-direction: column;
+	display: flex;
+	width: 45%;
+	flex-direction: column;
 }
 
 .giftcard-row4 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 3%;
 }
 
 .giftcard-row5 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 3%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 3%;
 }
 
 .giftcard-row6 {
-    display: flex;
-    margin-top: 3%;
-    border: 1px solid #347ca5;
-    padding: 5px;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    line-height: 35px;
-    border-radius: 5px;
+	display: flex;
+	margin-top: 3%;
+	border: 1px solid #347ca5;
+	padding: 5px;
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 35px;
+	border-radius: 5px;
 }
 
 .giftcard-row7 {
-    display: flex;
-    justify-content: center;
-    margin-top: 3%;
-    margin-bottom: 3%;
+	display: flex;
+	justify-content: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
 }
 
 .giftcard-row7 button {
-    background: #F49131;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    font-size: medium;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+	background: #f49131;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	color: #fff;
+	font-size: medium;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .girtcard-checkbox {
-    border: 1px solid blue;
-    margin-top: 5px;
-    margin-right: 1%;
+	border: 1px solid blue;
+	margin-top: 5px;
+	margin-right: 1%;
 }
 
-
 .modal-btn {
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-    background: #F49131;
-    color: #fff;
-    font-size: medium;
-    padding: 5px;
-    margin-top: 3%;
-    border: none;
-    border-radius: 5px;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #f49131;
+	color: #fff;
+	font-size: medium;
+	padding: 5px;
+	margin-top: 3%;
+	border: none;
+	border-radius: 5px;
 }
 
 @media only screen and (max-width: 1275px) {
-    .donate-goods-text1 {
-      margin-left: 20% !important;
-    }
+	.donate-goods-text1 {
+		margin-left: 20% !important;
+	}
 }
 
 @media only screen and (max-width: 1124px) {
-    .donate-goods-text1 {
-      margin-left: 15% !important;
-    }
+	.donate-goods-text1 {
+		margin-left: 15% !important;
+	}
 }
-
 
 @media only screen and (max-width: 885px) {
-    .donate-goods-text1 {
-        margin-right: auto;
-        font-size: 48px;
-    }
+	.donate-goods-text1 {
+		margin-right: auto;
+		font-size: 48px;
+	}
 
-    .giftcard-form {
-        width: 95%;
-    }
+	.giftcard-form {
+		width: 95%;
+	}
 
-    .donate-goods-text1 {
-        margin-left: 18% !important;
-      }
-}
-
-
-@media only screen and (max-width: 560px) {
-    .donate-goods-text1 {
-        margin-left: 18% !important;
-        font-size: xx-large !important;
-      }
-
-    .giftcard-form {
-        width: 95%;
-    }
+	.donate-goods-text1 {
+		margin-left: 18% !important;
+	}
 }
 
 @media only screen and (max-width: 560px) {
-    .donate-goods-text1 {
-        margin-left: 18% !important;
-        font-size: x-large !important;
-      }
+	.donate-goods-text1 {
+		margin-left: 18% !important;
+		font-size: xx-large !important;
+	}
+
+	.giftcard-form {
+		width: 95%;
+	}
+}
+
+@media only screen and (max-width: 560px) {
+	.donate-goods-text1 {
+		margin-left: 18% !important;
+		font-size: x-large !important;
+	}
 }
 
 @media only screen and (max-width: 361px) {
-    .giftcard-form label {
-        font-size: small;
-    }
+	.giftcard-form label {
+		font-size: small;
+	}
 
-    .giftcard-form input {
-        padding: 5px;
-    }
+	.giftcard-form input {
+		padding: 5px;
+	}
 
-    .giftcard-form input::placeholder {
-        font-size: 10px;
-    }
+	.giftcard-form input::placeholder {
+		font-size: 10px;
+	}
 
-    .giftcard-row6 {
-        font-size: 14px;
-        line-height: 1.5;
-    }
+	.giftcard-row6 {
+		font-size: 14px;
+		line-height: 1.5;
+	}
 
-    .donate-goods-text1 {
-        font-size: 28px !important;
-        margin-left: 10% !important;
-        margin-right: auto;
-    }
+	.donate-goods-text1 {
+		font-size: 28px !important;
+		margin-left: 10% !important;
+		margin-right: auto;
+	}
 }

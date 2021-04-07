@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './News.css';
 import axios from 'axios';
 
-const News = () => {
+const News = () => { 
 	// const {id} =useParams();
 	const [posts, setPosts] = useState([]);
 	const [medias, setMedias] = useState([]);
@@ -56,7 +56,7 @@ const News = () => {
 							<tr className="news-area">
 								<td className="news-area-img">
 									{medias.map((media) =>
-										media.id === post.post_img_Id ? (
+										media.id === post.post_img_id ? (
 											<img src={media.media_url} alt="" />
 										) : null,
 									)}

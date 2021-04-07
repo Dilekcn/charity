@@ -2,7 +2,7 @@ import './SearchResults.css'
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
-
+ 
 const SearchResults = ({results, searchResults}) => {
 	// const {id} =useParams();
 	const [posts, setPosts] = useState([])
@@ -30,16 +30,8 @@ const SearchResults = ({results, searchResults}) => {
 
 	return (
 		<div>
-			<div className="newss-bg-img"></div>
-			<div className="newss-text">
-				<span>
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry. Lorem Ipsum has been the industry's standard dummy text
-					ever since the 1500s, when an unknown printer took a galley of
-					type and scrambled it to make a type specimen book.{' '}
-				</span>
-			</div>
-			<div className="newss-header">
+			
+			<div style={{marginTop:"100px"}} className="newss-header">
 				<p>Search Results</p>
 			</div>
 			<table id="news-area">
@@ -52,7 +44,7 @@ const SearchResults = ({results, searchResults}) => {
 							<tr className="news-area">
 								<td className="news-area-img">
 									{medias.map((media) =>
-										media.id === post.post_img_Id ? (
+										media.id === post.post_img_id ? (
 											<img src={media.media_url} alt="" />
 										) : null,
 									)}
