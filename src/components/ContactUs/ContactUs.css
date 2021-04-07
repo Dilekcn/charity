@@ -1,12 +1,25 @@
+.contact-us-container {
+	display: flex;
+	justify-content: center;
+	height: auto;
+	margin: 30px;
+}
+
 .contact-us-intro-text {
 	text-align: center;
-	padding: 40px 0px;
+	padding: 30px 0px;
 }
 
 .contact-us-form-container {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
+	align-items: center;
 	height: auto;
+	flex: 5;
+	margin-right: 20px;
+	background-color: #e5e5e5;
+	border-radius: 3px;
 }
 
 .contact-us-form {
@@ -14,8 +27,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: left;
-	width: 60%;
-	background-color: #e5e5e5;
+	width: 80%;
+	background-color: lightgrey;
 	margin-bottom: 40px;
 	padding: 30px 0px 30px 40px;
 	border-radius: 5px;
@@ -61,4 +74,44 @@
 	font-size: 20px;
 	width: 150px;
 	margin: 10px auto;
+}
+
+.contact-us-communication {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #347ca5;
+	color: #fff;
+	flex: 3;
+	border-radius: 3px;
+	height: 80%;
+}
+
+.contact-us-communication-address-title {
+	text-align: center;
+	padding: 30px 0px;
+	font-weight: bolder;
+}
+
+.contact-us-communication-phone-title {
+	text-align: center;
+	padding: 80px 0px 30px 0px;
+	font-weight: bolder;
+}
+
+.contact-us-communication-follow-us-title {
+	text-align: center;
+	padding: 80px 0px 30px 0px;
+	font-weight: bolder;
+}
+
+.contact-us-communication-sm-logo-link {
+	margin: 0;
+}
+
+.contact-us-communication-sm-logo {
+	font-size: 33px;
+	margin: 5px;
+	fill: white;
+	margin-bottom: 40px;
 }

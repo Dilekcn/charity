@@ -86,9 +86,7 @@
 	font-size: 40px;
 }
 
-.footer-nav > ul,
-li,
-a {
+.footer-nav > ul > li > a {
 	padding-right: 15px;
 }
 
@@ -144,9 +142,7 @@ a {
 }
 
 @media (max-width: 450px) {
-	.footer-nav ul,
-	li,
-	a {
+	.footer-nav ul > li > a {
 		font-size: 10px;
 	}
 	.form-input {
