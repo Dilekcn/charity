@@ -189,6 +189,14 @@
       "email": "aslic@gmail.com",
       "password": "1234",
       "id": 11
+    },
+    {
+      "firstname": "black",
+      "lastname": "eagle",
+      "username": "blackeagle4894",
+      "email": "blackeagle4894@gmail.com",
+      "password": "123456",
+      "id": 12
     }
   ],
   "medias": [
