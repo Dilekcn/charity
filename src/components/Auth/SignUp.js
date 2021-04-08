@@ -21,7 +21,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 	useEffect(
 		() => {
 			axios
-				.get('http://localhost:4000/users')
+				.get('https://mern-brothers.herokuapp.com/users')
 				.then((res) => {
 					setUsers(res.data);
 				})
@@ -86,7 +86,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 
 			if (!existEmail) {
 				axios
-					.post('http://localhost:4000/users', {
+					.post('https://mern-brothers.herokuapp.com/users', {
 						firstname:name,
 						lastname:surname,
 						username:username,
@@ -95,6 +95,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 					})
 					.then((res) => {
 						window.scroll(0,0)
+						console.log(res)
 						document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
 						setTimeout(() => {
 							setIsLoggedIn(true)
@@ -114,7 +115,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 			}
 		}
 	
-
+		console.log(users)
 	return (
 		<div className="sign-up">
 			<div className="sign-up-body">
