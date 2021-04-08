@@ -27,22 +27,19 @@
 	height: 63px;
 	background-color: #347ca5;
 	border-radius: 10px;
-	font-family: Roboto;
 	font-size: 30px;
 	color: #fff;
 	border: none;
 	cursor: pointer;
 }
 
-.header-nav ul,
-li,
-a {
+.header-nav-links {
 	display: inline-block;
 	text-decoration: none;
 	list-style: none;
 	color: #347ca5;
 	font-size: 24px;
-	margin: 0px 8px;
+	margin: 0px 18px;
 }
 
 .header-search-container {
@@ -68,6 +65,11 @@ a {
 	border: none;
 	cursor: pointer;
 }
+
+.header-search-box-btn-icon {
+	font-size: 17px;
+}
+
 .header-search-box::placeholder {
 	color: #347ca5;
 	font-size: 12px;
@@ -79,10 +81,12 @@ a {
 	display: none;
 }
 
+.header-hamburger-menu-icon {
+	font-size: 30px;
+}
+
 @media (max-width: 1242px) {
-	.header-nav ul,
-	li,
-	a {
+	.header-nav-links {
 		font-size: 20px;
 	}
 	.header-search-box {
@@ -91,9 +95,7 @@ a {
 }
 
 @media (max-width: 1006px) {
-	.header-nav ul,
-	li,
-	a {
+	.header-nav-links {
 		font-size: 18px;
 		margin: 0px 6px;
 	}
@@ -125,9 +127,7 @@ a {
 		transition: all 0.5s ease;
 	}
 
-	.header-nav ul,
-	li,
-	a {
+	.header-nav-links {
 		display: block;
 		color: #347ca5;
 		font-size: 20px;
@@ -164,17 +164,46 @@ a {
 		display: flex;
 		justify-content: space-around;
 		align-items: center;
+		height: auto;
+		padding: 10px 0;
 	}
 	#logo {
 		margin: 0;
 	}
 
-	.header-nav ul,
-	li,
-	a {
+	.header-nav-links {
 		margin: 0px;
 	}
 	.header-search-box-btn {
 		width: 21px;
+	}
+}
+
+@media (max-width: 360px) {
+	#logo {
+		height: 27px;
+		width: 29px;
+		cursor: pointer;
+	}
+	#btn-donate {
+		width: auto;
+		height: auto;
+		border-radius: 5px;
+		font-size: 18px;
+		padding: 5px;
+	}
+	.header-search-box {
+		width: 100px;
+		height: 22px;
+		padding-left: 10px;
+		padding-right: 5px;
+		font-size: 10px;
+	}
+	.header-search-box-btn {
+		height: 22px;
+		width: 28px;
+	}
+	.header-hamburger-menu-icon {
+		font-size: 20px;
 	}
 }
