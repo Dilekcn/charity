@@ -10,24 +10,24 @@
   background-size: cover;
   background-position: center;
 }
-.getInvolved_text{
-width: 100%;
-height: 144px;
-background: #347CA5;
-display: flex;
-justify-content: center;
-align-items: center;
-padding-left: 15px;
-padding-right: 10px;
-font-family: Roboto;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: left;
-color:#fff;
 
+.getInvolved_text {
+  width: 100%;
+  height: 144px;
+  background: #347ca5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 10px;
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #fff;
 }
 .getInvolved_title {
   width: 100%;
@@ -39,37 +39,48 @@ color:#fff;
   font-size: 64px;
   line-height: 78px;
 }
-.getInvolved_images{
-    width: 100%;
-    height: 944px;
-    background: #E5E5E5;
-    display: flex;
-flex-direction:column;
-flex-wrap: wrap;
-justify-content: space-evenly;
-align-items: center;
+.getInvolved_images {
+  width: 100%;
+  height: 944px;
+  background: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
-.getInvolved_images .getInvolved_image{
-width: 433px;
-height: 348px;
-overflow: hidden;
-margin-left: 0px !important;
-margin-top: 0px !important;
+.getInvolved_images .getInvolved_image {
+  width: 433px;
+  height: 348px;
+  overflow: hidden;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
 }
-.getInvolved_image .getInvolved_image_img{
-    width: 100%;
-    height: 100%;
-    background-color: black; 
-    background-image: url("https://i.postimg.cc/K8XTGcZc/photo-1518949142393-f1d68174c92a.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 0px !important;
-margin-top: 0px !important;
-    
+.getInvolved_image .getInvolved_image_img {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: 0px !important;
+  margin-top: 0px !important;
+  border-radius: 3px;
+}
+.image_bg_goods {
+  background-image: url("https://i.postimg.cc/K8XTGcZc/photo-1518949142393-f1d68174c92a.jpg");
+}
+.image_bg_card {
+  background-image: url("https://i.postimg.cc/PJSzRPrq/aaron-doucett-Hkbe-Lx-OJlqk-unsplash.jpg");
+}
+.image_bg_time {
+  background-image: url("https://i.postimg.cc/5NtmFqnQ/joel-muniz-A4-Ax1-Apccf-A-unsplash.jpg");
+}
+.image_bg_ambassador {
+  background-image: url("https://i.postimg.cc/VsKq10mf/craig-philbrick-kfx-PVP-7-P7-U-unsplash.jpg");
 }
 .getInvolved_image:hover .getInvolved_image_img,
 .getInvolved_image:focus .getInvolved_image_img {
@@ -106,98 +117,89 @@ margin-top: 0px !important;
 }
 /*****************************************************/
 @media only screen and (max-width: 1024px) {
- 
-.getInvolved_img{   
-       height: 450px; 
-   }
-   .getInvolved_text{
- 
-   height: 100px;
+  .getInvolved_img {
+    height: 450px;
+  }
+  .getInvolved_text {
+    height: 100px;
     padding-left: 15px;
-   padding-right: 15px;
-   font-size: 18px;
-   line-height: 28px;
-   }
-   .getInvolved_title{
-   font-size: 60px;
-   }
-   .getInvolved_images{
-       width: 100%;
-       height: 800px;  
-   justify-content:space-around;
-  
-   }
-   .getInvolved_images .getInvolved_image{
-   width: 400px;
-   height: 350px;
-  
-   }
+    padding-right: 15px;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .getInvolved_title {
+    font-size: 60px;
+  }
+  .getInvolved_images {
+    width: 100%;
+    height: 800px;
+    justify-content: space-around;
+  }
+  .getInvolved_images .getInvolved_image {
+    width: 400px;
+    height: 350px;
+  }
+}
 
-    }
+@media only screen and (max-width: 768px) {
+  .getInvolved_img {
+    height: 380px;
+  }
+  .getInvolved_title {
+    font-size: 60px;
+  }
+  .getInvolved_images {
+    height: 550px;
+    width: 100%;
+    justify-content: space-around;
+  }
+  .getInvolved_images .getInvolved_image {
+    width: 350px;
+    height: 248px;
+  }
+  .getInvolved_image_img .donate_good {
+    font-size: 25px;
+  }
+}
 
+@media only screen and (max-width: 360px) {
+  .getInvolved_img {
+    margin-top: 70px;
+    height: 300px;
+  }
+  .getInvolved_text {
+    height: 140px;
+    padding-left: 3px;
+    padding-right: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+  .getInvolved_title {
+    height: 45px;
+    color: #347ca5;
+    font-size: 32px;
+    line-height: 34px;
+  }
+  .getInvolved_images {
+    height: 850px;
+  }
+  .getInvolved_images .getInvolved_image {
+    width: 280px;
+    height: 180px;
+  }
 
-    @media only screen and (max-width: 768px) {
-      
-.getInvolved_img{   
-       height: 380px;
-     }
-  .getInvolved_title{
-   font-size: 60px;
-    }
-   .getInvolved_images{
-       height: 550px;
-       width: 100%;
-       justify-content:space-around;   
-    
-   }
-   .getInvolved_images .getInvolved_image{  
-   width: 350px;
-   height: 248px;  
-   }
-   .getInvolved_image_img .donate_good{
-     font-size: 25px; 
-   }
-    }
-
-    @media only screen and (max-width: 360px) {
-      .getInvolved_img {
-        margin-top: 70px;
-        height: 300px;       
-      }
-      .getInvolved_text{  
-      height: 140px;     
-      padding-left: 3px;
-      padding-right: 8px;  
-      font-size: 14px;     
-      font-weight: 400;
-      line-height: 20px;   
-      
-      }
-      .getInvolved_title {      
-        height: 45px;
-        color: #347ca5;
-        font-size: 32px;
-        line-height: 34px;
-      }
-      .getInvolved_images{         
-          height: 850px;         
-      }
-      .getInvolved_images .getInvolved_image{
-      width: 280px;
-      height: 180px;     
-      }   
- 
-       .getInvolved_image_img .donate_good {
-        font-family: Prociono;
-        font-size: 24px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: 0em;
-        color: #fff;
-      }
-      .getInvolved_image_img .donate_good:hover {
-        font-size: 20px;
-        transform: scale(1.5, 1.5);
-      }
-    }
+  .getInvolved_image_img .donate_good {
+    font-family: Prociono;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    color: #fff;
+  }
+  .getInvolved_image_img .donate_good:hover {
+    font-size: 20px;
+    transform: scale(1.5, 1.5);
+  }
+}
