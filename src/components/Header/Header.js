@@ -29,10 +29,10 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 	}
 
 	useEffect(() => {
-		if (sessionStorage.getItem('userInfo') === null) {
-			sessionStorage.setItem('userInfo', JSON.stringify({firstname:"guest"}));
-		}	
-			setUserName(JSON.parse(sessionStorage.getItem('userInfo')).firstname.charAt(0).toUpperCase() + JSON.parse(sessionStorage.getItem('userInfo')).firstname.slice(1))
+		const info = JSON.parse(sessionStorage.getItem('userInfo'))
+		if(info) {
+			setUserName(info.firstname)
+		}
 	}, [])
 
 	return (
