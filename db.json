@@ -181,6 +181,14 @@
       "email": "mbalci85@gmail.com",
       "password": "123",
       "id": 10
+    },
+    {
+      "firstname": "asli",
+      "lastname": "asli",
+      "username": "asli",
+      "email": "aslic@gmail.com",
+      "password": "1234",
+      "id": 11
     }
   ],
   "medias": [
