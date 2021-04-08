@@ -205,6 +205,14 @@
       "email": "andrew@gmail.com",
       "password": "1234",
       "id": 13
+    },
+    {
+      "firstname": "Mehmet",
+      "lastname": "Yılmaz",
+      "username": "memo123",
+      "email": "memo@memo.com",
+      "password": "123",
+      "id": 14
     }
   ],
   "medias": [

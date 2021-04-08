@@ -71,7 +71,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 						Campaigns & News
 					</Link>
 
-					<Link to="/about-us" className="header-nav-links">
+					<Link to="/aboutus" className="header-nav-links">
 						About Us
 					</Link>
 

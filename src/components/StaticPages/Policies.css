@@ -1,0 +1,93 @@
+#privacytitle {
+  margin-left: 25%;
+}
+
+.policies-content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 10%;
+}
+
+.policies-content-title {
+  text-align: left;
+  width: 80%;
+  margin-top: 58px;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bolder;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 50px;
+  color: #000000;
+  font-size: 28px;
+}
+
+.policies-content-subtitle {
+  font-weight: bold;
+  width: 80%;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 50px;
+  color: #000000;
+  font-size: 24px;
+}
+
+.policies-content-text {
+  font-weight: normal;
+  width: 80%;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: Roboto;
+  font-style: normal;
+  line-height: 1.7;
+  color: #000000;
+  font-size: 20px;
+}
+
+@media (max-width: 1367px) {
+  #privacytitle {
+    margin-left: 22%;
+  }
+}
+
+@media (max-width: 768px) {
+  #privacytitle {
+    margin-left: 17%;
+  }
+}
+
+@media (max-width: 360px) {
+  #privacytitle {
+    margin-left: 8%;
+    font-size: 28px;
+  }
+  .policies-header {
+    height: 100px;
+  }
+  .policies-title {
+    font-size: 28px;
+  }
+
+  .policies-content-title {
+    margin-top: 58px;
+    line-height: 30px;
+    font-size: 22px;
+  }
+
+  .policies-content-subtitle {
+    margin-top: 10px;
+    line-height: 30px;
+    font-size: 18px;
+  }
+
+  .policies-content-text {
+    margin-top: 10px;
+    line-height: 1.7;
+    font-size: 14px;
+  }
+}
