@@ -1,209 +1,209 @@
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #logo {
-	height: 44px;
-	width: 48px;
-	cursor: pointer;
+  height: 44px;
+  width: 48px;
+  cursor: pointer;
 }
 
 #div-header {
-	position: fixed;
-	top: 0;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	width: 100%;
-	height: 100px;
-	z-index: 5;
-	background-color: white;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  z-index: 5;
+  background-color: white;
 }
 
 #btn-donate {
-	width: 153px;
-	height: 63px;
-	background-color: #347ca5;
-	border-radius: 10px;
-	font-size: 30px;
-	color: #fff;
-	border: none;
-	cursor: pointer;
+  width: 153px;
+  height: 63px;
+  background-color: #347ca5;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
 .header-nav-links {
-	display: inline-block;
-	text-decoration: none;
-	list-style: none;
-	color: #347ca5;
-	font-size: 24px;
-	margin: 0px 18px;
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  color: #347ca5;
+  font-size: 24px;
+  margin: 0px 18px;
 }
 
 .header-search-container {
-	display: flex;
+  display: flex;
 }
 
 .header-search-box {
-	width: 226px;
-	height: 27px;
-	background: #fff;
-	border: 1px solid #347ca5;
-	border-radius: 3px;
-	color: #347ca5;
-	padding-left: 10px;
-	padding-right: 5px;
+  width: 226px;
+  height: 27px;
+  background: #fff;
+  border: 1px solid #347ca5;
+  border-radius: 3px;
+  color: #347ca5;
+  padding-left: 10px;
+  padding-right: 5px;
 }
 
 .header-search-box-btn {
-	height: 27px;
-	width: 33px;
-	border-radius: 3px;
-	background-color: #347ca5;
-	border: none;
-	cursor: pointer;
+  height: 27px;
+  width: 33px;
+  border-radius: 3px;
+  background-color: #347ca5;
+  border: none;
+  cursor: pointer;
 }
 
 .header-search-box-btn-icon {
-	font-size: 17px;
+  font-size: 17px;
 }
 
 .header-search-box::placeholder {
-	color: #347ca5;
-	font-size: 12px;
-	padding-left: 2px;
+  color: #347ca5;
+  font-size: 12px;
+  padding-left: 2px;
 }
 
 #header-menu-checkbox,
 .header-menu-icon {
-	display: none;
+  display: none;
 }
 
 .header-hamburger-menu-icon {
-	font-size: 30px;
+  font-size: 30px;
 }
 
 @media (max-width: 1242px) {
-	.header-nav-links {
-		font-size: 20px;
-	}
-	.header-search-box {
-		width: 180px;
-	}
+  .header-nav-links {
+    font-size: 20px;
+  }
+  .header-search-box {
+    width: 180px;
+  }
 }
 
 @media (max-width: 1006px) {
-	.header-nav-links {
-		font-size: 18px;
-		margin: 0px 6px;
-	}
-	.header-search-box {
-		width: 180px;
-		box-sizing: border-box;
-	}
-	#btn-donate {
-		width: 111px;
-		height: 48px;
-		font-size: 22px;
-	}
+  .header-nav-links {
+    font-size: 18px;
+    margin: 0px 6px;
+  }
+  .header-search-box {
+    width: 180px;
+    box-sizing: border-box;
+  }
+  #btn-donate {
+    width: 111px;
+    height: 48px;
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 885px) {
-	.header-nav {
-		position: fixed;
-		display: flex;
-		justify-content: center;
-		z-index: 1;
-		right: -1000px;
-		height: auto;
-		top: 100px;
-		background-color: #fff;
-		text-align: left;
-		padding: 25px;
-		width: 100%;
-		text-align: center;
-		transition: all 0.5s ease;
-	}
+  .header-nav {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    right: -1000px;
+    height: auto;
+    top: 100px;
+    background-color: #fff;
+    text-align: left;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.5s ease;
+  }
 
-	.header-nav-links {
-		display: block;
-		color: #347ca5;
-		font-size: 20px;
-		margin: 8px 20px;
-		padding: 8px;
-		font-weight: bold;
-	}
+  .header-nav-links {
+    display: block;
+    color: #347ca5;
+    font-size: 20px;
+    margin: 8px 20px;
+    padding: 8px;
+    font-weight: bold;
+  }
 
-	#btn-donate {
-		width: 201px;
-		height: 58px;
-		font-size: 26px;
-	}
+  #btn-donate {
+    width: 201px;
+    height: 58px;
+    font-size: 26px;
+  }
 
-	.header-menu-icon {
-		display: block;
-	}
-	#header-menu-checkbox:checked ~ .header-nav {
-		right: 0px;
-	}
+  .header-menu-icon {
+    display: block;
+  }
+  #header-menu-checkbox:checked ~ .header-nav {
+    right: 0px;
+  }
 }
 
 @media (max-width: 608px) {
-	#btn-donate {
-		width: 111px;
-		height: 48px;
-		font-size: 24px;
-		margin: 0;
-	}
-	.header-search-box {
-		width: 120px;
-	}
-	#div-header {
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		height: auto;
-		padding: 10px 0;
-	}
-	#logo {
-		margin: 0;
-	}
+  #btn-donate {
+    width: 111px;
+    height: 48px;
+    font-size: 24px;
+    margin: 0;
+  }
+  .header-search-box {
+    width: 120px;
+  }
+  #div-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+  }
+  #logo {
+    margin: 0;
+  }
 
-	.header-nav-links {
-		margin: 0px;
-	}
-	.header-search-box-btn {
-		width: 21px;
-	}
+  .header-nav-links {
+    margin: 0px;
+  }
+  .header-search-box-btn {
+    width: 21px;
+  }
 }
 
 @media (max-width: 360px) {
-	#logo {
-		height: 27px;
-		width: 29px;
-		cursor: pointer;
-	}
-	#btn-donate {
-		width: auto;
-		height: auto;
-		border-radius: 5px;
-		font-size: 18px;
-		padding: 5px;
-	}
-	.header-search-box {
-		width: 100px;
-		height: 22px;
-		padding-left: 10px;
-		padding-right: 5px;
-		font-size: 10px;
-	}
-	.header-search-box-btn {
-		height: 22px;
-		width: 28px;
-	}
-	.header-hamburger-menu-icon {
-		font-size: 20px;
-	}
+  #logo {
+    height: 27px;
+    width: 29px;
+    cursor: pointer;
+  }
+  #btn-donate {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 5px;
+  }
+  .header-search-box {
+    width: 100px;
+    height: 22px;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-size: 10px;
+  }
+  .header-search-box-btn {
+    height: 22px;
+    width: 28px;
+  }
+  .header-hamburger-menu-icon {
+    font-size: 20px;
+  }
 }
