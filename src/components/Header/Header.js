@@ -33,7 +33,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 		if(info) {
 			setUserName(info.firstname)
 		}
-	}, [])
+	}, [isLoggedIn])
 
 	return (
 		<div id="div-header">
