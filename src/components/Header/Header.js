@@ -31,7 +31,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 	useEffect(() => {
 		const info = JSON.parse(sessionStorage.getItem('userInfo'))
 		if(info) {
-			setUserName(info.firstname)
+			setUserName(info.firstname.charAt(0).toUpperCase() + info.firstname.slice(1))
 		}
 	}, [isLoggedIn])
 
