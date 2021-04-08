@@ -114,10 +114,6 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 				setRefresh(!refresh);
 			}
 		}
-<<<<<<< HEAD
-=======
-	
->>>>>>> 866da05cb3e133dc41309d3a8096fbd30f4ab62b
 
 	return (
 		<div className="sign-up">
