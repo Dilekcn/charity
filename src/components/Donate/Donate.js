@@ -22,8 +22,8 @@ const Donate = () => {
       .catch((err) => console.log(err));
     setName("");
     setEmail("");
-    setMessage("");
-    e.preventDefault();
+    setMessage("");  
+    setCheckOut(true);
   };
 
   return (
@@ -82,17 +82,15 @@ const Donate = () => {
               <label htmlfor="submit">Payment</label>
               <br />
               <br />
-
+<button    type="submit" >dsfsdg</button>
               {checkout ? (
                 <Paypal />
               ) : (
                 <button
+                type="submit"
                   id="payment-button"
-                  value=""
-                  onClick={() => {
-                    setCheckOut(true);
+                  value=''
                  
-                  }}
                 ></button>
               )}
             </div>
