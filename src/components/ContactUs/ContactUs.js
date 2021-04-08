@@ -1,13 +1,11 @@
 import React, { useState, useLayoutEffect } from 'react';
 import './ContactUs.css';
-import imageHeader from '../GetInvolved/DonateGoods/Rectangle 26.png';
 import axios from 'axios';
 import {
 	AiFillFacebook,
 	AiFillTwitterSquare,
 	AiOutlineInstagram,
 } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 
 const ContactUs = () => {
 	useLayoutEffect(() => {
@@ -40,15 +38,8 @@ const ContactUs = () => {
 
 	return (
 		<div>
-			<div className="donate-goods-container">
-				<img
-					src={imageHeader}
-					alt="Avatar"
-					className="donate-goods-image"
-				/>
-				<div className="donate-goods-overlay">
-					<h1 className="donate-goods-text">Contact Us</h1>
-				</div>
+			<div className="contact-us-header-container">
+				<h1 className="contact-us-header-text">Contact Us</h1>
 			</div>
 			<div className="contact-us-container">
 				<div className="contact-us-form-container">

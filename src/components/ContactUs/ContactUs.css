@@ -1,3 +1,19 @@
+.contact-us-header-container {
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+	height: auto;
+	background-color: #347ca5;
+	padding: 40px;
+}
+
+.contact-us-header-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 72px;
+	line-height: 84px;
+	color: #fff;
+}
 .contact-us-container {
 	display: flex;
 	justify-content: center;
@@ -7,7 +23,7 @@
 
 .contact-us-intro-text {
 	text-align: center;
-	padding: 30px 0px;
+	padding: 30px 10px;
 }
 
 .contact-us-form-container {
@@ -89,8 +105,13 @@
 
 .contact-us-communication-address-title {
 	text-align: center;
-	padding: 30px 0px;
+	padding: 30px 10px;
 	font-weight: bolder;
+}
+
+.contact-us-communication-address-text {
+	padding: 0px 10px;
+	text-align: center;
 }
 
 .contact-us-communication-phone-title {
@@ -99,9 +120,13 @@
 	font-weight: bolder;
 }
 
+.contact-us-communication-phone-text {
+	padding: 0px 10px;
+}
+
 .contact-us-communication-follow-us-title {
 	text-align: center;
-	padding: 80px 0px 30px 0px;
+	padding: 80px 10px 30px 10px;
 	font-weight: bolder;
 }
 
@@ -114,4 +139,50 @@
 	margin: 5px;
 	fill: white;
 	margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+	.contact-us-header-container {
+		padding: 30px;
+	}
+
+	.contact-us-header-text {
+		font-size: 62px;
+		line-height: 74px;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact-us-header-container {
+		padding: 25px;
+	}
+
+	.contact-us-header-text {
+		font-size: 48px;
+		line-height: 60px;
+	}
+}
+
+@media (max-width: 608px) {
+	.contact-us-header-container {
+		margin-top: 68px;
+		padding: 18px;
+	}
+
+	.contact-us-header-text {
+		font-size: 38px;
+		line-height: 50px;
+	}
+}
+
+@media (max-width: 360px) {
+	.contact-us-header-container {
+		margin-top: 51px;
+		margin-right: 0;
+	}
+
+	.contact-us-header-text {
+		font-size: 30px;
+		line-height: 40px;
+	}
 }
