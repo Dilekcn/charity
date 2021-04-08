@@ -1,3 +1,20 @@
+.contact-us-header-container {
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+	height: auto;
+	background-color: #347ca5;
+	padding: 40px;
+	margin-right: 0px;
+}
+
+.contact-us-header-text {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 72px;
+	line-height: 84px;
+	color: #fff;
+}
 .contact-us-container {
 	display: flex;
 	justify-content: center;
@@ -7,7 +24,7 @@
 
 .contact-us-intro-text {
 	text-align: center;
-	padding: 30px 0px;
+	padding: 30px 10px;
 }
 
 .contact-us-form-container {
@@ -89,8 +106,13 @@
 
 .contact-us-communication-address-title {
 	text-align: center;
-	padding: 30px 0px;
+	padding: 30px 10px;
 	font-weight: bolder;
+}
+
+.contact-us-communication-address-text {
+	padding: 0px 10px;
+	text-align: center;
 }
 
 .contact-us-communication-phone-title {
@@ -99,9 +121,14 @@
 	font-weight: bolder;
 }
 
+.contact-us-communication-phone-text {
+	padding: 0px 10px;
+	text-align: center;
+}
+
 .contact-us-communication-follow-us-title {
 	text-align: center;
-	padding: 80px 0px 30px 0px;
+	padding: 80px 10px 30px 10px;
 	font-weight: bolder;
 }
 
@@ -114,4 +141,273 @@
 	margin: 5px;
 	fill: white;
 	margin-bottom: 40px;
+}
+
+@media (max-width: 1024px) {
+	.contact-us-header-container {
+		padding: 30px;
+	}
+
+	.contact-us-header-text {
+		font-size: 62px;
+		line-height: 74px;
+	}
+}
+
+@media (max-width: 768px) {
+	.contact-us-header-container {
+		padding: 25px;
+	}
+
+	.contact-us-header-text {
+		font-size: 48px;
+		line-height: 60px;
+	}
+}
+
+@media (max-width: 608px) {
+	.contact-us-header-container {
+		margin-top: 68px;
+		padding: 18px;
+	}
+
+	.contact-us-header-text {
+		font-size: 38px;
+		line-height: 50px;
+	}
+
+	.contact-us-container {
+		margin: 15px;
+	}
+
+	.contact-us-form-container {
+		margin-right: 15px;
+	}
+
+	.contact-us-form {
+		width: 90%;
+		margin-bottom: 40px;
+		padding: 20px 0px 20px 30px;
+		border-radius: 3px;
+	}
+}
+
+@media (max-width: 472px) {
+	.contact-us-form-container {
+		margin-right: 15px;
+	}
+
+	.contact-us-form {
+		width: 95%;
+		margin-bottom: 40px;
+		padding: 15px 0px 20px 15px;
+		border-radius: 3px;
+	}
+
+	.contact-us-intro-text {
+		font-size: 11px;
+		padding: 20px 10px;
+		line-height: 1.5;
+	}
+	.contact-us-form > input {
+		width: 95%;
+		height: 37px;
+		border-radius: 4px;
+	}
+
+	.contact-us-form > textarea {
+		width: 95%;
+		height: 150px;
+		border-radius: 4px;
+	}
+
+	.contact-us-form-submit-btn {
+		border-radius: 5px;
+		padding: 6px;
+		width: 120px;
+	}
+	.contact-us-communication {
+		height: 80%;
+	}
+
+	.contact-us-communication-address-title {
+		padding: 20px 10px;
+		font-size: 20px;
+	}
+
+	.contact-us-communication-address-text {
+		font-size: 13px;
+		line-height: 1.5;
+	}
+
+	.contact-us-communication-phone-title {
+		padding: 50px 0px 20px 0px;
+		font-size: 20px;
+	}
+
+	.contact-us-communication-phone-text {
+		font-size: 13px;
+		line-height: 1.5;
+	}
+
+	.contact-us-communication-follow-us-title {
+		font-size: 20px;
+		padding: 50px 10px 20px 10px;
+	}
+
+	.contact-us-communication-sm-logo {
+		font-size: 24px;
+		margin: 5px;
+		margin-bottom: 40px;
+	}
+}
+
+@media (max-width: 360px) {
+	.contact-us-header-container {
+		margin-top: 51px;
+		margin-right: 0;
+	}
+
+	.contact-us-header-text {
+		font-size: 30px;
+		line-height: 40px;
+	}
+
+	.contact-us-form {
+		width: 90%;
+		margin-bottom: 20px;
+	}
+
+	.contact-us-intro-text {
+		padding: 15px 10px;
+	}
+	.contact-us-form > input {
+		width: 95%;
+		height: 30px;
+		border-radius: 3px;
+		font-size: 11px;
+	}
+
+	.contact-us-form > label {
+		font-size: 13px;
+	}
+
+	.contact-us-form > input::placeholder {
+		font-size: 11px;
+	}
+
+	.contact-us-form > textarea {
+		width: 95%;
+		height: 120px;
+		border-radius: 3px;
+	}
+
+	.contact-us-form > textarea::placeholder {
+		font-size: 11px;
+	}
+
+	.contact-us-form-submit-btn {
+		border-radius: 3px;
+		padding: 4px;
+		width: 75px;
+		font-size: 16px;
+	}
+
+	.contact-us-communication-address-title {
+		padding: 15px 10px;
+		font-size: 16px;
+	}
+
+	.contact-us-communication-address-text {
+		font-size: 11px;
+	}
+
+	.contact-us-communication-phone-title {
+		padding: 30px 0px 20px 0px;
+		font-size: 16px;
+	}
+
+	.contact-us-communication-phone-text {
+		font-size: 11px;
+	}
+
+	.contact-us-communication-follow-us-title {
+		font-size: 16px;
+		padding: 30px 10px 20px 10px;
+	}
+
+	.contact-us-communication-sm-logo {
+		text-align: center;
+		font-size: 18px;
+		margin: 3px;
+		margin-bottom: 30px;
+	}
+}
+
+@media (max-width: 280px) {
+	.contact-us-form {
+		margin-bottom: 10px;
+	}
+
+	.contact-us-intro-text {
+		padding: 10px 7px;
+	}
+
+	.contact-us-form {
+		padding-left: 5px;
+	}
+	.contact-us-form > input {
+		height: 24px;
+		font-size: 9px;
+	}
+
+	.contact-us-form > label {
+		font-size: 11px;
+	}
+
+	.contact-us-form > input::placeholder {
+		font-size: 9px;
+	}
+
+	.contact-us-form > textarea {
+		height: 90px;
+	}
+
+	.contact-us-form > textarea::placeholder {
+		font-size: 9px;
+	}
+
+	.contact-us-form-submit-btn {
+		padding: 4px;
+		width: 60px;
+		font-size: 13px;
+	}
+
+	.contact-us-communication-address-title {
+		padding: 10px 8px;
+		font-size: 14px;
+	}
+
+	.contact-us-communication-address-text {
+		font-size: 9px;
+	}
+
+	.contact-us-communication-phone-title {
+		padding: 20px 0px 15px 0px;
+		font-size: 14px;
+	}
+
+	.contact-us-communication-phone-text {
+		font-size: 9px;
+	}
+
+	.contact-us-communication-follow-us-title {
+		font-size: 14px;
+		padding: 20px 10px 15px 10px;
+	}
+
+	.contact-us-communication-sm-logo {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
 }

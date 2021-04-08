@@ -6,7 +6,7 @@
       "donatee_img_id": 201,
       "donatee_desc": "Part of being a person is about helping others.I am so greateful for all the help I get.Thanks to everyone who helped.",
       "donatee_name": "Sarah Wingston",
-      "title": "Sarah's Story",
+      "title": "Help Homeless in London",
       "summary": "Sarah Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
@@ -16,7 +16,7 @@
       "donatee_img_id": 202,
       "donatee_desc": "Community service gives me a valuable opportunity to walk into a different community that is less familiar to me but just as colorful and most importantly, in need.",
       "donatee_name": "John Doe",
-      "title": "John's Story",
+      "title": "Books for Kids",
       "summary": "John Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
@@ -26,7 +26,7 @@
       "donatee_img_id": 203,
       "donatee_desc": "Life engenders life. Energy creates energy. It is by spending oneself that one becomes rich.",
       "donatee_name": "Emily Anderson",
-      "title": "Emily's Story",
+      "title": "Women Empowerment",
       "summary": "Emily Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
@@ -36,7 +36,7 @@
       "donatee_img_id": 204,
       "donatee_desc": "There is no use whatever trying to help people who do not help themselves. You cannot push anyone up a ladder unless he is willing to climb himself.",
       "donatee_name": "Andrew Hamilton",
-      "title": "Andrew's Story",
+      "title": "Building Schools Together",
       "summary": "Andrew Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
@@ -46,7 +46,7 @@
       "donatee_img_id": 205,
       "donatee_desc": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.",
       "donatee_name": "Irna Towsen",
-      "title": "Irna's Story",
+      "title": "Help a Fellow Student",
       "summary": "Irna Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
@@ -56,7 +56,7 @@
       "donatee_img_id": 206,
       "donatee_desc": "It’s the action, not the fruit of the action, that’s important. You have to do the right thing. It may not be in your power, may not be in your time, that there’ll be any fruit.",
       "donatee_name": "Mark Dale",
-      "title": "Mark's Story",
+      "title": "Read for Elderly",
       "summary": "Mark Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
@@ -66,7 +66,7 @@
       "donatee_img_id": 207,
       "donatee_desc": "I am only one, but I am one. I cannot do everything, but I can do something. And I will not let what I cannot do interfere with what I can do.",
       "donatee_name": "Sabeelah Khan",
-      "title": "Sabeelah's Story",
+      "title": "Run for Kids",
       "summary": "Sabeelah Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
@@ -76,7 +76,7 @@
       "donatee_img_id": 208,
       "donatee_desc": "No work is insignificant. All labor that uplifts humanity has dignity and importance and should be undertaken with painstaking excellence.",
       "donatee_name": "Sujith Kandathill",
-      "title": "Sujith's Story",
+      "title": "Clean Oceans",
       "summary": "Sujith Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
@@ -86,7 +86,7 @@
       "donatee_img_id": 209,
       "donatee_desc": "Kindness can transform someone’s dark moment with a blaze of light. You’ll never know how much your caring matters. Make a difference for another today.",
       "donatee_name": "Bethel Singer",
-      "title": "Bethel's Story",
+      "title": "Save the Environment",
       "summary": "Bethel Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
@@ -96,7 +96,7 @@
       "donatee_img_id": 210,
       "donatee_desc": "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened.",
       "donatee_name": "Daniel Robertson",
-      "title": "Daniel's Story",
+      "title": "Fundrasing for Cancer Research",
       "summary": "Daniel Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     }
@@ -191,12 +191,29 @@
       "id": 11
     },
     {
+<<<<<<< HEAD
       "firstname": "black",
       "lastname": "eagle",
       "username": "blackeagle4894",
       "email": "blackeagle4894@gmail.com",
       "password": "123456",
       "id": 12
+=======
+      "firstname": "Kevin",
+      "lastname": "Kevin",
+      "username": "kevin",
+      "email": "k@gmail.com",
+      "password": "1234",
+      "id": 12
+    },
+    {
+      "firstname": "andrew",
+      "lastname": "andrew",
+      "username": "andrew",
+      "email": "andrew@gmail.com",
+      "password": "1234",
+      "id": 13
+>>>>>>> 866da05cb3e133dc41309d3a8096fbd30f4ab62b
     }
   ],
   "medias": [
@@ -566,6 +583,150 @@
       "email": "john@gmail.com",
       "message": "789678903",
       "id": "7Jek-9A"
+    },
+    {
+      "name": "fsdafsd",
+      "email": "fsadfsad@gmail.com",
+      "message": "sdfsadfa",
+      "id": "FPrP8wK"
+    },
+    {
+      "name": "fdsFsd",
+      "email": "sdfsdfsa@gmail.com",
+      "message": "sadfsadfa",
+      "id": "ho6UAXW"
+    },
+    {
+      "name": "dsDF",
+      "email": "mrselifbalci@gmail.com",
+      "message": "cxzcxv",
+      "id": "-yWJ1wI"
+    },
+    {
+      "name": "dfsdz",
+      "email": "mrselifbalci@gmail.com",
+      "message": "fzf",
+      "id": "y_8dzIF"
+    },
+    {
+      "name": "fdfd",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dszdzs",
+      "id": "YZu7Rr1"
+    },
+    {
+      "name": "wewa",
+      "email": "elif@gmail.com",
+      "message": "eseaz",
+      "id": "XCRNqt3"
+    },
+    {
+      "name": "fsa",
+      "email": "mrselifbalci@gmail.com",
+      "message": "sdas",
+      "id": "yN83e-z"
+    },
+    {
+      "name": "dilek",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dasdas",
+      "id": "bEWiL-8"
+    },
+    {
+      "name": "david",
+      "email": "mrselifbalci@gmail.com",
+      "message": "fdsfsdaf",
+      "id": "z_NWqjx"
+    },
+    {
+      "name": "rer",
+      "email": "mrselifbalci@gmail.com",
+      "message": "reqrqrq",
+      "id": "qkSJqS6"
+    },
+    {
+      "name": "fdsfsdf",
+      "email": "mrselifbalci@gmail.com",
+      "message": "fsdafsadf",
+      "id": "eOXURRD"
+    },
+    {
+      "name": "dsfsdf",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dfssdf",
+      "id": "PolQMQa"
+    },
+    {
+      "name": "dasd",
+      "email": "mrselifbalci@gmail.com",
+      "message": "asdasd",
+      "id": "RPNJ9xy"
+    },
+    {
+      "name": "dasd",
+      "email": "mrselifbalci@gmail.com",
+      "message": "asCZS",
+      "id": "X4WQf0T"
+    },
+    {
+      "name": "das",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dwqda",
+      "id": "SGABYsM"
+    },
+    {
+      "name": "dsasd",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dasdas",
+      "id": "mJ32GJy"
+    },
+    {
+      "name": "Serbay Serdar",
+      "email": "mrselifbalci@gmail.com",
+      "message": "cxz",
+      "id": "VzQt2nU"
+    },
+    {
+      "name": "Serbay Serdar",
+      "email": "mrselifbalci@gmail.com",
+      "message": "sdasd",
+      "id": "ypSPMVD"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "nrfeonH"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "edprhGE"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "1-ZJPWV"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "yaqi2QL"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "EwExIhP"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "rEm7sM1"
     }
   ]
 }
