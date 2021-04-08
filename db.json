@@ -455,7 +455,6 @@
       "comments": ""
     }
   ],
-  
   "subscribers": [
     {
       "id": "1",
@@ -518,17 +517,6 @@
       "id": "naWMboV"
     }
   ],
-<<<<<<< HEAD
-
-
-  "donate": [
-    {
-      
-      "name": "Doe",
-      "email": "john@gmail.com",
-      "message": "789678903"
-    }    
-=======
   "contact-us": [
     {
       "id": "naWMboV",
@@ -543,7 +531,33 @@
       "email": "a@a.com",
       "message": "Hellooooo",
       "id": "oKLkjUX"
+    },
+    {
+      "first_name": "Elif",
+      "last_name": "Balci",
+      "email": "a@a.com",
+      "message": "Hellooooo",
+      "id": "wXiS2-7"
     }
->>>>>>> 541de4f0bf6d6bbcc06563c3c4be8233cde1c9b6
+  ],
+  "paypal-donations": [
+    {
+      "id": "fjs123",
+      "name": "Doe",
+      "email": "john@gmail.com",
+      "message": "789678903"
+    },
+    {
+      "name": "Doel",
+      "email": "john@gmail.com",
+      "message": "789678903",
+      "id": "dsfjh"
+    },
+    {
+      "name": "Elif",
+      "email": "john@gmail.com",
+      "message": "789678903",
+      "id": "7Jek-9A"
+    }
   ]
 }

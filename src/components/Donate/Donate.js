@@ -13,7 +13,7 @@ const Donate = () => {
   const submitForm = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/donate", {
+      .post("http://localhost:4000/paypal-donations", {
         name: name,
         email: email,
         message: message,
@@ -91,6 +91,7 @@ const Donate = () => {
                   value=""
                   onClick={() => {
                     setCheckOut(true);
+                 
                   }}
                 ></button>
               )}
