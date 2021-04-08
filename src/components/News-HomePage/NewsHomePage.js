@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const NewsHomePage = () => {
 	const [posts, setPosts] = useState([]);
-	const [medias, setMedias] = useState();
+	const [medias, setMedias] = useState([]);
 
 	useEffect(() => {
 		axios
@@ -31,8 +31,8 @@ const NewsHomePage = () => {
 	
 			<div id="newsHomePage">
 				<div className="news">
-					{medias && medias.map((media) =>
-						media.id === posts[posts.length - 1].post_img_Id ? (
+					{medias.map((media) =>
+						posts.length !== 0 && media.id === posts[posts.length - 1].post_img_id ? (
 							<img
 								className="news-img"
 								src={media.media_url}
@@ -81,8 +81,8 @@ const NewsHomePage = () => {
 								<span className="news-btn">Read More</span>
 							</Link>
 						</div>
-						{medias && medias.map((media) =>
-							media.id === posts[posts.length - 2].post_img_Id ? (
+						{medias.map((media) =>
+							posts.length !== 0 && media.id === posts[posts.length - 2].post_img_id ? (
 								<img
 									className="news-img"
 									src={media.media_url}
@@ -101,8 +101,8 @@ const NewsHomePage = () => {
 
 				<div>
 					<div className="news">
-						{medias && medias.map((media) =>
-							media.id === posts[posts.length - 3].post_img_id ? (
+						{medias.map((media) =>
+							posts.length !== 0 && media.id === posts[posts.length - 3].post_img_id ? (
 								<img
 									className="news-img"
 									src={media.media_url}
