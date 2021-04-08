@@ -95,7 +95,8 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 					})
 					.then((res) => {
 						window.scroll(0,0)
-						document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
+						sessionStorage.setItem('userInfo', JSON.stringify(res.data))
+						document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...'
 						setTimeout(() => {
 							setIsLoggedIn(true)
 							history.push('/')
@@ -113,7 +114,6 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 				setRefresh(!refresh);
 			}
 		}
-	
 
 	return (
 		<div className="sign-up">
