@@ -2,9 +2,10 @@ import React, {useEffect} from 'react';
 import imageHeader from '../DonateGoods/Rectangle 26.png';
 import "./Ambassador.css";
 import "./AmbassadorForm.css"
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
-const Ambassador = () => {
+const Ambassador = ({isLoggedIn}) => {
+  const history = useHistory()
   useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
@@ -35,7 +36,7 @@ const Ambassador = () => {
        <br/>
        <div>
 					<Link
-						to="/getinvolved/beanambassador-form"
+						to={isLoggedIn ? "/getinvolved/beanambassador-form" : "/login"}
 						className="apply-btn-Amb"
 					>
 						Apply

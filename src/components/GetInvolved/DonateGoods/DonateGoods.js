@@ -4,7 +4,7 @@ import imageHeader from './Rectangle 26.png';
 import image2 from './nick-de-partee-5DLBoEX99Cs-unsplash 1 (1).png';
 import image1 from './nick-de-partee-5DLBoEX99Cs-unsplash 1.png';
 import Modal from 'react-modal';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 
 const customStyles = {
 	content: {
@@ -14,7 +14,7 @@ const customStyles = {
 		right: '50%',
 		bottom: '60%',
 		marginRight: '-50%',
-		marginTop: '120px', 
+		marginTop: '120px',
 		transform: 'translate(-50%, -50%)',
 		height: 'fit-content',
 		backgroundColor: '#76A9C7',
@@ -30,8 +30,9 @@ const customStyles = {
 	},
 };
 
-const DonateGoods = () => {
+const DonateGoods = ({ isLoggedIn }) => {
 	const [modalIsOpen, setIsOpen] = React.useState(false);
+	const history = useHistory();
 
 	function closeModal() {
 		setIsOpen(false);
@@ -58,12 +59,15 @@ const DonateGoods = () => {
 			</div>
 			<div className="content">
 				<div className="content1">
-					<img className="image-1" src={image1}/>
+					<img className="image-1" src={image1} />
 					<div className="content1-p">
 						Just because you no longer need an item, don’t throw it away.
 						By donating it to us you’re not only keeping it out of
 						landfill, but you’re also making sure it goes to a new home,
-						while also doing something to help others. To donate, please fill in the form at the link below and our team will get back to you. Take a look at the information on this page to see what we can and cannot accept as gifts.
+						while also doing something to help others. To donate, please
+						fill in the form at the link below and our team will get back
+						to you. Take a look at the information on this page to see
+						what we can and cannot accept as gifts.
 					</div>
 				</div>
 				<div className="content2">
@@ -76,11 +80,11 @@ const DonateGoods = () => {
 							Find out what you can donate?
 						</a>
 					</p>
-					<img className="image-2" src={image2}/>
+					<img className="image-2" src={image2} />
 				</div>
 				<div className="donate-goods-btn-div">
 					<Link
-						to="/getinvolved/donategoods-form"
+						to={isLoggedIn ? '/getinvolved/donategoods-form' : '/login'}
 						className="donate-goods-btn"
 					>
 						Donate Goods Now

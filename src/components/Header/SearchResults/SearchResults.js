@@ -1,20 +1,17 @@
+import './SearchResults.css'
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './News.css';
 import axios from 'axios';
-
-const News = () => { 
+ 
+const SearchResults = ({results, searchResults}) => {
 	// const {id} =useParams();
-	const [posts, setPosts] = useState([]);
+	const [posts, setPosts] = useState([])
 	const [medias, setMedias] = useState([]);
 	const [viewmore, setViewmore] = useState(0);
 	useEffect(() => {
-		axios
-			.get('http://localhost:4000/posts')
-			.then((res) => setPosts(res.data))
-			.catch((err) => console.log(err));
-			console.log()
-	}, []);
+        setPosts(searchResults)
+	
+	}, [searchResults]);
 	useEffect(() => {
 		axios
 			.get('http://localhost:4000/medias')
@@ -31,20 +28,11 @@ const News = () => {
 		}
 	};
 
-	// console.log(posts);
 	return (
 		<div>
-			<div className="newss-bg-img"></div>
-			<div className="newss-text">
-				<span>
-					Lorem Ipsum is simply dummy text of the printing and typesetting
-					industry. Lorem Ipsum has been the industry's standard dummy text
-					ever since the 1500s, when an unknown printer took a galley of
-					type and scrambled it to make a type specimen book.{' '}
-				</span>
-			</div>
-			<div className="newss-header">
-				<p>Latest News</p>
+			
+			<div style={{marginTop:"100px"}} className="newss-header">
+				<p>Search Results</p>
 			</div>
 			<table id="news-area">
 				<br />
@@ -89,4 +77,4 @@ const News = () => {
 	);
 };
 
-export default News;
+export default SearchResults;

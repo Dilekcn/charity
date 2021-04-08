@@ -2,101 +2,101 @@
   "posts": [
     {
       "id": 1,
-      "post_img_Id": 101,
+      "post_img_id": 101,
       "donatee_img_id": 201,
       "donatee_desc": "Part of being a person is about helping others.I am so greateful for all the help I get.Thanks to everyone who helped.",
       "donatee_name": "Sarah Wingston",
-      "title": "Sarah's Story",
+      "title": "Help Homeless in London",
       "summary": "Sarah Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
     {
       "id": 2,
-      "post_img_Id": 102,
+      "post_img_id": 102,
       "donatee_img_id": 202,
       "donatee_desc": "Community service gives me a valuable opportunity to walk into a different community that is less familiar to me but just as colorful and most importantly, in need.",
       "donatee_name": "John Doe",
-      "title": "John's Story",
+      "title": "Books for Kids",
       "summary": "John Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
     {
       "id": 3,
-      "post_img_Id": 103,
+      "post_img_id": 103,
       "donatee_img_id": 203,
       "donatee_desc": "Life engenders life. Energy creates energy. It is by spending oneself that one becomes rich.",
       "donatee_name": "Emily Anderson",
-      "title": "Emily's Story",
+      "title": "Women Empowerment",
       "summary": "Emily Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
     {
       "id": 4,
-      "post_img_Id": 104,
+      "post_img_id": 104,
       "donatee_img_id": 204,
       "donatee_desc": "There is no use whatever trying to help people who do not help themselves. You cannot push anyone up a ladder unless he is willing to climb himself.",
       "donatee_name": "Andrew Hamilton",
-      "title": "Andrew's Story",
+      "title": "Building Schools Together",
       "summary": "Andrew Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
     {
       "id": 5,
-      "post_img_Id": 105,
+      "post_img_id": 105,
       "donatee_img_id": 205,
       "donatee_desc": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.",
       "donatee_name": "Irna Towsen",
-      "title": "Irna's Story",
+      "title": "Help a Fellow Student",
       "summary": "Irna Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
     {
       "id": 6,
-      "post_img_Id": 106,
+      "post_img_id": 106,
       "donatee_img_id": 206,
       "donatee_desc": "It’s the action, not the fruit of the action, that’s important. You have to do the right thing. It may not be in your power, may not be in your time, that there’ll be any fruit.",
       "donatee_name": "Mark Dale",
-      "title": "Mark's Story",
+      "title": "Read for Elderly",
       "summary": "Mark Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
     {
       "id": 7,
-      "post_img_Id": 107,
+      "post_img_id": 107,
       "donatee_img_id": 207,
       "donatee_desc": "I am only one, but I am one. I cannot do everything, but I can do something. And I will not let what I cannot do interfere with what I can do.",
       "donatee_name": "Sabeelah Khan",
-      "title": "Sabeelah's Story",
+      "title": "Run for Kids",
       "summary": "Sabeelah Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
     {
       "id": 8,
-      "post_img_Id": 108,
+      "post_img_id": 108,
       "donatee_img_id": 208,
       "donatee_desc": "No work is insignificant. All labor that uplifts humanity has dignity and importance and should be undertaken with painstaking excellence.",
       "donatee_name": "Sujith Kandathill",
-      "title": "Sujith's Story",
+      "title": "Clean Oceans",
       "summary": "Sujith Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
     {
       "id": 9,
-      "post_img_Id": 109,
+      "post_img_id": 109,
       "donatee_img_id": 209,
       "donatee_desc": "Kindness can transform someone’s dark moment with a blaze of light. You’ll never know how much your caring matters. Make a difference for another today.",
       "donatee_name": "Bethel Singer",
-      "title": "Bethel's Story",
+      "title": "Save the Environment",
       "summary": "Bethel Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     },
     {
       "id": 10,
-      "post_img_Id": 110,
+      "post_img_id": 110,
       "donatee_img_id": 210,
       "donatee_desc": "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened.",
       "donatee_name": "Daniel Robertson",
-      "title": "Daniel's Story",
+      "title": "Fundrasing for Cancer Research",
       "summary": "Daniel Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
       "content": ""
     }
@@ -157,6 +157,54 @@
       "email": "devleth@gmail.com",
       "password": "1234",
       "id": 7
+    },
+    {
+      "firstname": "Elif",
+      "lastname": "Balci",
+      "username": "elifbalci",
+      "email": "e@gmail.com",
+      "password": "1234",
+      "id": 8
+    },
+    {
+      "firstname": "Mehmet",
+      "lastname": "Mehmet",
+      "username": "Mehmet",
+      "email": "mehmet@gmail.com",
+      "password": "1234",
+      "id": 9
+    },
+    {
+      "firstname": "Mustafa",
+      "lastname": "Balci",
+      "username": "mbalci",
+      "email": "mbalci85@gmail.com",
+      "password": "123",
+      "id": 10
+    },
+    {
+      "firstname": "asli",
+      "lastname": "asli",
+      "username": "asli",
+      "email": "aslic@gmail.com",
+      "password": "1234",
+      "id": 11
+    },
+    {
+      "firstname": "Kevin",
+      "lastname": "Kevin",
+      "username": "kevin",
+      "email": "k@gmail.com",
+      "password": "1234",
+      "id": 12
+    },
+    {
+      "firstname": "andrew",
+      "lastname": "andrew",
+      "username": "andrew",
+      "email": "andrew@gmail.com",
+      "password": "1234",
+      "id": 13
     }
   ],
   "medias": [
@@ -271,9 +319,63 @@
       "phone": 789678903,
       "type_of_goods": "books",
       "number_of_pieces": 7,
-      "adress": "Holmes road,Kentish Town,London",
+      "address": "Holmes road,Kentish Town,London",
       "post_code": "NW5 3AN",
       "instructions_for_the_driver": "Be aware of the dog"
+    },
+    {
+      "firstname": "a",
+      "lastname": "b",
+      "email": "a@a.com",
+      "phone": "111-1111-1111",
+      "type_of_goods": "asdasd",
+      "number_of_pieces": "5",
+      "adress": "asdasdasd",
+      "post_code": "NW5 2NM",
+      "instructions_for_the_driver": "sdfsfsdfsdf",
+      "id": 2
+    },
+    {
+      "firstname": "aaa",
+      "lastname": "aaa",
+      "email": "b@b.com",
+      "phone": "222-2222-2222",
+      "type_of_goods": "aaa",
+      "number_of_pieces": "4",
+      "adress": "asdasdas",
+      "post_code": "PRS SLT",
+      "instructions_for_the_driver": "asdasd",
+      "id": 3
+    },
+    {
+      "firstname": "09",
+      "lastname": "09",
+      "email": "09@gmail.com",
+      "phone": "902-1234-1234",
+      "type_of_goods": "09",
+      "number_of_pieces": "09",
+      "adress": "9009",
+      "post_code": "fdghf",
+      "instructions_for_the_driver": "0990",
+      "id": 4
+    },
+    {
+      "firstname": "abc",
+      "lastname": "a",
+      "email": "1@gmail.com",
+      "phone": "123-4563-5078",
+      "type_of_goods": "fgfh",
+      "number_of_pieces": "5",
+      "adress": "gfdhgfd",
+      "post_code": "gfdh",
+      "instructions_for_the_driver": "fghgfdh",
+      "id": 5
+    },
+    {
+      "name": "abc",
+      "email": "1@gmail.com",
+      "message": "shfgh",
+      "id": 6
     }
   ],
   "gift-card-donation": [
@@ -298,6 +400,39 @@
       "expiration_date": "01.01.2022",
       "post_code": "NW5 3AN",
       "add_info": ""
+    },
+    {
+      "type_of_card": "Ismail's Gift Card",
+      "card_number": "1234567890123456",
+      "security_code": "123",
+      "amount": "150",
+      "expriration_date": "15/04",
+      "post_code": "10431",
+      "add_info": "Hello",
+      "user_id": 2,
+      "id": 4
+    },
+    {
+      "type_of_card": "fsdaf",
+      "card_number": "sd",
+      "security_code": "444",
+      "amount": "34",
+      "expriration_date": "44/44",
+      "post_code": "233",
+      "add_info": "4",
+      "user_id": 9,
+      "id": 5
+    },
+    {
+      "type_of_card": "111",
+      "card_number": "111",
+      "security_code": "111",
+      "amount": "111",
+      "expriration_date": "11/11",
+      "post_code": "111",
+      "add_info": "111",
+      "user_id": 9,
+      "id": 6
     }
   ],
   "time-donation": [
@@ -311,6 +446,15 @@
       "based_in": "London",
       "interested_in": "Teaching English",
       "comments": ""
+    },
+    {
+      "fullname": "Dilek CANTURK",
+      "email": "can@gmail.com",
+      "phone": "012-3456-7890",
+      "based": "glasgow",
+      "text": "fdhyftgh",
+      "text1": "fgdhfgh",
+      "id": 4
     }
   ],
   "ambassadors": [
@@ -325,6 +469,255 @@
       "reason_to_join": "I am a good person.",
       "interest_area": "advertise",
       "comments": ""
+    }
+  ],
+  "subscribers": [
+    {
+      "id": "1",
+      "first_name": "Elif",
+      "last_name": "Balci",
+      "email": "elif@gmail.com"
+    },
+    {
+      "first_name": "Mustafa",
+      "last_name": "Balci",
+      "email": "mustafa@gmail.com",
+      "id": "WSwgziO"
+    },
+    {
+      "first_name": "John ",
+      "last_name": "Doe",
+      "email": "john@doe.com",
+      "id": "CWRE16m"
+    },
+    {
+      "first_name": "Jane",
+      "last_name": "Doe",
+      "email": "jane@doe.com",
+      "id": "4NiQue5"
+    },
+    {
+      "first_name": "m",
+      "last_name": "a",
+      "email": "m@a.com",
+      "id": "9XWMIzX"
+    },
+    {
+      "first_name": "a",
+      "last_name": "a",
+      "email": "a@a.com",
+      "id": "sI5RjXK"
+    },
+    {
+      "first_name": "a",
+      "last_name": "b",
+      "email": "a@b.com",
+      "id": "WrDoZFX"
+    },
+    {
+      "first_name": "x",
+      "last_name": "x",
+      "email": "x@x.com",
+      "id": "2exVgnT"
+    },
+    {
+      "first_name": "a",
+      "last_name": "a",
+      "email": "a@b.com",
+      "id": "5KasMT1"
+    },
+    {
+      "first_name": "bbbb",
+      "last_name": "bb",
+      "email": "bb@bb.com",
+      "id": "naWMboV"
+    }
+  ],
+  "contact-us": [
+    {
+      "id": "naWMboV",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "bb@bb.com",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat"
+    },
+    {
+      "first_name": "Mustafa",
+      "last_name": "Balci",
+      "email": "a@a.com",
+      "message": "Hellooooo",
+      "id": "oKLkjUX"
+    },
+    {
+      "first_name": "Elif",
+      "last_name": "Balci",
+      "email": "a@a.com",
+      "message": "Hellooooo",
+      "id": "wXiS2-7"
+    }
+  ],
+  "paypal-donations": [
+    {
+      "id": "fjs123",
+      "name": "Doe",
+      "email": "john@gmail.com",
+      "message": "789678903"
+    },
+    {
+      "name": "Doel",
+      "email": "john@gmail.com",
+      "message": "789678903",
+      "id": "dsfjh"
+    },
+    {
+      "name": "Elif",
+      "email": "john@gmail.com",
+      "message": "789678903",
+      "id": "7Jek-9A"
+    },
+    {
+      "name": "fsdafsd",
+      "email": "fsadfsad@gmail.com",
+      "message": "sdfsadfa",
+      "id": "FPrP8wK"
+    },
+    {
+      "name": "fdsFsd",
+      "email": "sdfsdfsa@gmail.com",
+      "message": "sadfsadfa",
+      "id": "ho6UAXW"
+    },
+    {
+      "name": "dsDF",
+      "email": "mrselifbalci@gmail.com",
+      "message": "cxzcxv",
+      "id": "-yWJ1wI"
+    },
+    {
+      "name": "dfsdz",
+      "email": "mrselifbalci@gmail.com",
+      "message": "fzf",
+      "id": "y_8dzIF"
+    },
+    {
+      "name": "fdfd",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dszdzs",
+      "id": "YZu7Rr1"
+    },
+    {
+      "name": "wewa",
+      "email": "elif@gmail.com",
+      "message": "eseaz",
+      "id": "XCRNqt3"
+    },
+    {
+      "name": "fsa",
+      "email": "mrselifbalci@gmail.com",
+      "message": "sdas",
+      "id": "yN83e-z"
+    },
+    {
+      "name": "dilek",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dasdas",
+      "id": "bEWiL-8"
+    },
+    {
+      "name": "david",
+      "email": "mrselifbalci@gmail.com",
+      "message": "fdsfsdaf",
+      "id": "z_NWqjx"
+    },
+    {
+      "name": "rer",
+      "email": "mrselifbalci@gmail.com",
+      "message": "reqrqrq",
+      "id": "qkSJqS6"
+    },
+    {
+      "name": "fdsfsdf",
+      "email": "mrselifbalci@gmail.com",
+      "message": "fsdafsadf",
+      "id": "eOXURRD"
+    },
+    {
+      "name": "dsfsdf",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dfssdf",
+      "id": "PolQMQa"
+    },
+    {
+      "name": "dasd",
+      "email": "mrselifbalci@gmail.com",
+      "message": "asdasd",
+      "id": "RPNJ9xy"
+    },
+    {
+      "name": "dasd",
+      "email": "mrselifbalci@gmail.com",
+      "message": "asCZS",
+      "id": "X4WQf0T"
+    },
+    {
+      "name": "das",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dwqda",
+      "id": "SGABYsM"
+    },
+    {
+      "name": "dsasd",
+      "email": "mrselifbalci@gmail.com",
+      "message": "dasdas",
+      "id": "mJ32GJy"
+    },
+    {
+      "name": "Serbay Serdar",
+      "email": "mrselifbalci@gmail.com",
+      "message": "cxz",
+      "id": "VzQt2nU"
+    },
+    {
+      "name": "Serbay Serdar",
+      "email": "mrselifbalci@gmail.com",
+      "message": "sdasd",
+      "id": "ypSPMVD"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "nrfeonH"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "edprhGE"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "1-ZJPWV"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "yaqi2QL"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "EwExIhP"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "rEm7sM1"
     }
   ]
 }

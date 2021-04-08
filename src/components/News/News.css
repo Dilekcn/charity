@@ -15,8 +15,9 @@
   vertical-align: middle;
   text-align: center;
   background: #347ca5;
+  padding-right: 10px;
 }
-.newss-text span {
+.newss-text>span {
   height: 77px;
   left: 48px;
   font-family: Roboto;
@@ -92,10 +93,11 @@
 }
 
 .tr-readmore {
-  margin-bottom: 50px;
+  margin-bottom: 55px;
   float: left;
   width: 600px;
-}
+  padding-left: 390px;
+ }
 
 .news-btn-readmore {
   margin-left: 25px;
@@ -145,4 +147,317 @@
   display: flex;
   justify-content: center;
   margin-top: 10px;
+  }
+/*******************************************/
+@media (max-width: 1024px) {  
+  #news-area {
+    height: 890px;  
+  }
+  #news-area .news-area {
+    margin: 1% 10% 0 6%;
+    height: 340px;
+    width: 900px;   
+    border-radius: 10px;  
+  }  
+  #news-area .news-area-img {
+    width: auto;
+    height: auto;     
+  }  
+  #news-area .news-area-img img {
+    height: 310px;   
+    border-radius: 10px;  
+    margin: 12px;
+  }  
+  #news-area .news-area-text p {
+    margin-right: 3px;
+    width: 550px;
+    height: 185px;  
+  }  
+  .tr-readmore {
+    margin-bottom: 50px;
+    float: left;
+    width: 550px;    
+  }  
+  .news-btn-readmore {
+    margin-left: 20px;  
+    width: 146px;
+    height: 48px; 
+  }  
 }
+
+@media (max-width: 768px) {  
+  .newss-bg-img {     
+    height: 429px;  
+  }
+
+  .newss-header {   
+    height: 80px;  
+    font-size: 54px; 
+  }
+  
+  #news-area {
+    height: 873px;
+    width: 100%;
+    background: #e5e5e5;
+  }
+  #news-area .news-area {
+    display: flex;
+    margin: 1% 10% 0 5%;
+    height: 340px;
+    width: 680px;   
+  }  
+  #news-area .news-area-img {
+    width: 800px;
+    height: auto;
+  }  
+  #news-area .news-area-img img {
+    height: 230px;
+    width: 250px;
+    border-radius: 5px;
+    margin: 50px 5px;   
+  }  
+  #news-area .news-area-text p {
+    margin-left: 5px;
+    margin-right: 10px;
+    width: 400px;
+    height: 185px;  
+  }
+  #news-area .news-area-header h2 {
+    margin-top: 5px;
+    margin-left: 20px;  
+  }
+  .tr-readmore {  
+    width: 400px;
+    padding-left: 175px;   
+  }  
+  .news-btn-readmore {
+    margin-left: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 156px;
+    height: 52px;
+  }  
+  #news-btn-viewmore {
+    width: 180px;
+  }
+  .tr-btn-viewmore {
+    display: flex;
+    justify-content: center;
+  }
+  
+  @media (max-width: 414px) { 
+    .newss-bg-img {    
+      height: 300px;     
+    }    
+    .newss-text {   
+      padding: 10px 10px;
+    }
+    .newss-text>span {    
+      font-size: 18px;      
+    }
+    .newss-header {     
+      height: 70px;   
+      font-size: 44px;   
+    }    
+    #news-area {
+      height: 800px;
+      width: 100%;
+      background: #e5e5e5;
+    }
+    #news-area .news-area {     
+      margin: 1% 1% 3% 4%;
+      height: 340px;
+      width: 380px;   
+    }    
+    #news-area .news-area-img {
+      width: 100px;
+      height:100px;     
+    }
+    
+    #news-area .news-area-img img {
+      width: 100px;
+      height:100px;
+      border-radius: 50%;    
+      margin: 8px;
+    }    
+    #news-area .news-area-text p {    
+      margin-left: -90px;
+      margin-top: 36px;
+      width: 348px;
+      height: 170px;
+      font-size: 16px;
+      line-height: 24px; 
+     
+    } 
+    
+    .tr-readmore {
+      margin-bottom: 60px;
+      float: left;
+      width: 300px;
+      padding-left: 30px;
+     }
+    
+    .news-btn-readmore {
+      margin-left: 5px;
+
+      width: 120px;
+      height: 42px;    
+      font-size: 18px;
+      line-height: 20px;    
+    }
+    
+    #news-btn-viewmore {
+      width: 150px;
+      height: 40px;
+      left: 240px;     
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: -20px;
+      margin-bottom: 5px;    
+    }
+  }
+
+  @media (max-width: 375px) { 
+    .newss-bg-img {    
+      height: 300px;     
+    }    
+    .newss-text {   
+      padding: 10px 10px;
+    }
+    .newss-text>span {    
+      font-size: 18px;      
+    }
+    .newss-header {     
+      height: 70px;   
+      font-size: 44px;   
+    }    
+    #news-area {
+      height: 800px;
+      width: 100%;
+      background: #e5e5e5;
+    }
+    #news-area .news-area {     
+      margin: 1% 1% 3% 6%;
+      height: 340px;
+      width: 330px;   
+    }    
+    #news-area .news-area-img {
+      width: 100px;
+      height:100px;     
+    }
+    
+    #news-area .news-area-img img {
+      width: 100px;
+      height:100px;
+      border-radius: 50%;    
+      margin: 8px;
+    }    
+    #news-area .news-area-text p {    
+      margin-left: -90px;
+      margin-top: 30px;
+      width: 310px;
+      height: 180px;
+      font-size: 14px;
+      line-height: 22px;   
+    } 
+    
+    .tr-readmore {
+      margin-bottom: 60px;
+      float: left;
+      width: 300px;
+      padding-left: 15px;
+     }
+    
+    .news-btn-readmore {
+      margin-left: -15px;    
+      width: 120px;
+      height: 40px;    
+      font-size: 18px;
+      line-height: 24px;    
+    }
+    
+    #news-btn-viewmore {
+      width: 120px;
+      height: 40px;
+      left: 240px;     
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: -15px;
+      margin-bottom: 5px;    
+    }
+  }
+
+  @media (max-width: 360px) { 
+    .newss-bg-img {    
+      height: 300px;     
+    }    
+    .newss-text {   
+      padding: 10px 10px;
+    }
+    .newss-text>span {    
+      font-size: 18px;      
+    }
+    .newss-header {     
+      height: 70px;   
+      font-size: 44px;   
+    }    
+    #news-area {
+      height: 800px;
+      width: 100%;
+      background: #e5e5e5;
+    }
+    #news-area .news-area {     
+      margin: 1% 1% 1% 6%;
+      height: 340px;
+      width: 300px;   
+    }    
+    #news-area .news-area-img {
+      width: 100px;
+      height:100px;     
+    }
+    
+    #news-area .news-area-img img {
+      width: 100px;
+      height:100px;
+      border-radius: 50%;    
+      margin: 8px;
+    }    
+    #news-area .news-area-text p {    
+      margin-left: -90px;
+      margin-top: 30px;
+      width: 280px;
+      height: 180px;
+      font-size: 14px;
+      line-height: 22px;   
+    } 
+    
+    .tr-readmore {
+      margin-bottom: 60px;
+      float: left;
+      width: 300px;
+      padding-left: 30px;
+     }
+    
+    .news-btn-readmore {
+      margin-left: 25px;    
+      width: 120px;
+      height: 42px;    
+      font-size: 18px;
+      line-height: 24px;    
+    }
+    
+    #news-btn-viewmore {
+      width: 150px;
+      height: 40px;
+      left: 240px;     
+      font-size: 18px;
+      line-height: 24px;
+      margin-top: 5px;
+      margin-bottom: 5px;    
+    }
+  }
+
+
+}
+

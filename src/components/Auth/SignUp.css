@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+  color: #347ca5;
+}
 .sign-up {
   position: relative;
   display: flex;
@@ -10,7 +14,7 @@
   margin-bottom: 100px;
 }
 
-label {
+#sign-up-form ~ label {
   color: #347ca5;
   margin-left: 5px;
   font-size: medium;
@@ -78,6 +82,7 @@ label {
 .sign-up-email {
   max-width: 80%;
   margin-top: 5px;
+  margin-bottom: 10px;
   background: #ffffff;
   border-radius: 10px;
   border: none;
@@ -97,6 +102,7 @@ label {
 .sign-up-password {
   max-width: 80%;
   margin-top: 5px;
+  margin-bottom: 10px;
   background: #ffffff;
   border-radius: 10px;
   border: none;
