@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import './News.css';
 import axios from 'axios';
 
-const News = () => {
+const News = () => { 
 	// const {id} =useParams();
 	const [posts, setPosts] = useState([]);
 	const [medias, setMedias] = useState([]);
@@ -13,6 +13,7 @@ const News = () => {
 			.get('http://localhost:4000/posts')
 			.then((res) => setPosts(res.data))
 			.catch((err) => console.log(err));
+			console.log()
 	}, []);
 	useEffect(() => {
 		axios
@@ -22,7 +23,7 @@ const News = () => {
 	}, []);
 
 	const viewMore = () => {
-		if (posts.length - 2 < viewmore) {
+		if (posts.length - 2 <= viewmore) {
 			document.querySelector('.allPosts').textContent =
 				'No more stories to view...';
 		} else {
@@ -30,7 +31,7 @@ const News = () => {
 		}
 	};
 
-	console.log(posts);
+	// console.log(posts);
 	return (
 		<div>
 			<div className="newss-bg-img"></div>
@@ -50,11 +51,12 @@ const News = () => {
 				{posts.length !== 0 &&
 					posts
 						.slice(posts.length - 2 - viewmore, posts.length)
+						.reverse()
 						.map((post) => (
 							<tr className="news-area">
 								<td className="news-area-img">
 									{medias.map((media) =>
-										media.id === post.post_img_Id ? (
+										media.id === post.post_img_id ? (
 											<img src={media.media_url} alt="" />
 										) : null,
 									)}
@@ -70,22 +72,17 @@ const News = () => {
 										<p> {post.summary}</p>
 									</tr>
 									<tr className="tr-readmore">
-										<Link
-											to={`/newsdetail/${post.id}`}
-											className="news-btn-readmore"
-										>
+										<Link to={`/newsdetail/${post.id}`} className="news-btn-readmore">
 											Read More
 										</Link>
 									</tr>
 								</td>
 							</tr>
-						))}
+						))}<br/>
 				<tr className="allPosts"></tr>
 				<tr className="tr-btn-viewmore">
-					{' '}
-					<button id="news-btn-viewmore" onClick={viewMore}>
-						View More
-					</button>
+				
+					<button id="news-btn-viewmore" onClick={viewMore}>View More</button>
 				</tr>
 			</table>
 		</div>
