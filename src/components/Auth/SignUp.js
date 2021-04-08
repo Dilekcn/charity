@@ -18,7 +18,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 
 	const history= useHistory() 
 
-	useEffect(
+	useEffect( 
 		() => {
 			axios
 				.get('http://localhost:4000/users')

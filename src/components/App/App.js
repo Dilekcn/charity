@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Donate from '../Donate/Donate';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
@@ -27,6 +27,13 @@ export default function App() {
 	const [isLoggedIn, setIsLoggedIn] = useState(false);
 	const [searchResults, setSearchResults] = useState([]);
 
+	useEffect(() => {
+		const userInfo = JSON.parse(sessionStorage.getItem('userInfo'))
+		if(userInfo) {
+			userInfo.id && setIsLoggedIn(true)
+		}
+	},[])
+
 	const searchFunc = async (val) => {
 		let results = [];
 		for (let i = 0; i < val.length; i++) {
@@ -37,6 +44,7 @@ export default function App() {
 		}
 
 		setSearchResults(results);
+		window.scroll(0, 0)
 	};
 
 	return (
