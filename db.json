@@ -510,6 +510,7 @@
       "id": "naWMboV"
     }
   ],
+<<<<<<< HEAD
 
 
   "donate": [
@@ -519,5 +520,22 @@
       "email": "john@gmail.com",
       "message": "789678903"
     }    
+=======
+  "contact-us": [
+    {
+      "id": "naWMboV",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "bb@bb.com",
+      "message": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidat"
+    },
+    {
+      "first_name": "Mustafa",
+      "last_name": "Balci",
+      "email": "a@a.com",
+      "message": "Hellooooo",
+      "id": "oKLkjUX"
+    }
+>>>>>>> 541de4f0bf6d6bbcc06563c3c4be8233cde1c9b6
   ]
 }
