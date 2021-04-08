@@ -101,7 +101,7 @@ const ContactUs = () => {
 						<h2 className="contact-us-communication-follow-us-title">
 							Follow Us
 						</h2>
-						<div>
+						<div style={{ textAlign: 'center' }}>
 							<a
 								href="https://www.facebook.com/"
 								target="_blank"
