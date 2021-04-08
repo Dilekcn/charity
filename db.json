@@ -191,29 +191,12 @@
       "id": 11
     },
     {
-<<<<<<< HEAD
-      "firstname": "black",
-      "lastname": "eagle",
-      "username": "blackeagle4894",
-      "email": "blackeagle4894@gmail.com",
-      "password": "123456",
-      "id": 12
-=======
-      "firstname": "Kevin",
-      "lastname": "Kevin",
-      "username": "kevin",
-      "email": "k@gmail.com",
-      "password": "1234",
-      "id": 12
-    },
-    {
       "firstname": "andrew",
       "lastname": "andrew",
       "username": "andrew",
       "email": "andrew@gmail.com",
       "password": "1234",
       "id": 13
->>>>>>> 866da05cb3e133dc41309d3a8096fbd30f4ab62b
     }
   ],
   "medias": [
@@ -540,6 +523,18 @@
       "last_name": "bb",
       "email": "bb@bb.com",
       "id": "naWMboV"
+    },
+    {
+      "first_name": "dsa",
+      "last_name": "Balci",
+      "email": "mrselifbalci@gmail.com",
+      "id": "IvpFCxB"
+    },
+    {
+      "first_name": "Serbay",
+      "last_name": "Serdar",
+      "email": "mrselifbalci@gmail.com",
+      "id": "yOF2x4P"
     }
   ],
   "contact-us": [
@@ -745,6 +740,18 @@
       "email": "",
       "message": "",
       "id": "Fyd59hf"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "efziMkK"
+    },
+    {
+      "name": "",
+      "email": "",
+      "message": "",
+      "id": "9rP-Kd6"
     }
   ]
 }
