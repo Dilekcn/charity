@@ -9,11 +9,12 @@ const Donate = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const[classone,setClassOne] = useState("donate")
 
   const submitForm = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:4000/paypal-donations", {
+      .post('http://localhost:4000/paypal-donations', {
         name: name,
         email: email,
         message: message,
@@ -22,8 +23,10 @@ const Donate = () => {
       .catch((err) => console.log(err));
     setName("");
     setEmail("");
-    setMessage("");  
+    setMessage("");
     setCheckOut(true);
+    setClassOne("donate-new")
+
   };
 
   return (
@@ -35,7 +38,7 @@ const Donate = () => {
             Your support could power a kinder, fairer, more friendly future.
           </p>
         </div>
-        <div className="donate">
+        <div className={classone}>
           <div className="donate-header">
             <h1>DONATE NOW</h1>
           </div>
@@ -87,10 +90,9 @@ const Donate = () => {
                 <Paypal />
               ) : (
                 <button
-                type="submit"
+                  type="submit"
                   id="payment-button"
-                  value=''
-                 
+                  value=""
                 ></button>
               )}
             </div>
