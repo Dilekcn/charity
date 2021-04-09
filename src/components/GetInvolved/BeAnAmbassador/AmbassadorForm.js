@@ -3,6 +3,8 @@ import imageHeader from '../DonateGoods/Rectangle 26.png';
 import './AmbassadorForm.css';
 import Modal from 'react-modal';
 import { useHistory } from 'react-router';
+import axios from 'axios';
+
 
 const customStyles = {
 	content: {
@@ -41,6 +43,9 @@ const AmbassadorForm = () => {
 	const [particular, setParticular] = useState('');
 	const [comment, setComment] = useState('');
 	const [modalIsOpen, setIsOpen] = React.useState(false);
+	const [userId, setUserId] = useState(
+		JSON.parse(sessionStorage.getItem('userInfo')).id,
+	);
 
 	const makeAnotherDonation = () => {
 		window.scroll(0, 0);
@@ -61,6 +66,19 @@ const AmbassadorForm = () => {
 
 	const submit = (e) => {
 		e.preventDefault();
+		axios
+			.post('http://localhost:4000/ambassadors', {
+				name: name,
+				number: number,
+				email: email,
+				city: city,
+				reason: reason,
+				particular: particular,
+				comment: comment,
+				user_id: userId,
+			})
+			.then((res) => console.log(res))
+			.catch((err) => console.log(err));
 		setName('');
 		setNumber('');
 		setEmail('');
