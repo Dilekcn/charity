@@ -1,14 +1,14 @@
-.donate-goods-container {
+.donate-goods-header-container {
 	position: relative;
 }
 
-.donate-goods-image {
+.donate-goods-header-image {
 	display: block;
 	width: 100%;
 	height: 317px;
 }
 
-.donate-goods-overlay {
+.donate-goods-header-overlay {
 	position: absolute;
 	bottom: 0;
 	background: rgba(52, 124, 165, 0.84);
@@ -20,7 +20,7 @@
 	opacity: 1;
 }
 
-.donate-goods-text {
+.donate-goods-header-text {
 	position: absolute;
 	top: 50%;
 	margin-left: 33%;
@@ -154,17 +154,66 @@
 	margin-top: 10px;
 }
 
-@media (max-width: 360px) {
-	.donate-goods-image {
-		height: 180px;
+@media (max-width: 1006px) {
+	.donate-goods-header-image {
+		height: 200px;
 	}
 
-	.donate-goods-overlay {
-		height: 180px;
+	.donate-goods-header-overlay {
+		height: 200px;
 	}
 
-	.donate-goods-text {
-		margin-left: 8%;
+	.donate-goods-header-text {
+		margin-left: 30%;
+		top: 55%;
+		font-size: 44px;
+	}
+}
+
+@media (max-width: 608px) {
+	.donate-goods-header-image {
+		height: 170px;
+	}
+
+	.donate-goods-header-overlay {
+		height: 170px;
+	}
+
+	.donate-goods-header-text {
+		margin-left: 30%;
+		top: 45%;
+		font-size: 44px;
+	}
+}
+
+@media (max-width: 496px) {
+	.donate-goods-header-image {
+		height: 160px;
+	}
+
+	.donate-goods-header-overlay {
+		height: 160px;
+	}
+
+	.donate-goods-header-text {
+		margin-left: 25%;
+		top: 45%;
 		font-size: 38px;
+	}
+}
+
+@media (max-width: 360px) {
+	.donate-goods-header-image {
+		height: 130px;
+	}
+
+	.donate-goods-header-overlay {
+		height: 130px;
+	}
+
+	.donate-goods-header-text {
+		margin-left: 20%;
+		top: 40%;
+		font-size: 28px;
 	}
 }

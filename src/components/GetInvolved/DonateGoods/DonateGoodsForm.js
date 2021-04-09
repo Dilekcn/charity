@@ -61,14 +61,14 @@ const DonateGoodsForm = () => {
 
 	return (
 		<div>
-			<div className="donate-goods-container">
+			<div className="donate-goods-header-container">
 				<img
 					src={imageHeader}
 					alt="Avatar"
-					className="donate-goods-image"
+					className="donate-goods-header-image"
 				/>
-				<div className="donate-goods-overlay">
-					<h1 className="donate-goods-text">Donate Goods</h1>
+				<div className="donate-goods-header-overlay">
+					<h1 className="donate-goods-header-text">Donate Goods</h1>
 				</div>
 			</div>
 			<div className="donate-goods-form-container">
