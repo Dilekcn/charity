@@ -64,17 +64,18 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 415px) {
   #termstitle {
-    margin-left: 10%;
-    font-size: 34px;
+    margin-left: 12%;
+    font-size: 32px;
   }
 
   .terms-title {
     font-size: 28px;
   }
+
   .terms-content-subtitle {
-    margin-top: 0px;
+    margin-top: 10%;
     font-size: 18px;
     line-height: 30px;
     line-height: 1.5;

@@ -12,7 +12,7 @@
 .policies-content-title {
   text-align: left;
   width: 80%;
-  margin-top: 58px;
+  margin-top: 7%;
   margin-right: auto;
   margin-left: auto;
   font-weight: bolder;
@@ -57,24 +57,17 @@
 
 @media (max-width: 768px) {
   #privacytitle {
-    margin-left: 17%;
+    margin-left: 15%;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 415px) {
   #privacytitle {
     margin-left: 8%;
     font-size: 28px;
   }
-  .policies-header {
-    height: 100px;
-  }
-  .policies-title {
-    font-size: 28px;
-  }
 
   .policies-content-title {
-    margin-top: 58px;
     line-height: 30px;
     font-size: 22px;
   }

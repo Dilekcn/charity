@@ -21,7 +21,7 @@
 .aboutus-content-title {
   text-align: center;
   width: 80%;
-  margin-top: 78px;
+  margin-top: 5%;
   margin-right: auto;
   margin-left: auto;
   font-family: Roboto;
@@ -114,16 +114,11 @@
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 415px) {
   #aboutus-header {
     margin-left: 28%;
   }
-  .about-header {
-    height: 100px;
-  }
-  .aboutus-title {
-    font-size: 28px;
-  }
+
   .aboutus-content-title {
     font-size: 20px;
     font-weight: bold;
