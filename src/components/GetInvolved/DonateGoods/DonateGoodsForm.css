@@ -14,10 +14,7 @@
 	background: rgba(52, 124, 165, 0.84);
 	width: 100%;
 	transition: 0.5s ease;
-	/* opacity:0; */
 	color: white;
-	/* font-size: 20px; */
-	/* padding: 20px; */
 	text-align: center;
 	height: 317px;
 	opacity: 1;
@@ -155,4 +152,19 @@
 	font-size: 18px;
 	width: auto;
 	margin-top: 10px;
+}
+
+@media (max-width: 360px) {
+	.donate-goods-image {
+		height: 180px;
+	}
+
+	.donate-goods-overlay {
+		height: 180px;
+	}
+
+	.donate-goods-text {
+		margin-left: 8%;
+		font-size: 38px;
+	}
 }
