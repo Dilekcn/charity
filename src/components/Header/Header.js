@@ -11,6 +11,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 	const [posts, setPosts] = useState([]);
 	const [userName, setUserName] = useState('');
 	const history = useHistory();
+	const [checked, setChecked] = useState(false);
 
 	useEffect(() => {
 		axios
@@ -39,6 +40,11 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 			);
 		}
 	}, [isLoggedIn]);
+
+	const changeChecked = () => {
+		setChecked(!checked);
+	};
+
 	return (
 		<div id="div-header">
 			<Link to="/">
@@ -64,24 +70,45 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 					/>
 				</button>
 			</form>
-			<input type="checkbox" id="header-menu-checkbox" />
+
+			<input
+				type="checkbox"
+				id="header-menu-checkbox"
+				onChange={(e) => {
+					setChecked(e.target.checked);
+				}}
+				checked={checked}
+			/>
 			<label for="header-menu-checkbox" className="header-menu-icon">
 				<GiHamburgerMenu
 					className="header-hamburger-menu-icon"
 					style={{ fill: '#347ca5' }}
 				/>
 			</label>
+
 			<nav className="header-nav">
 				<ul>
-					<Link to="/getInvolved" className="header-nav-links">
+					<Link
+						to="/getInvolved"
+						className="header-nav-links"
+						onClick={changeChecked}
+					>
 						Get Involved
 					</Link>
 
-					<Link to="/campaigns&news" className="header-nav-links">
+					<Link
+						to="/campaigns&news"
+						className="header-nav-links"
+						onClick={changeChecked}
+					>
 						Campaigns & News
 					</Link>
 
-					<Link to="/about-us" className="header-nav-links">
+					<Link
+						to="/aboutus"
+						className="header-nav-links"
+						onClick={changeChecked}
+					>
 						About Us
 					</Link>
 					{isLoggedIn && userName !== 'guest' ? (
@@ -98,6 +125,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 								setIsLoggedIn(false);
 								sessionStorage.removeItem('userInfo');
 							}
+							changeChecked();
 						}}
 					>
 						{isLoggedIn ? 'Log Out' : 'Log In'}

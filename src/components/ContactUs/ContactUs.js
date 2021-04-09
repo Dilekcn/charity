@@ -43,10 +43,10 @@ const ContactUs = () => {
 			</div>
 			<div className="contact-us-container">
 				<div className="contact-us-form-container">
-					<h4 className="contact-us-intro-text">
+					<h3 className="contact-us-intro-text">
 						Please complete this enquiry form. We will try our best to
 						respond within three working days.
-					</h4>
+					</h3>
 					<form className="contact-us-form" onSubmit={submitMessage}>
 						<label>First Name</label>
 						<input

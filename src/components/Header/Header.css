@@ -185,6 +185,9 @@
 	.header-search-box-btn {
 		width: 21px;
 	}
+	.header-nav {
+		top: 68px;
+	}
 }
 
 @media (max-width: 360px) {
@@ -213,5 +216,8 @@
 	}
 	.header-hamburger-menu-icon {
 		font-size: 20px;
+	}
+	.header-nav {
+		top: 51px;
 	}
 }
