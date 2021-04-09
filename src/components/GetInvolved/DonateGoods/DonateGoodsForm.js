@@ -98,10 +98,7 @@ const DonateGoodsForm = () => {
 							<div className="donate-goods-form-contact-no">
 								<label>
 									Contact Number{' '}
-									<span
-										className="donate-goods-form-contact-no-format"
-										style={{ fontSize: '14px' }}
-									>
+									<span className="donate-goods-form-contact-no-format">
 										<i>(Format XXX-XXXX-XXXX)</i>
 									</span>
 								</label>
