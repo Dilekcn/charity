@@ -140,6 +140,8 @@ export default function App() {
 					/>
 
 					<Route exact path="/contact-us" component={ContactUs} />
+					<Route exact path="/aboutus" component={About} />
+					<Route exact path="/terms&conditions" component={Terms} />
 				</Switch>
 
 				<Footer />
