@@ -16,9 +16,10 @@ export default function NewsDetail() {
     const[post,setPost]=useState([])
  
     useEffect(() => {
-        axios.get(`http://localhost:4000/posts/${id}`)
+        axios.get(`https://mern-brothers.herokuapp.com/posts/${id}`)
         .then(res=>{ 
             setPost(res.data)
+            console.log(res.data)
         })
         .catch(err=>{
             console.log(err)
@@ -26,7 +27,7 @@ export default function NewsDetail() {
     }, [])
 
     
-
+ 
 
     return (
         <div>
