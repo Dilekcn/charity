@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const NewsHomePage = () => {
 	const [posts, setPosts] = useState([]);
-	const [medias, setMedias] = useState([]);
+	
 
 	useEffect(() => {
 		axios
@@ -14,16 +14,8 @@ const NewsHomePage = () => {
 			.catch((err) => console.log(err));
 	}, []);
 
-	useEffect(() => {
-		axios
-			.get('http://localhost:4000/medias')
-			.then((res) => setMedias(res.data))
-			.catch((err) => console.log(err));
-	}, []);
 
-	// const postImgId1 = posts[posts.length - 1].post_img_id;
-	// const postImgId2 = posts[posts.length - 2].post_img_id;
-	// const postImgId3 = posts[posts.length - 3].post_img_id;
+
 
 	return (
 		<div id="news-div">
@@ -31,17 +23,13 @@ const NewsHomePage = () => {
 
 			<div id="newsHomePage">
 				<div className="news">
-					{medias.map((media) =>
-						posts.length !== 0 &&
-						media.id === posts[posts.length - 1].post_img_id ? (
+				
 							<img
 								className="news-img"
-								src={media.media_url}
+								src={posts.length !== 0 && posts[posts.length - 1].post_img_url}
 								alt="pic"
 							/>
-						) : null,
-					)}
-
+				
 					<div className="news-text">
 						<h2>{posts.length !== 0 && posts[posts.length - 1].title}</h2>
 
@@ -81,16 +69,11 @@ const NewsHomePage = () => {
 								<span className="news-btn">Read More</span>
 							</Link>
 						</div>
-						{medias.map((media) =>
-							posts.length !== 0 &&
-							media.id === posts[posts.length - 2].post_img_id ? (
-								<img
-									className="news-img"
-									src={media.media_url}
-									alt="pic"
-								/>
-							) : null,
-						)}
+						<img
+								className="news-img"
+								src={posts.length !== 0 && posts[posts.length - 2].post_img_url}
+								alt="pic"
+							/>
 					</div>
 				</div>
 				<div
@@ -102,16 +85,11 @@ const NewsHomePage = () => {
 
 				<div>
 					<div className="news">
-						{medias.map((media) =>
-							posts.length !== 0 &&
-							media.id === posts[posts.length - 3].post_img_id ? (
-								<img
-									className="news-img"
-									src={media.media_url}
-									alt="pic"
-								/>
-							) : null,
-						)}
+					<img
+								className="news-img"
+								src={posts.length !== 0 && posts[posts.length - 3].post_img_url}
+								alt="pic"
+							/>
 
 						<div className="news-text">
 							<h2>
