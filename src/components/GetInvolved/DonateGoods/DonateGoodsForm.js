@@ -199,8 +199,7 @@ const DonateGoodsForm = () => {
 				<span className="donate-goods-form-modal-text">
 					Thank you! <br />
 					Your donation is currently under review. Once approved, you will
-					be contacted via email regarding the collection time in your
-					area.
+					be contacted via email regarding the collection time in your area
 				</span>
 				<br />
 				<br />
