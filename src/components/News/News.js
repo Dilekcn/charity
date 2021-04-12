@@ -9,11 +9,11 @@ const News = () => {
 	const [viewmore, setViewmore] = useState(0);
 	useEffect(() => {
 		axios
-			.get('http://localhost:4000/posts')
+			.get('https://mern-brothers.herokuapp.com/posts')
 			.then((res) => setPosts(res.data))
 			.catch((err) => console.log(err));
 			console.log()
-	}, []);
+	}, []); 
 
 	const viewMore = () => {
 		if (posts.length - 2 <= viewmore) {

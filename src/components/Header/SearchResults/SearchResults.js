@@ -1,7 +1,7 @@
 import './SearchResults.css'
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+
  
 const SearchResults = ({results, searchResults}) => {
 	// const {id} =useParams();
@@ -11,7 +11,7 @@ const SearchResults = ({results, searchResults}) => {
         setPosts(searchResults)
 	
 	}, [searchResults]);
-
+ 
 	const viewMore = () => {
 		if (posts.length - 2 <= viewmore) {
 			document.querySelector('.allPosts').textContent =
