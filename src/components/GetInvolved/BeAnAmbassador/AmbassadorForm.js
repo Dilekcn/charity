@@ -143,7 +143,7 @@ const AmbassadorForm = () => {
 				<form className="ambassador-form" onSubmit={submit}>
 					<div className="ambassador-row1">
 						<div>
-							<label htmlFor="ambassador-name">Full Name</label>
+							<label htmlFor="ambassador-name">First Name</label>
 							<input
 								required
 								value={name}
@@ -154,6 +154,7 @@ const AmbassadorForm = () => {
 								placeholder="Enter your name and surname"
 							/>
 						</div>
+					
 						<div>
 							<label htmlFor="ambassador-contact">Contact Number</label>
 							<input
@@ -168,6 +169,18 @@ const AmbassadorForm = () => {
 						</div>
 					</div>
 					<div className="ambassador-row2">
+					<div>
+							<label htmlFor="ambassador-name">Last Name</label>
+							<input
+								required
+								value={name}
+								onChange={(e) => setName(e.target.value)}
+								type="text"
+								id="ambassador-name"
+								name="ambassador-name"
+								placeholder="Enter your name and surname"
+							/>
+						</div>
 						<div className="ambas-email">
 							<label htmlFor="ambassador-email">Email</label>
 							<input
