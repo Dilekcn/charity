@@ -35,7 +35,8 @@ const customStyles = {
 };
 
 const AmbassadorForm = () => {
-	const [name, setName] = useState('');
+	const [firstname, setFirstName] = useState('');
+	const [lastname, setLastName] = useState('');
 	const [number, setNumber] = useState('');
 	const [email, setEmail] = useState('');
 	const [city, setCity] = useState('');
@@ -67,19 +68,21 @@ const AmbassadorForm = () => {
 	const submit = (e) => {
 		e.preventDefault();
 		axios
-			.post('http://localhost:4000/ambassadors', {
-				name: name,
-				number: number,
+			.post('http://mern-brothers.herokuapp.com/ambassadors', {
+				firstname: firstname,
+				lastname: lastname,
+				phone: number,
 				email: email,
-				city: city,
-				reason: reason,
-				particular: particular,
-				comment: comment,
+				based_in: city,
+				reason_to_join: reason,
+				interest_area: particular,
+				comments: comment,
 				user_id: userId,
 			})
 			.then((res) => console.log(res))
 			.catch((err) => console.log(err));
-		setName('');
+		setFirstName('');
+		setLastName('');
 		setNumber('');
 		setEmail('');
 		setCity('');
@@ -146,14 +149,26 @@ const AmbassadorForm = () => {
 							<label htmlFor="ambassador-name">First Name</label>
 							<input
 								required
-								value={name}
-								onChange={(e) => setName(e.target.value)}
+								value={firstname}
+								onChange={(e) => setFirstName(e.target.value)}
 								type="text"
 								id="ambassador-name"
 								name="ambassador-name"
 								placeholder="Enter your name and surname"
 							/>
 						</div>
+						<div>
+							<label htmlFor="ambassador-name">Last Name</label>
+							<input
+								required
+								value={lastname}
+								onChange={(e) => setLastName(e.target.value)}
+								type="text"
+								id="ambassador-name"
+								name="ambassador-name"
+								placeholder="Enter your name and surname"
+							/>
+					</div>
 					
 						<div>
 							<label htmlFor="ambassador-contact">Contact Number</label>
@@ -169,18 +184,7 @@ const AmbassadorForm = () => {
 						</div>
 					</div>
 					<div className="ambassador-row2">
-					<div>
-							<label htmlFor="ambassador-name">Last Name</label>
-							<input
-								required
-								value={name}
-								onChange={(e) => setName(e.target.value)}
-								type="text"
-								id="ambassador-name"
-								name="ambassador-name"
-								placeholder="Enter your name and surname"
-							/>
-						</div>
+				
 						<div className="ambas-email">
 							<label htmlFor="ambassador-email">Email</label>
 							<input
