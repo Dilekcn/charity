@@ -94,13 +94,14 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						password: password
 					})
 					.then((res) => {
-						window.scroll(0,0)
-						sessionStorage.setItem('userInfo', JSON.stringify(res.data))
-						document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...'
-						setTimeout(() => {
-							setIsLoggedIn(true)
-							history.push('/')
-						}, 1500);
+						// window.scroll(0,0)
+						// sessionStorage.setItem('userInfo', JSON.stringify(res.data))
+						// document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...'
+						// setTimeout(() => {
+						// 	setIsLoggedIn(true)
+						// 	history.push('/')
+						// }, 1500);
+						console.log(res.data)
 					})
 					.catch((err) => console.log(err));
 				document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
