@@ -1,24 +1,17 @@
 import './SearchResults.css'
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import axios from 'axios';
+
  
 const SearchResults = ({results, searchResults}) => {
 	// const {id} =useParams();
 	const [posts, setPosts] = useState([])
-	const [medias, setMedias] = useState([]);
 	const [viewmore, setViewmore] = useState(0);
 	useEffect(() => {
         setPosts(searchResults)
 	
 	}, [searchResults]);
-	useEffect(() => {
-		axios
-			.get('http://localhost:4000/medias')
-			.then((res) => setMedias(res.data))
-			.catch((err) => console.log(err));
-	}, []);
-
+ 
 	const viewMore = () => {
 		if (posts.length - 2 <= viewmore) {
 			document.querySelector('.allPosts').textContent =
@@ -43,11 +36,8 @@ const SearchResults = ({results, searchResults}) => {
 						.map((post) => (
 							<tr className="news-area">
 								<td className="news-area-img">
-									{medias.map((media) =>
-										media.id === post.post_img_id ? (
-											<img src={media.media_url} alt="" />
-										) : null,
-									)}
+								<img src={post.post_img_url} alt="" />	
+										
 								</td>
 
 								<td>

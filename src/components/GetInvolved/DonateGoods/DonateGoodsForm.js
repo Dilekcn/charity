@@ -105,7 +105,7 @@ const DonateGoodsForm = () => {
 								<input
 									type="tel"
 									className="donate-goods-form-contact-no-input"
-									pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+									// pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
 									placeholder="Enter contact number"
 									value={phone}
 									onChange={(e) => setPhone(e.target.value)}
@@ -194,29 +194,13 @@ const DonateGoodsForm = () => {
 			<Modal
 				isOpen={modalIsOpen}
 				onRequestClose={() => setModalIsOpen(false)}
-				style={{
-					overlay: {},
-					content: {
-						display: 'flex',
-						justifyContent: 'center',
-						flexDirection: 'column',
-						alignItems: 'center',
-						top: '25%',
-						left: '25%',
-						right: '25%',
-						height: 'fit-content',
-						width: '50%',
-						padding: '60px',
-						textAlign: 'center',
-						lineHeight: 1.8,
-						backgroundColor: '#347ca5',
-						color: 'white',
-					},
-				}}
+				className="donate-goods-form-modal"
 			>
-				Thank you! Your donation is currently under review. Once approved,
-				you will be contacted via email regarding the collection time in
-				your area.
+				<span className="donate-goods-form-modal-text">
+					Thank you! <br />
+					Your donation is currently under review. Once approved, you will
+					be contacted via email regarding the collection time in your area
+				</span>
 				<br />
 				<br />
 				<button

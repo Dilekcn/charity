@@ -21,7 +21,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 	useEffect( 
 		() => {
 			axios
-				.get('http://localhost:4000/users')
+				.get('https://mern-brothers.herokuapp.com/users')
 				.then((res) => {
 					setUsers(res.data);
 				})
@@ -44,7 +44,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 		}
 
 		axios
-		.post('http://localhost:4000/users', {
+		.post('https://mern-brothers.herokuapp.com/users', {
 			firstname:givenName,
 			lastname:familyName,
 			username:email,
@@ -86,7 +86,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 
 			if (!existEmail) {
 				axios
-					.post('http://localhost:4000/users', {
+					.post('https://mern-brothers.herokuapp.com/users', {
 						firstname:name,
 						lastname:surname,
 						username:username,

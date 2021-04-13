@@ -6,21 +6,14 @@ import axios from 'axios';
 const News = () => { 
 	// const {id} =useParams();
 	const [posts, setPosts] = useState([]);
-	const [medias, setMedias] = useState([]);
 	const [viewmore, setViewmore] = useState(0);
 	useEffect(() => {
 		axios
-			.get('http://localhost:4000/posts')
+			.get('https://mern-brothers.herokuapp.com/posts')
 			.then((res) => setPosts(res.data))
 			.catch((err) => console.log(err));
 			console.log()
-	}, []);
-	useEffect(() => {
-		axios
-			.get('http://localhost:4000/medias')
-			.then((res) => setMedias(res.data))
-			.catch((err) => console.log(err));
-	}, []);
+	}, []); 
 
 	const viewMore = () => {
 		if (posts.length - 2 <= viewmore) {
@@ -54,12 +47,8 @@ const News = () => {
 						.reverse()
 						.map((post) => (
 							<tr className="news-area">
-								<td className="news-area-img">
-									{medias.map((media) =>
-										media.id === post.post_img_id ? (
-											<img src={media.media_url} alt="" />
-										) : null,
-									)}
+								<td className="news-area-img">				
+											<img src={post.post_img_url} alt="" />						
 								</td>
 
 								<td>

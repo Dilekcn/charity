@@ -14,36 +14,26 @@ export default function NewsDetail() {
     
     const{id}=useParams()
     const[post,setPost]=useState([])
-    const[medias,setMedias]=useState([])
  
     useEffect(() => {
-        axios.get(`http://localhost:4000/posts/${id}`)
+        axios.get(`https://mern-brothers.herokuapp.com/posts/${id}`)
         .then(res=>{ 
             setPost(res.data)
+            console.log(res.data)
         })
         .catch(err=>{
             console.log(err)
         })
     }, [])
 
-     
-    useEffect(() => {
-        axios.get(`http://localhost:4000/medias`)
-        .then(res=>{ 
-            setMedias(res.data)
+    
  
-        })
-        .catch(err=>{
-            console.log(err)
-        })
-    }, [])
-
 
     return (
         <div>
             <div className="slider-container">
-                    {medias.map(media=>media.id===post.post_img_id ? <div style={{backgroundImage:`url(${media.media_url})`,paddingTop:"50px",height:"575px", backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}></div> : null)}
-                    {medias.map(media=>media.id===post.donatee_img_id ? <img className="donatee-img"src={media.media_url} alt='donatee'/>:null)}
+                    <div style={{backgroundImage:`url(${post.post_img_url})`,paddingTop:"50px",height:"575px", backgroundPosition: 'center',backgroundSize: 'cover',backgroundRepeat: 'no-repeat'}}></div> 
+                    <img className="donatee-img"src={post.donatee_img_url} alt='donatee'/>
 
                     <p className="quote">
                         <span>"{post.donatee_desc}"</span>

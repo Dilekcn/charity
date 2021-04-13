@@ -2,8 +2,8 @@
   "posts": [
     {
       "id": 1,
-      "post_img_id": 101,
-      "donatee_img_id": 201,
+      "post_img_url": "https://i.postimg.cc/6qpCntLx/sporlab-f8ld5zt3a3k-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/wML046Ry/oleg-ivanov-Yc-Opd3zftx-E-unsplash.jpg",
       "donatee_desc": "Part of being a person is about helping others.I am so greateful for all the help I get.Thanks to everyone who helped.",
       "donatee_name": "Sarah Wingston",
       "title": "Help Homeless in London",
@@ -12,8 +12,8 @@
     },
     {
       "id": 2,
-      "post_img_id": 102,
-      "donatee_img_id": 202,
+      "post_img_url": "https://i.postimg.cc/Bv25GhQk/matt-collamer-8-UG90-AYPDW4-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/rpsTBWp6/irene-strong-v2a-Knj-Mb-P-k-unsplash.jpg",
       "donatee_desc": "Community service gives me a valuable opportunity to walk into a different community that is less familiar to me but just as colorful and most importantly, in need.",
       "donatee_name": "John Doe",
       "title": "Books for Kids",
@@ -22,8 +22,8 @@
     },
     {
       "id": 3,
-      "post_img_id": 103,
-      "donatee_img_id": 203,
+      "post_img_url": "https://i.postimg.cc/RFRcWNtT/ben-white-PAi-Vz-Sm-Yy-c-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/CKrPzrV1/miguel-alcantara-f-VVY8z0h9-Y0-unsplash.jpg",
       "donatee_desc": "Life engenders life. Energy creates energy. It is by spending oneself that one becomes rich.",
       "donatee_name": "Emily Anderson",
       "title": "Women Empowerment",
@@ -32,8 +32,8 @@
     },
     {
       "id": 4,
-      "post_img_id": 104,
-      "donatee_img_id": 204,
+      "post_img_url": "https://i.postimg.cc/5NtmFqnQ/joel-muniz-A4-Ax1-Apccf-A-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/pd5V67kb/leilani-angel-K84vnnzxm-TQ-unsplash.jpg",
       "donatee_desc": "There is no use whatever trying to help people who do not help themselves. You cannot push anyone up a ladder unless he is willing to climb himself.",
       "donatee_name": "Andrew Hamilton",
       "title": "Building Schools Together",
@@ -42,8 +42,8 @@
     },
     {
       "id": 5,
-      "post_img_id": 105,
-      "donatee_img_id": 205,
+      "post_img_url": "https://i.postimg.cc/5NtmFqnQ/joel-muniz-A4-Ax1-Apccf-A-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/ydLCvy93/bruno-emmanuelle-Jf-Nse-U6-L9ug-unsplash.jpg",
       "donatee_desc": "The purpose of life is not to be happy. It is to be useful, to be honorable, to be compassionate, to have it make some difference that you have lived and lived well.",
       "donatee_name": "Irna Towsen",
       "title": "Help a Fellow Student",
@@ -52,8 +52,8 @@
     },
     {
       "id": 6,
-      "post_img_id": 106,
-      "donatee_img_id": 206,
+      "post_img_url": "https://i.postimg.cc/9Mjp46nc/joel-muniz-3k3l2brxmw-Q-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/9F2hWsfY/ludovic-migneault-EZ4-TYg-XPNWk-unsplash.jpg",
       "donatee_desc": "It’s the action, not the fruit of the action, that’s important. You have to do the right thing. It may not be in your power, may not be in your time, that there’ll be any fruit.",
       "donatee_name": "Mark Dale",
       "title": "Read for Elderly",
@@ -62,8 +62,8 @@
     },
     {
       "id": 7,
-      "post_img_id": 107,
-      "donatee_img_id": 207,
+      "post_img_url": "https://i.postimg.cc/VsKq10mf/craig-philbrick-kfx-PVP-7-P7-U-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/FKnp9TMx/mathis-jrdl-dd0-Eg-K-qo8-A-unsplash.jpg",
       "donatee_desc": "I am only one, but I am one. I cannot do everything, but I can do something. And I will not let what I cannot do interfere with what I can do.",
       "donatee_name": "Sabeelah Khan",
       "title": "Run for Kids",
@@ -72,8 +72,8 @@
     },
     {
       "id": 8,
-      "post_img_id": 108,
-      "donatee_img_id": 208,
+      "post_img_url": "https://i.postimg.cc/brVkRW3D/chitto-cancio-Di-V6h-NAn4b-E-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/bJG6b0zR/kirill-balobanov-Tgtn-H8-Ph9-OI-unsplash.jpg",
       "donatee_desc": "No work is insignificant. All labor that uplifts humanity has dignity and importance and should be undertaken with painstaking excellence.",
       "donatee_name": "Sujith Kandathill",
       "title": "Clean Oceans",
@@ -82,8 +82,8 @@
     },
     {
       "id": 9,
-      "post_img_id": 109,
-      "donatee_img_id": 209,
+      "post_img_url": "https://i.postimg.cc/RFRcWNtT/ben-white-PAi-Vz-Sm-Yy-c-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/SxrtpNTc/christopher-campbell-r-DEOVt-E7v-Os-unsplash.jpg",
       "donatee_desc": "Kindness can transform someone’s dark moment with a blaze of light. You’ll never know how much your caring matters. Make a difference for another today.",
       "donatee_name": "Bethel Singer",
       "title": "Save the Environment",
@@ -92,8 +92,8 @@
     },
     {
       "id": 10,
-      "post_img_id": 110,
-      "donatee_img_id": 210,
+      "post_img_url": "https://i.postimg.cc/PJSzRPrq/aaron-doucett-Hkbe-Lx-OJlqk-unsplash.jpg",
+      "donatee_img_url": "https://i.postimg.cc/6QPKt378/sigmund-Qj-CNk0-Tx-Gfc-unsplash.jpg",
       "donatee_desc": "Thousands of candles can be lighted from a single candle, and the life of the candle will not be shortened.",
       "donatee_name": "Daniel Robertson",
       "title": "Fundrasing for Cancer Research",
@@ -221,108 +221,46 @@
       "email": "kkk@gmail.com",
       "password": "1234",
       "id": 15
-    }
-  ],
-  "medias": [
-    {
-      "id": 101,
-      "media_url": "https://i.postimg.cc/6qpCntLx/sporlab-f8ld5zt3a3k-unsplash.jpg",
-      "type": "post"
     },
     {
-      "id": 102,
-      "media_url": "https://i.postimg.cc/Bv25GhQk/matt-collamer-8-UG90-AYPDW4-unsplash.jpg",
-      "type": "post"
+      "firstname": "Irna",
+      "lastname": "Towsen",
+      "username": "Irna",
+      "email": "mrselifbalci@gmail.com",
+      "password": "123456",
+      "id": 16
     },
     {
-      "id": 103,
-      "media_url": "https://i.postimg.cc/RFRcWNtT/ben-white-PAi-Vz-Sm-Yy-c-unsplash.jpg",
-      "type": "post"
+      "firstname": "Sujith",
+      "lastname": "Sujith",
+      "username": "Sujith",
+      "email": "sujith@gmail.com",
+      "password": "123456",
+      "id": 17
     },
     {
-      "id": 104,
-      "media_url": "https://i.postimg.cc/5NtmFqnQ/joel-muniz-A4-Ax1-Apccf-A-unsplash.jpg",
-      "type": "post"
+      "firstname": "Irna",
+      "lastname": "Irna",
+      "username": "Irna",
+      "email": "Irna@gmail.com",
+      "password": "123456",
+      "id": 18
     },
     {
-      "id": 105,
-      "media_url": "https://i.postimg.cc/5NtmFqnQ/joel-muniz-A4-Ax1-Apccf-A-unsplash.jpg",
-      "type": "post"
+      "firstname": "Irna",
+      "lastname": "Irna",
+      "username": "Irna",
+      "email": "Irna@gmail.com",
+      "password": "123456",
+      "id": 19
     },
     {
-      "id": 106,
-      "media_url": "https://i.postimg.cc/9Mjp46nc/joel-muniz-3k3l2brxmw-Q-unsplash.jpg",
-      "type": "post"
-    },
-    {
-      "id": 107,
-      "media_url": "https://i.postimg.cc/VsKq10mf/craig-philbrick-kfx-PVP-7-P7-U-unsplash.jpg",
-      "type": "post"
-    },
-    {
-      "id": 108,
-      "media_url": "https://i.postimg.cc/brVkRW3D/chitto-cancio-Di-V6h-NAn4b-E-unsplash.jpg",
-      "type": "post"
-    },
-    {
-      "id": 109,
-      "media_url": "https://i.postimg.cc/RFRcWNtT/ben-white-PAi-Vz-Sm-Yy-c-unsplash.jpg",
-      "type": "post"
-    },
-    {
-      "id": 110,
-      "media_url": "https://i.postimg.cc/PJSzRPrq/aaron-doucett-Hkbe-Lx-OJlqk-unsplash.jpg",
-      "type": "post"
-    },
-    {
-      "id": 201,
-      "media_url": "https://i.postimg.cc/wML046Ry/oleg-ivanov-Yc-Opd3zftx-E-unsplash.jpg",
-      "type": "donatee"
-    },
-    {
-      "id": 202,
-      "media_url": "https://i.postimg.cc/rpsTBWp6/irene-strong-v2a-Knj-Mb-P-k-unsplash.jpg",
-      "type": "donatee"
-    },
-    {
-      "id": 203,
-      "media_url": "https://i.postimg.cc/CKrPzrV1/miguel-alcantara-f-VVY8z0h9-Y0-unsplash.jpg",
-      "type": "donatee"
-    },
-    {
-      "id": 204,
-      "media_url": "https://i.postimg.cc/pd5V67kb/leilani-angel-K84vnnzxm-TQ-unsplash.jpg",
-      "type": "donatee"
-    },
-    {
-      "id": 205,
-      "media_url": "https://i.postimg.cc/ydLCvy93/bruno-emmanuelle-Jf-Nse-U6-L9ug-unsplash.jpg",
-      "type": "donatee"
-    },
-    {
-      "id": 206,
-      "media_url": "https://i.postimg.cc/9F2hWsfY/ludovic-migneault-EZ4-TYg-XPNWk-unsplash.jpg",
-      "type": "donatee"
-    },
-    {
-      "id": 207,
-      "media_url": "https://i.postimg.cc/FKnp9TMx/mathis-jrdl-dd0-Eg-K-qo8-A-unsplash.jpg",
-      "type": "donatee"
-    },
-    {
-      "id": 208,
-      "media_url": "https://i.postimg.cc/bJG6b0zR/kirill-balobanov-Tgtn-H8-Ph9-OI-unsplash.jpg",
-      "type": "donatee"
-    },
-    {
-      "id": 209,
-      "media_url": "https://i.postimg.cc/SxrtpNTc/christopher-campbell-r-DEOVt-E7v-Os-unsplash.jpg",
-      "type": "donatee"
-    },
-    {
-      "id": 210,
-      "media_url": "https://i.postimg.cc/6QPKt378/sigmund-Qj-CNk0-Tx-Gfc-unsplash.jpg",
-      "type": "donatee"
+      "firstname": "andrew",
+      "lastname": "andrew",
+      "username": "andrew",
+      "email": "andrew@gmail.com",
+      "password": "123456",
+      "id": 20
     }
   ],
   "goods-donation": [
@@ -405,6 +343,110 @@
       "instructions_for_the_driver": "adsasd",
       "user_id": 10,
       "id": 7
+    },
+    {
+      "firstname": "asas",
+      "lastname": "dafad",
+      "email": "asas@asas.com",
+      "phone": "111-2222-2222",
+      "type_of_goods": "adasd",
+      "number_of_pieces": "3",
+      "address": "SDSDa",
+      "post_code": "dcsdfs",
+      "instructions_for_the_driver": "sdasdaccscfvvf",
+      "user_id": 10,
+      "id": 8
+    },
+    {
+      "firstname": "as",
+      "lastname": "sas",
+      "email": "asdad@a.com",
+      "phone": "111-1111-1111",
+      "type_of_goods": "asdsd",
+      "number_of_pieces": "2",
+      "address": "sdcsc",
+      "post_code": "sdc",
+      "instructions_for_the_driver": "asdasda",
+      "user_id": 10,
+      "id": 9
+    },
+    {
+      "firstname": "asd",
+      "lastname": "asd",
+      "email": "asdasd@a.com",
+      "phone": "111-1111-1111",
+      "type_of_goods": "a",
+      "number_of_pieces": "2",
+      "address": "sd",
+      "post_code": "s",
+      "instructions_for_the_driver": "s",
+      "user_id": 10,
+      "id": 10
+    },
+    {
+      "firstname": "asda",
+      "lastname": "sd",
+      "email": "a@a.com",
+      "phone": "222",
+      "type_of_goods": "dasd",
+      "number_of_pieces": "33",
+      "address": "a",
+      "post_code": "a",
+      "instructions_for_the_driver": "a",
+      "user_id": 10,
+      "id": 11
+    },
+    {
+      "firstname": "a",
+      "lastname": "a",
+      "email": "a@a",
+      "phone": "1",
+      "type_of_goods": "sd",
+      "number_of_pieces": "1",
+      "address": "d",
+      "post_code": "s",
+      "instructions_for_the_driver": "s",
+      "user_id": 10,
+      "id": 12
+    },
+    {
+      "firstname": "n",
+      "lastname": "n",
+      "email": "n@n",
+      "phone": "n",
+      "type_of_goods": "N",
+      "number_of_pieces": "8",
+      "address": "8",
+      "post_code": "J",
+      "instructions_for_the_driver": "J",
+      "user_id": 10,
+      "id": 13
+    },
+    {
+      "firstname": "asds",
+      "lastname": "d",
+      "email": "a@a",
+      "phone": "1",
+      "type_of_goods": "r",
+      "number_of_pieces": "4",
+      "address": "t",
+      "post_code": "g",
+      "instructions_for_the_driver": "b",
+      "user_id": 10,
+      "id": 14
+    },
+    {
+      "firstname": "a",
+      "lastname": "a",
+      "email": "a@a",
+      "phone": "a",
+      "type_of_goods": "e",
+      "number_of_pieces": "3",
+      "address": "e",
+      "post_code": "v",
+      "instructions_for_the_driver": "b\n",
+      "user_id": 10,
+      "id": 15
     }
   ],
   "gift-card-donation": [
@@ -498,6 +540,30 @@
       "reason_to_join": "I am a good person.",
       "interest_area": "advertise",
       "comments": ""
+    },
+    {
+      "user_id": 4,
+      "firstname": "John2",
+      "lastname": "Doe",
+      "email": "john@gmail.com",
+      "phone": 789678903,
+      "based_in": "Birmingham",
+      "reason_to_join": "I am a good person.",
+      "interest_area": "advertise",
+      "comments": "",
+      "id": 5
+    },
+    {
+      "firstname": "Mustafa",
+      "lastname": "Balci",
+      "phone": "10250",
+      "email": "mrselifbalci@gmail.com",
+      "based_in": "dsd",
+      "reason_to_join": "dsad",
+      "interest_area": "dsd",
+      "comments": "dszd",
+      "user_id": 11,
+      "id": 6
     }
   ],
   "subscribers": [
@@ -813,18 +879,27 @@
       "name": "",
       "email": "",
       "message": "",
+<<<<<<< HEAD
       "id": "ppOE0MM"
+=======
+      "id": "7ULbSeA"
+>>>>>>> ced276aa3d07044a5aa475c34d1b3f973ab23b92
     },
     {
       "name": "",
       "email": "",
       "message": "",
+<<<<<<< HEAD
       "id": "-VxwzFl"
+=======
+      "id": "Dprub9D"
+>>>>>>> ced276aa3d07044a5aa475c34d1b3f973ab23b92
     },
     {
       "name": "",
       "email": "",
       "message": "",
+<<<<<<< HEAD
       "id": "VTsOMic"
     },
     {
@@ -838,6 +913,9 @@
       "email": "",
       "message": "",
       "id": "_AA4Hhz"
+=======
+      "id": "WqbL80b"
+>>>>>>> ced276aa3d07044a5aa475c34d1b3f973ab23b92
     }
   ]
 }
