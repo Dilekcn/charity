@@ -15,7 +15,7 @@ const Login = ({setIsLoggedIn}) => {
 		() => {
 			window.scroll(0, 0)
 			axios
-				.get('http://localhost:4000/users')
+				.get('https://mern-brothers.herokuapp.com/users')
 				.then((res) => {
 					setUsers(res.data);
 				})
@@ -45,7 +45,7 @@ const Login = ({setIsLoggedIn}) => {
 			document.querySelector('.valid').textContent = 'Please fill the blanks!'
 			return false
 		}
-		axios.get('http://localhost:4000/users')
+		axios.get('https://mern-brothers.herokuapp.com/users')
 		.then(res => {
 			for(let i = 0; i < res.data.length; i++) {
 				if(res.data[i].email === email && res.data[i].password === password) {
