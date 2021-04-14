@@ -45,24 +45,26 @@ const Login = ({setIsLoggedIn}) => {
 			document.querySelector('.valid').textContent = 'Please fill the blanks!'
 			return false
 		}
-		axios.get('https://mern-brothers.herokuapp.com/users')
+		const username = email.includes('@') ? {
+			email: email,
+			password:password
+		} : {
+			username: email,
+			password:password
+		}
+		axios.post('https://mern-brothers.herokuapp.com/signin', username)
 		.then(res => {
-			for(let i = 0; i < res.data.length; i++) {
-				if(res.data[i].email === email && res.data[i].password === password) {
-					setUserExist(true)
-					setIsLoggedIn(true)
-					sessionStorage.setItem('userInfo', JSON.stringify(res.data[i]))
-				} else if(res.data[i].username === email && res.data[i].password === password) {
-					setUserExist(true)
-					setIsLoggedIn(true)
-					sessionStorage.setItem('userInfo', JSON.stringify(res.data[i]))
-				} else {
-					setUserExist(false)
-					document.querySelector('.valid').textContent = 'Invalid email or password!'
-				}
-			}
+			setUserExist(true)
+			setIsLoggedIn(true)
+			sessionStorage.setItem('userInfo', JSON.stringify(res.data))
+		
+			console.log(res.data)
 		})
-		.catch(err => console.log(err))
+		.catch(err => {
+			setUserExist(false)
+			document.querySelector('.valid').textContent = 'Invalid email or password!'
+			console.log(err)
+		})
 	}
 
 	if(userExist) {

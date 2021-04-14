@@ -35,6 +35,8 @@ const customStyles = {
 
 const GiftCard = () => {
 	const [checkbox, setCheckbox] = useState(false);
+	const [firstname, setFirstname] = useState('');
+	const [lastname, setLastname] = useState('');
 	const [type, setType] = useState('');
 	const [number, setNumber] = useState('');
 	const [code, setCode] = useState('');
@@ -60,7 +62,7 @@ const GiftCard = () => {
 	const submit = async (e) => {
 		e.preventDefault();
 		await axios
-			.post('http://localhost:4000/gift-card-donation', {
+			.post('https://mern-brothers.herokuapp.com/gift-card-donation', {
 				type_of_card: type,
 				card_number: number,
 				security_code: code,
@@ -80,6 +82,8 @@ const GiftCard = () => {
 		setExpiration('');
 		setPostcode('');
 		setInfo('');
+		setFirstname('')
+		setLastname('')
 		setIsOpen(true);
 	};
 
@@ -104,8 +108,8 @@ const GiftCard = () => {
 						</label>
 						<input
 							required
-							value={type}
-							onChange={(e) => setType(e.target.value)}
+							value={firstname}
+							onChange={(e) => setFirstname(e.target.value)}
 							type="text"
 							id="giftcard-type"
 							name="giftcard-type"w
@@ -118,8 +122,8 @@ const GiftCard = () => {
 						</label>
 						<input
 							required
-							value={type}
-							onChange={(e) => setType(e.target.value)}
+							value={lastname}
+							onChange={(e) => setLastname(e.target.value)}
 							type="text"
 							id="giftcard-type"
 							name="giftcard-type"w
@@ -257,10 +261,12 @@ const GiftCard = () => {
 			</div>
 			<Modal
 				isOpen={modalIsOpen}
-				style={customStyles}
+				// style={customStyles}
 				onAfterOpen={afterOpenModal}
 				onRequestClose={closeModal}
 				contentLabel="Example Modal"
+				ariaHideApp={false}
+				className="gift-card-modal"
 			>
 				<p>
 					Thank you! You have just made a difference in someone else’s
