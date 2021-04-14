@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect,useEffect } from 'react';
+import React, { useState, useLayoutEffect, useEffect } from 'react';
 import imageHeader from './Rectangle 26.png';
 import './DonateGoodsForm.css';
 import Modal from 'react-modal';
@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 const DonateGoodsForm = () => {
-	
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
@@ -17,14 +16,13 @@ const DonateGoodsForm = () => {
 	const [address, setAddress] = useState('');
 	const [postCode, setPostCode] = useState('');
 	const [instructions, setInstructions] = useState('');
-	const [userId,setUserId]=useState(JSON.parse(sessionStorage.getItem('userInfo')).id)
-	
+	const [userId, setUserId] = useState(
+		JSON.parse(sessionStorage.getItem('userInfo')).id,
+	);
 
 	useLayoutEffect(() => {
 		window.scroll(0, 0);
 	}, []);
-
-
 
 	const makeAnotherDonation = () => {
 		window.scroll(0, 0);
@@ -44,11 +42,11 @@ const DonateGoodsForm = () => {
 				address: address,
 				post_code: postCode,
 				instructions_for_the_driver: instructions,
-				user_id: userId
+				user_id: userId,
 			})
 			.then((res) => console.log(res))
 			.catch((err) => console.log(err));
-		
+
 		setFirstName('');
 		setLastName('');
 		setPhone('');
@@ -59,20 +57,18 @@ const DonateGoodsForm = () => {
 		setPostCode('');
 		setInstructions('');
 		setModalIsOpen(true);
-		
-		
 	};
 
 	return (
 		<div>
-			<div className="donate-goods-container">
+			<div className="donate-goods-header-container">
 				<img
 					src={imageHeader}
 					alt="Avatar"
-					className="donate-goods-image"
+					className="donate-goods-header-image"
 				/>
-				<div className="donate-goods-overlay">
-					<h1 className="donate-goods-text">Donate Goods</h1>
+				<div className="donate-goods-header-overlay">
+					<h1 className="donate-goods-header-text">Donate Goods</h1>
 				</div>
 			</div>
 			<div className="donate-goods-form-container">
@@ -102,10 +98,7 @@ const DonateGoodsForm = () => {
 							<div className="donate-goods-form-contact-no">
 								<label>
 									Contact Number{' '}
-									<span
-										className="donate-goods-form-contact-no-format"
-										style={{ fontSize: '14px' }}
-									>
+									<span className="donate-goods-form-contact-no-format">
 										<i>(Format XXX-XXXX-XXXX)</i>
 									</span>
 								</label>

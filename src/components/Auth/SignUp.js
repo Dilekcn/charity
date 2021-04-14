@@ -17,7 +17,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 	const [ refresh, setRefresh ] = useState(false);
 
 	const history= useHistory() 
-
+ 
 	useEffect( 
 		() => {
 			axios
@@ -95,7 +95,8 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 					})
 					.then((res) => {
 						window.scroll(0,0)
-						document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
+						sessionStorage.setItem('userInfo', JSON.stringify(res.data))
+						document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...'
 						setTimeout(() => {
 							setIsLoggedIn(true)
 							history.push('/')
@@ -113,7 +114,6 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 				setRefresh(!refresh);
 			}
 		}
-	
 
 	return (
 		<div className="sign-up">
@@ -121,7 +121,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 				<h1 className="sign-up-SignIn">Sign up</h1>
 				<h3 className="valid" style={{ color: 'red' }}> </h3>
 				<form className="sign-up-form" onSubmit={signup}>
-					<label htmlFor="name">Name</label>
+					<label style={{color:"#347ca5"}} htmlFor="name">Name</label>
 					<input
 						className="sign-up-email"
 						type="text"
@@ -132,7 +132,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setName(e.target.value)}
 						required
 					/>
-					<label htmlFor="surname">Surname</label>
+					<label style={{color:"#347ca5"}} htmlFor="surname">Surname</label>
 					<input
 						className="sign-up-email"
 						type="text"
@@ -143,7 +143,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setSurname(e.target.value)}
 						required
 					/>
-					<label htmlFor="username">Username</label>
+					<label style={{color:"#347ca5"}} htmlFor="username">Username</label>
 					<input
 						className="sign-up-email"
 						type="text"
@@ -154,7 +154,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setUsername(e.target.value)}
 						required
 					/>
-					<label htmlFor="email">Email</label>
+					<label style={{color:"#347ca5"}} htmlFor="email">Email</label>
 					<input
 						className="sign-up-email"
 						type="email"
@@ -165,7 +165,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setEmail(e.target.value)}
 						required
 					/>
-					<label htmlFor="password">Password</label>
+					<label style={{color:"#347ca5"}} htmlFor="password">Password</label>
 					<input
 						className="sign-up-password"
 						type="password"
@@ -176,7 +176,7 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setPassword(e.target.value)}
 						required
 					/>
-					<label htmlFor="confirm">Confirm your password</label>
+					<label style={{color:"#347ca5"}} htmlFor="confirm">Confirm your password</label>
 					<input
 						className="sign-up-password"
 						type="password"

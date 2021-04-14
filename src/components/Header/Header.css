@@ -4,6 +4,14 @@
 	padding: 0;
 }
 
+.header-username {
+	margin-left: 15px;
+	background-color: #347ca5;
+	color: white;
+	padding: 5px;
+	border-radius: 4px;
+}
+
 #logo {
 	height: 44px;
 	width: 48px;
@@ -177,6 +185,9 @@
 	.header-search-box-btn {
 		width: 21px;
 	}
+	.header-nav {
+		top: 68px;
+	}
 }
 
 @media (max-width: 360px) {
@@ -205,5 +216,8 @@
 	}
 	.header-hamburger-menu-icon {
 		font-size: 20px;
+	}
+	.header-nav {
+		top: 51px;
 	}
 }

@@ -1,3 +1,6 @@
+/* .mainContainerambass {
+  margin-bottom: 70px;
+} */
 .contentAmb {
   display: grid;
   align-content: center;
@@ -14,20 +17,22 @@
   font-family: Prociono;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 45px;
   width: 90%;
   text-align: left;
+  margin-bottom: 15%;
 }
 
 .contentAmb1-p li {
   color: black;
-  font-size: 24px;
+  font-size: 20px;
+  margin-left: 25px;
 }
 
 .apply-btn-Amb {
   margin-top: 5%;
-  margin-left: 42%;
+  margin-left: 44%;
   margin-bottom: 5%;
   border-radius: 5px;
   border: none;
@@ -36,7 +41,7 @@
   padding: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 @media only screen and (max-width: 885px) {

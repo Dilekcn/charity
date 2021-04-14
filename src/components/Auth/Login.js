@@ -11,7 +11,7 @@ const Login = ({setIsLoggedIn}) => {
 	const [password, setPassword] = useState('') 
 	const [userExist, setUserExist] = useState(false)
 
-	useEffect(
+	useEffect( 
 		() => {
 			window.scroll(0, 0)
 			axios
@@ -40,6 +40,7 @@ const Login = ({setIsLoggedIn}) => {
 	};
 
 	const login = (e) => {
+	
 		if(email.trim() === '' || password.trim() === '') {
 			document.querySelector('.valid').textContent = 'Please fill the blanks!'
 			return false
@@ -74,7 +75,7 @@ const Login = ({setIsLoggedIn}) => {
 				<h1 className="sign-in-SignIn">Sign in</h1>
 				<h3 className="valid" style={{color:'red'}}> </h3>
 				<form className="sign-in-form" >
-				<label htmlFor="email">Email or Username</label>
+				<label style={{color:"#347ca5"}} htmlFor="email">Email or Username</label>
 					<input
 						className="sign-in-email"
 						type="text"
@@ -85,7 +86,7 @@ const Login = ({setIsLoggedIn}) => {
 						onChange={(e) => setEmail(e.target.value)}
 						required
 					/>
-					<label htmlFor="password">Password</label>
+					<label style={{color:"#347ca5"}} htmlFor="password">Password</label>
 					<input
 						className="sign-in-password"
 						type="password"

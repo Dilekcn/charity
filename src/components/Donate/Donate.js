@@ -85,7 +85,6 @@ const Donate = () => {
               <label htmlfor="submit">Payment</label>
               <br />
               <br />
-<button    type="submit" >dsfsdg</button>
               {checkout ? (
                 <Paypal />
               ) : (

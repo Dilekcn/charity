@@ -10,7 +10,7 @@ const GetInvolved = ({isLoggedIn}) => {
         } else {
             alert('Please login first.')
             history.push('/login')
-        }
+        } 
     }
     useEffect(() => {
 		window.scroll(0, 0);
@@ -28,28 +28,29 @@ const GetInvolved = ({isLoggedIn}) => {
             </div>
             <div className="getInvolved_images"> 
                 <div className="getInvolved_image">
-                    <Link to='/getinvolved/donategoods' className="getInvolved_image_img">
+                    <Link to='/getinvolved/donategoods' className="getInvolved_image_img image_bg_goods">
                         <span className="donate_good"> Donate goods</span>
                     </Link>
                 </div>
+              
 
                 <div className="getInvolved_image">
                     <div className="getInvolved_image_img">
-                    <Link onClick={() => alertFunc()} className="getInvolved_image_img">
+                    <Link onClick={() => alertFunc()} className="getInvolved_image_img image_bg_card">
                         <span className="donate_good">Donate with a gift card</span>
                     </Link>
                     </div>
                 </div>  
 
                  <div className="getInvolved_image">
-                    <Link to='/getinvolved/donateyourtime' className="getInvolved_image_img">
+                    <Link to='/getinvolved/donateyourtime' className="getInvolved_image_img image_bg_time">
                         <span  className="donate_good"> Donate your time</span>
                     </Link>
                 </div>
 
                 <div className="getInvolved_image">
                     <div className="getInvolved_image_img">
-                    <Link to='/getinvolved/beanambassador' className="getInvolved_image_img">
+                    <Link to='/getinvolved/beanambassador' className="getInvolved_image_img image_bg_ambassador">
                         <span className="donate_good"> Be an ambassador</span>
                     </Link>  
                     </div>

@@ -1,13 +1,11 @@
 import React, { useState, useLayoutEffect } from 'react';
 import './ContactUs.css';
-import imageHeader from '../GetInvolved/DonateGoods/Rectangle 26.png';
 import axios from 'axios';
 import {
 	AiFillFacebook,
 	AiFillTwitterSquare,
 	AiOutlineInstagram,
 } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
 
 const ContactUs = () => {
 	useLayoutEffect(() => {
@@ -40,22 +38,15 @@ const ContactUs = () => {
 
 	return (
 		<div>
-			<div className="donate-goods-container">
-				<img
-					src={imageHeader}
-					alt="Avatar"
-					className="donate-goods-image"
-				/>
-				<div className="donate-goods-overlay">
-					<h1 className="donate-goods-text">Contact Us</h1>
-				</div>
+			<div className="contact-us-header-container">
+				<h1 className="contact-us-header-text">Contact Us</h1>
 			</div>
 			<div className="contact-us-container">
 				<div className="contact-us-form-container">
-					<h4 className="contact-us-intro-text">
+					<h3 className="contact-us-intro-text">
 						Please complete this enquiry form. We will try our best to
 						respond within three working days.
-					</h4>
+					</h3>
 					<form className="contact-us-form" onSubmit={submitMessage}>
 						<label>First Name</label>
 						<input
@@ -110,7 +101,7 @@ const ContactUs = () => {
 						<h2 className="contact-us-communication-follow-us-title">
 							Follow Us
 						</h2>
-						<div>
+						<div style={{ textAlign: 'center' }}>
 							<a
 								href="https://www.facebook.com/"
 								target="_blank"

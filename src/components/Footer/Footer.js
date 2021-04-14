@@ -75,8 +75,8 @@ const Footer = () => {
 					<Link to="/terms" className="footer-nav-links">
 						Terms & Conditions
 					</Link>
-					<Link to="/privacy" className="footer-nav-links">
-						Privacy & Cookies
+					<Link to="/policies" className="footer-nav-links">
+						Privacy & Cookie Policies
 					</Link>
 					<Link to="/contact-us" className="footer-nav-links">
 						Contact Us

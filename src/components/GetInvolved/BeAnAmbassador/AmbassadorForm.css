@@ -161,9 +161,15 @@
 }
 
 @media only screen and (max-width: 360px) {
+	.ambassadorForm-overlay {
+		height: 180px;
+	}
+	.ambassadorForm-image {
+		height: 180px;
+	}
 	.ambassadorForm-text {
 		margin-left: 8%;
-		margin-top: 3%;
+		/* margin-top: 3%; */
 		font-size: 38px;
 	}
 	.ambassador-row1 div,
