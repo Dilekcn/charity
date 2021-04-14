@@ -447,6 +447,19 @@
       "instructions_for_the_driver": "b\n",
       "user_id": 10,
       "id": 15
+    },
+    {
+      "firstname": "Andrew",
+      "lastname": "Holmes",
+      "email": "mrselifbalci@gmail.com",
+      "phone": "102-9999-9999",
+      "type_of_goods": "books",
+      "number_of_pieces": "3",
+      "address": "65-69 Holmes Rd, Kentish Town\nRoom 540",
+      "post_code": "NW5 3AN",
+      "instructions_for_the_driver": "65-69 Holmes Rd, Kentish Town\nRoom 540",
+      "user_id": 20,
+      "id": 16
     }
   ],
   "gift-card-donation": [

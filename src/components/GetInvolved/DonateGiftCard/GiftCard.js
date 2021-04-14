@@ -97,6 +97,37 @@ const GiftCard = () => {
 			</div>
 			<div className="giftcard-content">
 				<form className="giftcard-form" onSubmit={submit}>
+				<div className="giftcard-name">
+					<div>
+					<label htmlFor="giftcard-type">
+							First Name
+						</label>
+						<input
+							required
+							value={type}
+							onChange={(e) => setType(e.target.value)}
+							type="text"
+							id="giftcard-type"
+							name="giftcard-type"w
+							placeholder="Enter the type of gift card"
+						/>
+					</div>
+					<div>
+					<label htmlFor="giftcard-type">
+							Last Name
+						</label>
+						<input
+							required
+							value={type}
+							onChange={(e) => setType(e.target.value)}
+							type="text"
+							id="giftcard-type"
+							name="giftcard-type"w
+							placeholder="Enter the type of gift card"
+						/>
+
+					</div>			
+					</div>
 					<div className="giftcard-row1">
 						<label htmlFor="giftcard-type">
 							Please enter the type of gift card: For Example (Amazon,
@@ -108,7 +139,7 @@ const GiftCard = () => {
 							onChange={(e) => setType(e.target.value)}
 							type="text"
 							id="giftcard-type"
-							name="giftcard-type"
+							name="giftcard-type"w
 							placeholder="Enter the type of gift card"
 						/>
 					</div>
