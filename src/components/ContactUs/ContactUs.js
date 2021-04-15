@@ -17,7 +17,8 @@ const ContactUs = () => {
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 
-	const submitMessage = () => {
+	const submitMessage = (e) => {
+		e.preventDefault()
 		axios
 			.post('http://localhost:4000/contact-us', {
 				first_name: firstName,

@@ -15,9 +15,10 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 
 	useEffect(() => {
 		axios
-			.get('http://localhost:4000/posts')
-			.then((res) => setPosts(res.data))
+			.get('https://mern-brothers.herokuapp.com/posts')
+			.then((res) => {setPosts(res.data);console.log(res.data)})
 			.catch((err) => console.log(err));
+			
 	}, []);
 
 	const onSubmitSearch = (e) => {
