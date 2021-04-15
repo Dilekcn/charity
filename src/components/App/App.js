@@ -40,7 +40,7 @@ export default function App() {
 		let results = [];
 		for (let i = 0; i < val.length; i++) {
 			await axios
-				.get(`http://localhost:4000/posts/${val[i]}`)
+				.get(`https://mern-brothers.herokuapp.com/posts/${val[i]}`)
 				.then((res) => results.push(res.data))
 				.catch((err) => console.log(err));
 		}
