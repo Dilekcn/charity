@@ -21,7 +21,6 @@ const ContactUs = () => {
 	const [modalIsOpen, setModalIsOpen] = useState(false);
 
 	const submitMessage = (e) => {
-		window.scroll(0, 0);
 		e.preventDefault();
 		axios
 			.post('https://mern-brothers.herokuapp.com/contact-us', {
@@ -56,12 +55,7 @@ const ContactUs = () => {
 						Please complete this enquiry form. We will try our best to
 						respond within three working days.
 					</h3>
-					<form
-						className="contact-us-form"
-						onSubmit={() => {
-							submitMessage();
-						}}
-					>
+					<form className="contact-us-form" onSubmit={submitMessage}>
 						<label>First Name</label>
 						<input
 							type="text"
@@ -93,7 +87,11 @@ const ContactUs = () => {
 							value={message}
 							required
 						/>
-						<button type="submit" className="contact-us-form-submit-btn">
+						<button
+							type="submit"
+							className="contact-us-form-submit-btn"
+							onClick={() => window.scroll(0, 0)}
+						>
 							Submit
 						</button>
 					</form>
@@ -161,16 +159,13 @@ const ContactUs = () => {
 				</span>
 				<br />
 				<br />
-				<button
+				<Link
 					to="/contact-us"
 					className="contact-us-form-btn-popup"
-					onClick={() => {
-						sendAnotherMessage();
-						window.scroll(0, 0);
-					}}
+					onClick={sendAnotherMessage}
 				>
 					Send Another Message
-				</button>
+				</Link>
 				<br />
 				<Link to="/" className="contact-us-form-btn-popup">
 					Back to Home Page
