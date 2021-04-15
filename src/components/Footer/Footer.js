@@ -12,9 +12,9 @@ const Footer = () => {
 	const subscribeLetter = (e) => {
 		e.preventDefault();
 		axios
-			.post('http://localhost:4000/subscribers', {
-				first_name: firstName,
-				last_name: lastName,
+			.post('https://mern-brothers.herokuapp.com/subscribers', {
+				firstname: firstName,
+				lastname: lastName,
 				email: email,
 			})
 			.then((res) => console.log(res))
