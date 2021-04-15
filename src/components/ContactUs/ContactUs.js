@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './ContactUs.css';
 import axios from 'axios';
 import {
@@ -6,9 +6,11 @@ import {
 	AiFillTwitterSquare,
 	AiOutlineInstagram,
 } from 'react-icons/ai';
+import Modal from 'react-modal';
+import { Link } from 'react-router-dom';
 
 const ContactUs = () => {
-	useLayoutEffect(() => {
+	useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
 
@@ -16,13 +18,15 @@ const ContactUs = () => {
 	const [lastName, setLastName] = useState('');
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
+	const [modalIsOpen, setModalIsOpen] = useState(false);
 
 	const submitMessage = (e) => {
-		e.preventDefault()
+		window.scroll(0, 0);
+		e.preventDefault();
 		axios
-			.post('http://localhost:4000/contact-us', {
-				first_name: firstName,
-				last_name: lastName,
+			.post('https://mern-brothers.herokuapp.com/contact-us', {
+				firstname: firstName,
+				lastname: lastName,
 				email: email,
 				message: message,
 			})
@@ -33,8 +37,12 @@ const ContactUs = () => {
 		setLastName('');
 		setEmail('');
 		setMessage('');
+		setModalIsOpen(true);
+	};
 
+	const sendAnotherMessage = () => {
 		window.scroll(0, 0);
+		setModalIsOpen(false);
 	};
 
 	return (
@@ -48,12 +56,18 @@ const ContactUs = () => {
 						Please complete this enquiry form. We will try our best to
 						respond within three working days.
 					</h3>
-					<form className="contact-us-form" onSubmit={submitMessage}>
+					<form
+						className="contact-us-form"
+						onSubmit={() => {
+							submitMessage();
+						}}
+					>
 						<label>First Name</label>
 						<input
 							type="text"
 							placeholder="Enter your first name..."
 							onChange={(e) => setFirstName(e.target.value)}
+							value={firstName}
 							required
 						/>
 						<label>Last Name</label>
@@ -61,6 +75,7 @@ const ContactUs = () => {
 							type="text"
 							placeholder="Enter your last name..."
 							onChange={(e) => setLastName(e.target.value)}
+							value={lastName}
 							required
 						/>
 						<label>Email Address</label>
@@ -68,12 +83,14 @@ const ContactUs = () => {
 							type="email"
 							placeholder="Enter your email address..."
 							onChange={(e) => setEmail(e.target.value)}
+							value={email}
 							required
 						/>
 						<label>Your Message</label>
 						<textarea
 							placeholder="Enter your message..."
 							onChange={(e) => setMessage(e.target.value)}
+							value={message}
 							required
 						/>
 						<button type="submit" className="contact-us-form-submit-btn">
@@ -131,6 +148,34 @@ const ContactUs = () => {
 					</div>
 				</div>
 			</div>
+			<Modal
+				isOpen={modalIsOpen}
+				onRequestClose={() => setModalIsOpen(false)}
+				className="contact-us-form-modal"
+			>
+				<span className="contact-us-form-modal-text">
+					Thank you for contacting us!
+					<br />
+					Your message is currently under review. You will be contacted via
+					email regarding your concern/request/suggestion...
+				</span>
+				<br />
+				<br />
+				<button
+					to="/contact-us"
+					className="contact-us-form-btn-popup"
+					onClick={() => {
+						sendAnotherMessage();
+						window.scroll(0, 0);
+					}}
+				>
+					Send Another Message
+				</button>
+				<br />
+				<Link to="/" className="contact-us-form-btn-popup">
+					Back to Home Page
+				</Link>
+			</Modal>
 		</div>
 	);
 };
