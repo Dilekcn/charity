@@ -6,7 +6,8 @@ import axios from "axios";
 
 const Donate = () => {
   const [checkout, setCheckOut] = useState(false);
-  const [name, setName] = useState("");
+  const [firstname, setFirstName] = useState("");
+  const [lastname, setLastName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const[classone,setClassOne] = useState("donate")
@@ -14,14 +15,16 @@ const Donate = () => {
   const submitForm = (e) => {
     e.preventDefault();
     axios
-      .post('http://localhost:4000/paypal-donations', {
-        name: name,
+      .post('https://mern-brothers.herokuapp.com/paypal-donations', {
+        firstname: firstname,
+        lastname: lastname,
         email: email,
         message: message,
       })
       .then((res) => console.log(res))
       .catch((err) => console.log(err));
-    setName("");
+    setFirstName("");
+    setLastName("");
     setEmail("");
     setMessage("");
     setCheckOut(true);
@@ -51,15 +54,26 @@ const Donate = () => {
               <br />
               <br />
               <input
-                value={name}
+                value={firstname}
                 type="text"
-                id="name"
-                name="name"
-                onChange={(e) => setName(e.target.value)}
-                placeholder="Name..."
+                id="firstname"
+                name="firstname"
+                onChange={(e) => setFirstName(e.target.value)}
+                placeholder="Firstname"
               />
               <br />
               <br />
+              <input
+                value={lastname}
+                type="text"
+                id="lastname"
+                name="lastname"
+                onChange={(e) => setLastName(e.target.value)}
+                placeholder="Lastname"
+              />
+              <br />
+              <br />
+
               <input
                 value={email}
                 type="email"

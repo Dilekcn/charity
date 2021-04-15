@@ -5,7 +5,7 @@ import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import GoogleLogin from 'react-google-login';
 
-const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
+const SignUp = ({ setIsLoggedIn, isLoggedIn }) => {
 	const [ emailInput, setEmail ] = useState('');
 	const [ password, setPassword ] = useState('');
 	const [ name, setName ] = useState('');
@@ -16,57 +16,62 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 	const [ users, setUsers ] = useState(null);
 	const [ refresh, setRefresh ] = useState(false);
 
-	const history= useHistory() 
- 
-	useEffect( 
-		() => {
-			axios
-				.get('http://localhost:4000/users')
-				.then((res) => {
-					setUsers(res.data);
-				})
-				.catch((err) => console.log(err));
-		},
-		[]
-	);
+	const history = useHistory();
+
+	useEffect(() => {
+		axios
+			.get('https://mern-brothers.herokuapp.com/users')
+			.then((res) => {
+				setUsers(res.data);
+			})
+			.catch((err) => console.log(err));
+	}, []);
 
 	const responseGoogle = (response) => {
-		if(!response.googleId) return document.querySelector('.valid').textContent = 'Something went wrong try again or sign up manually'
-			const {familyName, givenName, email, googleId} = response.profileObj
-		if(users) {
-			for(let i = 0; i < users.length; i++) {
-				if(users[i].email === email) {
-					setExistEmail(true)
-					document.querySelector('.valid').textContent = 'You already signed up. Please Log in.'
-					return
+		if (!response.googleId)
+			return (document.querySelector('.valid').textContent =
+				'Something went wrong try again or sign up manually');
+		const { familyName, givenName, email, googleId } = response.profileObj;
+		if (users) {
+			for (let i = 0; i < users.length; i++) {
+				if (users[i].email === email) {
+					setExistEmail(true);
+					document.querySelector('.valid').textContent = 'You already signed up. Please Log in.';
+					return;
 				}
 			}
 		}
 
 		axios
-		.post('http://localhost:4000/users', {
-			firstname:givenName,
-			lastname:familyName,
-			username:email,
-			email: email,
-			password: googleId
-		})
-		.then((res) => {
-			window.scroll(0,0)
-			document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
-						setTimeout(() => {
-							setIsLoggedIn(true);
-							history.push('/')
-						}, 1500);
-		})
-		.catch((err) => console.log(err));
-
+			.post('https://mern-brothers.herokuapp.com/users', {
+				firstname: givenName,
+				lastname: familyName,
+				username: email,
+				email: email,
+				password: googleId
+			})
+			.then((res) => {
+				window.scroll(0, 0);
+				document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
+				setTimeout(() => {
+					setIsLoggedIn(true);
+					history.push('/');
+				}, 1500);
+			})
+			.catch((err) => console.log(err));
 	};
 
 	const signup = (e) => {
 		e.preventDefault();
 		document.querySelector('.valid').textContent = '';
-		if (emailInput.trim() === '' || password.trim() === '' || confirm.trim() === '' || username.trim() === '' || name.trim() === '' || surname.trim() === '') {
+		if (
+			emailInput.trim() === '' ||
+			password.trim() === '' ||
+			confirm.trim() === '' ||
+			username.trim() === '' ||
+			name.trim() === '' ||
+			surname.trim() === ''
+		) {
 			document.querySelector('.valid').textContent = 'Please fill the blanks!';
 			return;
 		}
@@ -76,52 +81,69 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 		}
 		if (users !== null) {
 			for (let i = 0; i < users.length; i++) {
-				if(users[i].email === emailInput.trim().toLowerCase()) {
+				if (users[i].email === emailInput.trim().toLowerCase()) {
 					document.querySelector('.valid').textContent = 'Email is already taken';
-					return
+					return;
 				}
-				
-			}
-			}
-
-			if (!existEmail) {
-				axios
-					.post('http://localhost:4000/users', {
-						firstname:name,
-						lastname:surname,
-						username:username,
-						email: emailInput,
-						password: password
-					})
-					.then((res) => {
-						window.scroll(0,0)
-						sessionStorage.setItem('userInfo', JSON.stringify(res.data))
-						document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...'
-						setTimeout(() => {
-							setIsLoggedIn(true)
-							history.push('/')
-						}, 1500);
-					})
-					.catch((err) => console.log(err));
-				document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
-				setExistEmail(true);
-				setConfirm('');
-				setEmail('');
-				setPassword('');
-				setName('')
-				setSurname('')
-				setUsername('')
-				setRefresh(!refresh);
 			}
 		}
+
+		if (!existEmail) {
+			axios
+				.post('https://mern-brothers.herokuapp.com/users', {
+					firstname: name,
+					lastname: surname,
+					username: username,
+					email: emailInput,
+					password: password
+				})
+				.then((res) => {
+					window.scroll(0, 0);
+					axios
+						.post('https://mern-brothers.herokuapp.com/signin', {
+							email:emailInput,
+							password:password
+						})
+						.then((res) => {
+							setIsLoggedIn(true)
+							sessionStorage.setItem('userInfo', JSON.stringify(res.data))
+
+							console.log(res.data);
+						})
+						.catch((err) => {
+							console.log(err);
+						});
+					document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
+					setTimeout(() => {
+						setIsLoggedIn(true);
+						history.push('/');
+					}, 1500);
+					console.log(res.data);
+				})
+				.catch((err) => console.log(err));
+			document.querySelector('.valid').textContent = 'Signed up successfully. Redirecting to homepage...';
+			setExistEmail(true);
+			setConfirm('');
+			setEmail('');
+			setPassword('');
+			setName('');
+			setSurname('');
+			setUsername('');
+			setRefresh(!refresh);
+		}
+	};
 
 	return (
 		<div className="sign-up">
 			<div className="sign-up-body">
 				<h1 className="sign-up-SignIn">Sign up</h1>
-				<h3 className="valid" style={{ color: 'red' }}> </h3>
+				<h3 className="valid" style={{ color: 'red' }}>
+					{' '}
+				</h3>
 				<form className="sign-up-form" onSubmit={signup}>
-					<label style={{color:"#347ca5"}} htmlFor="name">Name</label>
+					<label style={{ color: '#347ca5' }} htmlFor="name">
+						Name
+					</label>
 					<input
 						className="sign-up-email"
 						type="text"
@@ -132,7 +154,9 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setName(e.target.value)}
 						required
 					/>
-					<label style={{color:"#347ca5"}} htmlFor="surname">Surname</label>
+					<label style={{ color: '#347ca5' }} htmlFor="surname">
+						Surname
+					</label>
 					<input
 						className="sign-up-email"
 						type="text"
@@ -143,7 +167,9 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setSurname(e.target.value)}
 						required
 					/>
-					<label style={{color:"#347ca5"}} htmlFor="username">Username</label>
+					<label style={{ color: '#347ca5' }} htmlFor="username">
+						Username
+					</label>
 					<input
 						className="sign-up-email"
 						type="text"
@@ -154,7 +180,9 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setUsername(e.target.value)}
 						required
 					/>
-					<label style={{color:"#347ca5"}} htmlFor="email">Email</label>
+					<label style={{ color: '#347ca5' }} htmlFor="email">
+						Email
+					</label>
 					<input
 						className="sign-up-email"
 						type="email"
@@ -165,7 +193,9 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setEmail(e.target.value)}
 						required
 					/>
-					<label style={{color:"#347ca5"}} htmlFor="password">Password</label>
+					<label style={{ color: '#347ca5' }} htmlFor="password">
+						Password
+					</label>
 					<input
 						className="sign-up-password"
 						type="password"
@@ -176,7 +206,9 @@ const SignUp = ({setIsLoggedIn, isLoggedIn}) => {
 						onChange={(e) => setPassword(e.target.value)}
 						required
 					/>
-					<label style={{color:"#347ca5"}} htmlFor="confirm">Confirm your password</label>
+					<label style={{ color: '#347ca5' }} htmlFor="confirm">
+						Confirm your password
+					</label>
 					<input
 						className="sign-up-password"
 						type="password"

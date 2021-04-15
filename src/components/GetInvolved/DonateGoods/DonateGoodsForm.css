@@ -106,7 +106,7 @@
 .donate-goods-form-right > div > textarea {
 	width: 90%;
 	font-family: Roboto;
-	height: 202px;
+	height: 203px;
 	margin-top: 8px;
 	margin-bottom: 18px;
 	padding-top: 12px;
@@ -158,6 +158,22 @@
 	margin-top: 10px;
 }
 
+.donate-goods-form-modal {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	margin: 200px auto;
+	height: fit-content;
+	width: 70%;
+	padding: 60px;
+	text-align: center;
+	line-height: 1.5;
+	background-color: #347ca5;
+	color: white;
+	border-radius: 5px;
+}
+
 @media (max-width: 1006px) {
 	.donate-goods-header-image {
 		height: 200px;
@@ -188,6 +204,13 @@
 		top: 45%;
 		font-size: 44px;
 	}
+	.donate-goods-form-modal {
+		margin: 180px auto;
+		padding: 40px;
+	}
+	.donate-goods-form-btn-popup {
+		font-size: 16px;
+	}
 }
 
 @media (max-width: 496px) {
@@ -203,6 +226,16 @@
 		margin-left: 25%;
 		top: 45%;
 		font-size: 38px;
+	}
+	.donate-goods-form-modal {
+		width: 70%;
+		padding: 30px;
+	}
+	.donate-goods-form-modal-text {
+		font-size: 15px;
+	}
+	.donate-goods-form-btn-popup {
+		font-size: 13px;
 	}
 }
 
@@ -286,5 +319,16 @@
 		padding: 7px;
 		font-size: 16px;
 		width: 90px;
+	}
+	.donate-goods-form-modal {
+		margin: 140px auto;
+		width: 70%;
+		padding: 20px;
+	}
+	.donate-goods-form-modal-text {
+		font-size: 13px;
+	}
+	.donate-goods-form-btn-popup {
+		font-size: 12px;
 	}
 }

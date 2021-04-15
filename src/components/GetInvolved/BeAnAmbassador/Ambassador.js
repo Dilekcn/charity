@@ -6,6 +6,15 @@ import { Link, useHistory } from 'react-router-dom';
 
 const Ambassador = ({isLoggedIn}) => {
   const history = useHistory()
+  function handleClick () {
+    if(isLoggedIn) {
+      history.push("/getinvolved/beanambassador-form") }
+      else {
+history.push("/login")
+      }
+    }
+  
+  
   useEffect(() => {
 		window.scroll(0, 0);
 	}, []);
@@ -33,15 +42,14 @@ const Ambassador = ({isLoggedIn}) => {
       <br/>
       <p>Our committee is currently looking for ambassadors to join our cause! Please consider applying. We look forward to having you on board!</p>
        </p>
-       <br/>
-       <div>
-					<Link
-						to={isLoggedIn ? "/getinvolved/beanambassador-form" : "/login"}
+
+					<button
+						onClick={handleClick}
 						className="apply-btn-Amb"
 					>
 						Apply
-					</Link>
-				</div>
+					</button>
+
       </div>
       
     </div>

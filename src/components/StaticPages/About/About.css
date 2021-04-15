@@ -1,12 +1,43 @@
-#aboutus-header {
+.about-container {
+  position: relative;
+}
+
+.about-image {
+  display: block;
+  width: 100%;
+  height: 317px;
+}
+
+.about-overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(52, 124, 165, 0.84);
+  width: 100%;
+  transition: 0.5s ease;
+  /* opacity:0; */
+  color: white;
+  /* font-size: 20px; */
+  /* padding: 20px; */
+  text-align: center;
+  height: 317px;
+  opacity: 1;
+}
+
+.about-text {
+  position: absolute;
+  top: 50%;
   margin-left: 40%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 72px;
+  line-height: 84px;
+  color: #ffffff;
 }
 
 .aboutus-content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin-bottom: 10%;
 }
 
 .aboutus-title {
@@ -21,7 +52,7 @@
 .aboutus-content-title {
   text-align: center;
   width: 80%;
-  margin-top: 5%;
+  margin-top: 78px;
   margin-right: auto;
   margin-left: auto;
   font-family: Roboto;
@@ -85,15 +116,16 @@
   margin-bottom: 100px;
 }
 
-@media (max-width: 1366px) {
-}
-
-@media (max-width: 768px) {
-  #aboutus-header {
-    margin-left: 37%;
+@media only screen and (max-width: 1024px) {
+  .about-text {
+    margin-left: 40%;
+    font-size: 56px;
   }
-  .aboutus-title {
-    font-size: 38px;
+}
+@media (max-width: 768px) {
+  .about-text {
+    margin-left: 40%;
+    font-size: 48px;
   }
 
   .aboutus-content-title {
@@ -114,9 +146,11 @@
   }
 }
 
-@media (max-width: 415px) {
-  #aboutus-header {
-    margin-left: 32%;
+@media (max-width: 360px) {
+  .about-text {
+    margin-left: 30%;
+    margin-top: 3%;
+    font-size: 38px;
   }
 
   .aboutus-content-title {

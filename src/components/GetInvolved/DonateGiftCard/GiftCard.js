@@ -35,6 +35,8 @@ const customStyles = {
 
 const GiftCard = () => {
 	const [checkbox, setCheckbox] = useState(false);
+	const [firstname, setFirstname] = useState('');
+	const [lastname, setLastname] = useState('');
 	const [type, setType] = useState('');
 	const [number, setNumber] = useState('');
 	const [code, setCode] = useState('');
@@ -60,7 +62,7 @@ const GiftCard = () => {
 	const submit = async (e) => {
 		e.preventDefault();
 		await axios
-			.post('http://localhost:4000/gift-card-donation', {
+			.post('https://mern-brothers.herokuapp.com/gift-card-donation', {
 				type_of_card: type,
 				card_number: number,
 				security_code: code,
@@ -80,6 +82,8 @@ const GiftCard = () => {
 		setExpiration('');
 		setPostcode('');
 		setInfo('');
+		setFirstname('')
+		setLastname('')
 		setIsOpen(true);
 	};
 
@@ -97,6 +101,37 @@ const GiftCard = () => {
 			</div>
 			<div className="giftcard-content">
 				<form className="giftcard-form" onSubmit={submit}>
+				<div className="giftcard-name">
+					<div>
+					<label htmlFor="giftcard-type">
+							First Name
+						</label>
+						<input
+							required
+							value={firstname}
+							onChange={(e) => setFirstname(e.target.value)}
+							type="text"
+							id="giftcard-type"
+							name="giftcard-type"w
+							placeholder="Enter the type of gift card"
+						/>
+					</div>
+					<div>
+					<label htmlFor="giftcard-type">
+							Last Name
+						</label>
+						<input
+							required
+							value={lastname}
+							onChange={(e) => setLastname(e.target.value)}
+							type="text"
+							id="giftcard-type"
+							name="giftcard-type"w
+							placeholder="Enter the type of gift card"
+						/>
+
+					</div>			
+					</div>
 					<div className="giftcard-row1">
 						<label htmlFor="giftcard-type">
 							Please enter the type of gift card: For Example (Amazon,
@@ -108,7 +143,7 @@ const GiftCard = () => {
 							onChange={(e) => setType(e.target.value)}
 							type="text"
 							id="giftcard-type"
-							name="giftcard-type"
+							name="giftcard-type"w
 							placeholder="Enter the type of gift card"
 						/>
 					</div>
@@ -226,10 +261,12 @@ const GiftCard = () => {
 			</div>
 			<Modal
 				isOpen={modalIsOpen}
-				style={customStyles}
+				// style={customStyles}
 				onAfterOpen={afterOpenModal}
 				onRequestClose={closeModal}
 				contentLabel="Example Modal"
+				ariaHideApp={false}
+				className="gift-card-modal"
 			>
 				<p>
 					Thank you! You have just made a difference in someone else’s

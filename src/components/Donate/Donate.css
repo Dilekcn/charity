@@ -71,7 +71,7 @@
 .donate-form {
   margin-top: 1px;
   width: 522px;
-  height: 600px;
+  height: fit-content;
   background: #e5e5e5;
   border-radius: 10px;
 }
