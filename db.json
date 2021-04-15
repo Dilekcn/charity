@@ -703,6 +703,30 @@
       "id": "7Jek-9A"
     },
     {
+<<<<<<< HEAD
+      "name": "abc",
+      "email": "1@gmail.com",
+      "message": "fghfgh",
+      "id": "cNHDVZK"
+    },
+    {
+      "name": "aa a",
+      "email": "1@gmail.com",
+      "message": "fsdf",
+      "id": "d3K59zE"
+    },
+    {
+      "name": "Dilek",
+      "email": "1@gmail.com",
+      "message": "sadasd",
+      "id": "A585OAX"
+    },
+    {
+      "name": "reack",
+      "email": "abcg@mail.com",
+      "message": "dtgret",
+      "id": "FI4QIKB"
+=======
       "name": "fsdafsd",
       "email": "fsadfsad@gmail.com",
       "message": "sdfsadfa",
@@ -797,6 +821,9 @@
       "email": "mrselifbalci@gmail.com",
       "message": "dasdas",
       "id": "mJ32GJy"
+<<<<<<< HEAD
+>>>>>>> 1bc02e973cb80632a413db002fa1b9214014bb9d
+=======
     },
     {
       "name": "Serbay Serdar",
@@ -887,6 +914,9 @@
       "email": "",
       "message": "",
       "id": "ESXS6mT"
+<<<<<<< HEAD
+>>>>>>> eb121a320ecfff0c8050f0db10d1b9fc45bd8659
+=======
     },
     {
       "name": "",
@@ -929,6 +959,7 @@
 =======
       "id": "WqbL80b"
 >>>>>>> ced276aa3d07044a5aa475c34d1b3f973ab23b92
+>>>>>>> 9171b1dc5eaa9f4a6f1656d1401cd258b4465de5
     }
   ]
 }

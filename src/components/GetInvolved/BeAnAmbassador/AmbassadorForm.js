@@ -274,10 +274,10 @@ const AmbassadorForm = () => {
 					Thank you! You have just made a difference in someone else’s
 					life!{' '}
 				</p>
-				<button className="modal-btn" onClick={() => makeAnotherDonation()}>
+				<button className="donate-goods-form-btn-popup" onClick={() => makeAnotherDonation()}>
 					Make another donation
 				</button>
-				<button className="modal-btn" onClick={() => history.push('/')}>
+				<button className="donate-goods-form-btn-popup" onClick={() => history.push('/')}>
 					Back to home page
 				</button>
 			</Modal>

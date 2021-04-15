@@ -99,7 +99,6 @@ const Donate = () => {
               <label htmlfor="submit">Payment</label>
               <br />
               <br />
-
               {checkout ? (
                 <Paypal />
               ) : (
