@@ -25,6 +25,8 @@ const DonateYourTime = ({ isLoggedIn }) => {
 					<div className="donate_time_text1">
 						<p>
 							Are the children doing their own thing now and you’ve
+							suddenly got more time? Are the children doing their own thing now and you’ve
+							suddenly got more time?Are the children doing their own thing now and you’ve
 							suddenly got more time?
 						</p>
 					</div>
@@ -34,6 +36,8 @@ const DonateYourTime = ({ isLoggedIn }) => {
 					<div className="donate_time_text2">
 						<p>
 							Has being in lockdown got you thinking about the great
+							skills you have and putting them to good use to help
+							others? After all, the best gift you can give is your time.Has being in lockdown got you thinking about the great
 							skills you have and putting them to good use to help
 							others? After all, the best gift you can give is your time.
 						</p>
@@ -46,6 +50,8 @@ const DonateYourTime = ({ isLoggedIn }) => {
 				<div className="donate_time_part3">
 					<p>
 						Whatever your age or skills, however much time you can give,
+						we’ve got a volunteer role for you. Use your skills and join a
+						great team whose values match your own. Whatever your age or skills, however much time you can give,
 						we’ve got a volunteer role for you. Use your skills and join a
 						great team whose values match your own.
 					</p>
