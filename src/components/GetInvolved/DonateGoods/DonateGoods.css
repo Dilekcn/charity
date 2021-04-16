@@ -202,7 +202,7 @@
 
 	.donate-goods-text {
 		margin-right: auto !important;
-		margin-left: 28% !important;
+		margin-left: 28%;
 	}
 }
 
@@ -259,6 +259,9 @@
 		padding: 10px;
 		font-size: small;
 	}
+	.donate-goods-text {
+		margin-left: 19% !important;
+	}
 }
 
 @media only screen and (max-width: 430px) {
@@ -269,7 +272,7 @@
 	}
 }
 
-@media only screen and (max-width: 370px) {
+@media only screen and (max-width: 415px) {
 	.content1 {
 		display: flex;
 		justify-content: center;
@@ -310,5 +313,17 @@
 	.donate-goods-modal {
 		width: 90% !important;
 		line-height: 1.1 !important;
+	}
+
+	.donate-goods-overlay {
+		height: 200px;
+	}
+
+	.donate-goods-image {
+		height: 200px;
+	}
+
+	.donate-goods-text {
+		margin-left: 23% !important;
 	}
 }
