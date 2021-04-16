@@ -105,7 +105,7 @@ const DonateGoodsForm = () => {
 								<input
 									type="tel"
 									className="donate-goods-form-contact-no-input"
-									// pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+									pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
 									placeholder="Enter contact number"
 									value={phone}
 									onChange={(e) => setPhone(e.target.value)}

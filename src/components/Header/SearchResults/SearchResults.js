@@ -9,7 +9,6 @@ const SearchResults = ({results, searchResults}) => {
 	const [viewmore, setViewmore] = useState(0);
 	useEffect(() => {
         setPosts(searchResults)
-	
 	}, [searchResults]);
  
 	const viewMore = () => {

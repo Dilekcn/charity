@@ -60,7 +60,6 @@
 	font-family: Roboto;
 	font-size: 24px;
 	color: white;
-	padding-left: 5px;
 	padding-top: 30px;
 }
 
@@ -68,6 +67,8 @@
 	color: white;
 	margin-bottom: 10px;
 	font-size: 20px;
+	padding-bottom: 10px;
+	text-align: center;
 }
 
 .footer-nav {
