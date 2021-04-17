@@ -14,7 +14,7 @@
   font-family: Prociono;
   font-style: normal;
   font-weight: normal;
-  font-size: 28px;
+  font-size: 20px;
   line-height: 45px;
   width: 90%;
   text-align: left;
@@ -23,7 +23,7 @@
 
 .contentAmb1-p li {
   color: black;
-  font-size: 22px;
+  font-size: 18px;
   margin-left: 25px;
 }
 
@@ -49,6 +49,9 @@
 }
 
 @media only screen and (max-width: 415px) {
+  #h1-content {
+    margin-left: 15%;
+  }
   .apply-btn-Amb {
     margin-left: 40%;
     width: fit-content;
@@ -56,13 +59,29 @@
   }
 
   .contentAmb1-p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 30px;
     margin-left: auto;
     margin-right: auto;
   }
   .contentAmb1-p li {
     color: black;
-    font-size: 18px;
+    font-size: 16px;
+  }
+  .ambassadorForm-text {
+    margin-top: -10px;
+  }
+}
+@media only screen and (max-width: 376px) {
+  #h1-content {
+    margin-left: 11%;
+  }
+}
+@media only screen and (max-width: 361px) {
+  #h1-content {
+    margin-left: 10%;
+  }
+  .ambassadorForm-text {
+    margin-top: -15px;
   }
 }
