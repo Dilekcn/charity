@@ -114,7 +114,8 @@
 #payment-button {
   width: 201px;
   height: 60px;
-  margin-left: 35px;
+  margin-left: 160px;
+  margin-bottom: 20px;
   background-image: url("https://i.postimg.cc/76sCp0Ph/3fa0b0ba7c17fbde04063dfe67f8a373.png");
   background-position: center;
   background-size: cover;
