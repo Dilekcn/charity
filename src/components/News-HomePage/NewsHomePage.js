@@ -10,7 +10,7 @@ const NewsHomePage = () => {
 	useEffect(() => {
 		axios
 			.get('https://mern-brothers.herokuapp.com/posts')
-			.then((res) => setPosts(res.data))
+			.then((res) => setPosts(res.data.docs))
 			.catch((err) => console.log(err));
 	}, []);
  
@@ -22,6 +22,7 @@ const NewsHomePage = () => {
 			<span id="newsTitle">The difference you make</span>
 
 			<div id="newsHomePage">
+			
 				<div className="news">
 				
 							<img

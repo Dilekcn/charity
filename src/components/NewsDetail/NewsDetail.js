@@ -45,9 +45,21 @@ export default function NewsDetail() {
                     <h1> {post.title}</h1>
                     <p> {post.summary}</p>
             </div>
-            <div style={{fontSize:"90px",color:"#347ca5",textAlign:"center",marginBottom:"200px"}}>
-               CONTENT FROM CK EDITOR
+            <div className="content-1">
+                <img className="content-1-img" src={post.content_img_1} alt="body_img" />
+                <p className="content-1-text">{post.content_1}</p>
             </div>
+            <div className="content-2">
+                <p className="content-2-text">{post.content_2}</p>
+            </div>
+            <div className="content-3">
+                 <p className="content-3-text">{post.content_3}</p>
+                 <img className="content-2-img" src={post.content_img_2} alt="body_img"/>
+            </div>
+            <div>
+                <p className="content-4-text">{post.content_4}</p>
+            </div>
+           
             
         </div>
     )

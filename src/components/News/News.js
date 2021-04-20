@@ -10,7 +10,7 @@ const News = () => {
 	useEffect(() => {
 		axios
 			.get('https://mern-brothers.herokuapp.com/posts')
-			.then((res) => setPosts(res.data))
+			.then((res) => setPosts(res.data.docs))
 			.catch((err) => console.log(err));
 			console.log()
 	}, []); 
