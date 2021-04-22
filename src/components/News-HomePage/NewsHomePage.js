@@ -15,7 +15,7 @@ const NewsHomePage = () => {
 	}, []);
  
 
-
+ 
 
 	return (
 		<div id="news-div">
