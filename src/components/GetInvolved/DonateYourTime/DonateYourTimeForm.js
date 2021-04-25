@@ -55,7 +55,7 @@ const DonateYourTimeForm = () => {
 					<div id="time_container">
 						<div className="time_container">
 							<div className="time_name">
-								<label for="firstname">First Name</label>
+								<label htmlfor="firstname">First Name</label>
 								<br />
 								<input
 									value={firstname}
@@ -69,7 +69,7 @@ const DonateYourTimeForm = () => {
 							</div>
 							<br />
 							<div className="time_name">
-								<label for="lastname">Last Name</label>
+								<label htmlForm="lastname">Last Name</label>
 								<br />
 								<input
 									value={lastname}
@@ -86,7 +86,7 @@ const DonateYourTimeForm = () => {
 						<div className="time_container_right">
 							<div className="time_number">
 								<br />
-								<label for="number">
+								<label htmlFor="number">
 									Contact Number
 									<span
 										className="donate_time_form_contact_num"
@@ -109,7 +109,7 @@ const DonateYourTimeForm = () => {
 							</div>
 							<br />
 							<div className="time_based">
-								<label for="based">Where are you based?</label>
+								<label htmlFor="based">Where are you based?</label>
 								<br />
 								<input
 									value={based}
@@ -123,7 +123,7 @@ const DonateYourTimeForm = () => {
 							</div>
 						</div>
 						<div className="time_email">
-							<label for="email">Email</label>
+							<label htmlFor="email">Email</label>
 							<br />
 							<input
 								value={email}
@@ -137,7 +137,7 @@ const DonateYourTimeForm = () => {
 						</div>
 
 						<div className="time_text">
-							<label for="text">
+							<label htmlFor="text">
 								What particular areas are you willing to contribute to
 								or interest you the most?
 							</label>{' '}
@@ -152,7 +152,7 @@ const DonateYourTimeForm = () => {
 						</div>
 
 						<div className="time_text2">
-							<label for="text2">Other thoughts or comments</label>{' '}
+							<label htmlFor="text2">Other thoughts or comments</label>{' '}
 							<br /> <br />
 							<textarea
 								value={text1}

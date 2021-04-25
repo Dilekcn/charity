@@ -16,7 +16,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 	useEffect(() => {
 		axios
 			.get('https://mern-brothers.herokuapp.com/posts')
-			.then((res) => {setPosts(res.data);console.log(res.data)})
+			.then((res) => setPosts(res.data))
 			.catch((err) => console.log(err));
 			
 	}, []);
@@ -80,7 +80,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 				}}
 				checked={checked}
 			/>
-			<label for="header-menu-checkbox" className="header-menu-icon">
+			<label htmlFor="header-menu-checkbox" className="header-menu-icon">
 				<GiHamburgerMenu
 					className="header-hamburger-menu-icon"
 					style={{ fill: '#347ca5' }}
@@ -122,7 +122,7 @@ const Header = ({ isLoggedIn, setIsLoggedIn, searchFunc }) => {
 						to="/login"
 						className="header-nav-links"
 						onClick={(e) => {
-							if (e.target.textContent == 'Log Out') {
+							if (e.target.textContent ==='Log Out') {
 								setIsLoggedIn(false);
 								sessionStorage.removeItem('userInfo');
 							}

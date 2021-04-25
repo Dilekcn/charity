@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 
 import './DonateYourTime.css';
-import { Link, useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const DonateYourTime = ({ isLoggedIn }) => {
 	useEffect(() => {
@@ -20,7 +20,7 @@ const DonateYourTime = ({ isLoggedIn }) => {
 				</div>
 				<div className="donate_time_part1">
 					<div className="donate_time_img1">
-						<img src="https://i.postimg.cc/k4DvG139/ebbdb21ddc800ebc3b80781a9cb4659a.jpg" />
+						<img src="https://i.postimg.cc/k4DvG139/ebbdb21ddc800ebc3b80781a9cb4659a.jpg"  alt=""/>
 					</div>
 					<div className="donate_time_text1">
 						<p>
@@ -43,7 +43,7 @@ const DonateYourTime = ({ isLoggedIn }) => {
 						</p>
 					</div>
 					<div className="donate_time_img2">
-						<img src="https://i.postimg.cc/brDgC63L/8033aab42f07550d2ccb521536413a65.jpg" />
+						<img src="https://i.postimg.cc/brDgC63L/8033aab42f07550d2ccb521536413a65.jpg" alt="" />
 					</div>
 				</div>
 				<br />

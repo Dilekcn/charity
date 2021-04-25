@@ -48,6 +48,8 @@ const AmbassadorForm = () => {
 		JSON.parse(sessionStorage.getItem('userInfo')).id,
 	);
 
+	setUserId()
+
 	const makeAnotherDonation = () => {
 		window.scroll(0, 0);
 		setIsOpen(false);

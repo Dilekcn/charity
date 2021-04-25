@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useEffect } from 'react';
+import React, { useState, useLayoutEffect } from 'react';
 import imageHeader from './Rectangle 26.png';
 import './DonateGoodsForm.css';
 import Modal from 'react-modal';
@@ -20,6 +20,7 @@ const DonateGoodsForm = () => {
 		JSON.parse(sessionStorage.getItem('userInfo')).id,
 	);
 
+	setUserId()
 	useLayoutEffect(() => {
 		window.scroll(0, 0);
 	}, []);

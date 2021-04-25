@@ -20,6 +20,7 @@ const NewsHomePage = () => {
 	return (
 		<div id="news-div">
 			<span id="newsTitle">The difference you make</span>
+		
 
 			<div id="newsHomePage">
 			
@@ -27,18 +28,18 @@ const NewsHomePage = () => {
 				
 							<img
 								className="news-img"
-								src={posts.length !== 0 && posts[posts.length - 1].post_img_url}
+								src={posts.length !== 0 ? posts[posts.length - 1].post_img_url : undefined}
 								alt="pic"
 							/>
 				
 					<div className="news-text">
-						<h2>{posts.length !== 0 && posts[posts.length - 1].title}</h2>
+						<h2>{posts.length !== 0 ? posts[posts.length - 1].title : undefined}</h2>
 
-						<p>{posts.length !== 0 && posts[posts.length - 1].summary}</p>
+						<p>{posts.length !== 0 ? posts[posts.length - 1].summary : undefined}</p>
 
 						<Link
 							to={`/newsdetail/${
-								posts.length !== 0 && posts[posts.length - 1].id
+								posts.length !== 0 ? posts[posts.length - 1].id:undefined
 							}`}
 						>
 							<span className="news-btn">Read More</span>
@@ -55,16 +56,16 @@ const NewsHomePage = () => {
 					<div className="news">
 						<div className="news-text">
 							<h2>
-								{posts.length !== 0 && posts[posts.length - 2].title}
+								{posts.length !== 0 ? posts[posts.length - 2].title:undefined}
 							</h2>
 
 							<p>
-								{posts.length !== 0 && posts[posts.length - 2].summary}
+								{posts.length !== 0 ? posts[posts.length - 2].summary : undefined}
 							</p>
 
 							<Link
 								to={`/newsdetail/${
-									posts.length !== 0 && posts[posts.length - 2].id
+									posts.length !== 0 ? posts[posts.length - 2].id:undefined
 								}`}
 							>
 								<span className="news-btn">Read More</span>
@@ -72,7 +73,7 @@ const NewsHomePage = () => {
 						</div>
 						<img
 								className="news-img"
-								src={posts.length !== 0 && posts[posts.length - 2].post_img_url}
+								src={posts.length !== 0 ? posts[posts.length - 2].post_img_url:undefined}
 								alt="pic"
 							/>
 					</div>
@@ -88,21 +89,21 @@ const NewsHomePage = () => {
 					<div className="news">
 					<img
 								className="news-img"
-								src={posts.length !== 0 && posts[posts.length - 3].post_img_url}
+								src={posts.length !== 0 ? posts[posts.length - 3].post_img_url : undefined}
 								alt="pic"
 							/>
 
 						<div className="news-text">
 							<h2>
-								{posts.length !== 0 && posts[posts.length - 3].title}
+								{posts.length !== 0 ? posts[posts.length - 3].title : undefined} }
 							</h2>
 
 							<p>
-								{posts.length !== 0 && posts[posts.length - 3].summary}
+								{posts.length !== 0 ? posts[posts.length - 3].summary : undefined}}
 							</p>
 							<Link
 								to={`/newsdetail/${
-									posts.length !== 0 && posts[posts.length - 3].id
+									posts.length !== 0 ? posts[posts.length - 3].id : undefined
 								}`}
 							>
 								<span className="news-btn">Read More</span>

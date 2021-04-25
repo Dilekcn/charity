@@ -2,7 +2,7 @@ import React, {useEffect} from 'react';
 import imageHeader from '../DonateGoods/Rectangle 26.png';
 import "./Ambassador.css";
 import "./AmbassadorForm.css"
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const Ambassador = ({isLoggedIn}) => {
   const history = useHistory()

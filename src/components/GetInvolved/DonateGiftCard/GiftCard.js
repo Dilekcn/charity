@@ -5,33 +5,33 @@ import Modal from 'react-modal';
 import { useHistory } from 'react-router';
 import axios from 'axios';
 
-const customStyles = {
-	content: {
-		position: 'absolute',
-		top: '38%',
-		left: '50%',
-		right: '50%',
-		bottom: '60%',
-		marginRight: '-50%',
-		marginTop: '120px',
-		transform: 'translate(-50%, -50%)',
-		height: 'fit-content',
-		backgroundColor: '#76A9C7',
-		padding: '10px',
-		width: '40%',
-		fontFamily: 'Roboto',
-		fontStyle: 'normal',
-		fontWeight: 'normal',
-		fontSize: 'large',
-		lineHeight: '28px',
-		color: 'white',
-		marginBottom: '450px',
-		display: 'flex',
-		flexDirection: 'column',
-		justifyContent: 'center',
-		textAlign: 'center',
-	},
-};
+// const customStyles = {
+// 	content: {
+// 		position: 'absolute',
+// 		top: '38%',
+// 		left: '50%',
+// 		right: '50%',
+// 		bottom: '60%',
+// 		marginRight: '-50%',
+// 		marginTop: '120px',
+// 		transform: 'translate(-50%, -50%)',
+// 		height: 'fit-content',
+// 		backgroundColor: '#76A9C7',
+// 		padding: '10px',
+// 		width: '40%',
+// 		fontFamily: 'Roboto',
+// 		fontStyle: 'normal',
+// 		fontWeight: 'normal',
+// 		fontSize: 'large',
+// 		lineHeight: '28px',
+// 		color: 'white',
+// 		marginBottom: '450px',
+// 		display: 'flex',
+// 		flexDirection: 'column',
+// 		justifyContent: 'center',
+// 		textAlign: 'center',
+// 	},
+// };
 
 const GiftCard = () => {
 	const [checkbox, setCheckbox] = useState(false);

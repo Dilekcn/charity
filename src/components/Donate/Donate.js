@@ -84,7 +84,7 @@ const Donate = () => {
               />
               <br />
               <br />
-              <label htmlfor="message">Message(optional)</label>
+              <label htmlFor="message">Message(optional)</label>
               <br />
               <br />
 
@@ -96,7 +96,7 @@ const Donate = () => {
               ></textarea>
               <br />
               <br />
-              <label htmlfor="submit">Payment</label>
+              <label htmlFor="submit">Payment</label>
               <br />
               <br />
               {checkout ? (

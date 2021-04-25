@@ -19,12 +19,12 @@ export default function NewsDetail() {
         axios.get(`https://mern-brothers.herokuapp.com/posts/${id}`)
         .then(res=>{ 
             setPost(res.data)
-            console.log(res.data)
+           
         })
         .catch(err=>{
             console.log(err)
         })
-    }, [])
+    }, [id])
 
     
  

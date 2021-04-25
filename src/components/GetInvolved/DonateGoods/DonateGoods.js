@@ -4,7 +4,7 @@ import imageHeader from './Rectangle 26.png';
 import image2 from './nick-de-partee-5DLBoEX99Cs-unsplash 1 (1).png';
 import image1 from './nick-de-partee-5DLBoEX99Cs-unsplash 1.png';
 import Modal from 'react-modal';
-import { Link, useHistory } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 
 const customStyles = {
 	content: {
@@ -32,7 +32,7 @@ const customStyles = {
 
 const DonateGoods = ({ isLoggedIn }) => {
 	const [modalIsOpen, setIsOpen] = React.useState(false);
-	const history = useHistory();
+	// const history = useHistory();
 
 	function closeModal() {
 		setIsOpen(false);
@@ -59,7 +59,7 @@ const DonateGoods = ({ isLoggedIn }) => {
 			</div>
 			<div className="content">
 				<div className="content1">
-					<img className="image-1" src={image1} />
+					<img className="image-1" src={image1} alt="" />
 					<div className="content1-p">
 						Just because you no longer need an item, don’t throw it away.
 						By donating it to us you’re not only keeping it out of
@@ -71,16 +71,16 @@ const DonateGoods = ({ isLoggedIn }) => {
 					</div>
 				</div>
 				<div className="content2">
-					<p className="content2-p">
+					<div className="content2-p">
 						<h4>What we can and can't collect</h4> It goes without saying
 						that we need to be able to re-sell items, but if a piece of
 						furniture is a little bit battered and worn we can sometimes
 						give it a new lease of life in our upcycling workshops. <br />
-						<a onClick={() => setIsOpen(true)}>
+						<p className="content2-p2" onClick={() => setIsOpen(true)}>
 							Find out what you can donate?
-						</a>
-					</p>
-					<img className="image-2" src={image2} />
+						</p>
+					</div>
+					<img className="image-2" src={image2} alt="" />
 				</div>
 				<div className="donate-goods-btn-div">
 					<Link
